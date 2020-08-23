@@ -54,7 +54,7 @@ export default class Sidebar extends React.Component {
 
               <div className="block md:hidden">
                 <div
-                  tabindex="0"
+                  tabIndex="0"
                   onClick={this.props.toggleNav}
                   title={this.props.navOpen ? 'Close Menu' : 'Open Menu'}
                   className="block -mr-2 p-2 text-gray-600 hover:text-gray-900 rounded-lg overflow-hidden focus:shadow-outline focus:outline-none cursor-pointer"

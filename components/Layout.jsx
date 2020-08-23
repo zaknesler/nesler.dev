@@ -35,7 +35,7 @@ export default class Layout extends React.Component {
               <main>
                 {this.props.title ? (
                   <div className="mb-6">
-                    <h3>{this.props.title}</h3>
+                    <h3 className="text-lg font-semibold">{this.props.title}</h3>
                     <hr className="mt-2" />
                   </div>
                 ) : (
