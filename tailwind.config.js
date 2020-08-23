@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  purge: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
@@ -51,5 +52,4 @@ module.exports = {
   variants: {
     typography: [],
   },
-  purge: ['pages/**/*.[js,jsx]', 'components/**/*.[js,jsx]'],
 }

@@ -1,8 +1,24 @@
-@import 'tailwindcss/base';
+@tailwind base;
 
-@import 'tailwindcss/components';
+*::selection {
+  @apply bg-brand-400 bg-opacity-25;
+}
 
-@import './_markup.css';
-/* @import "./_prism.css"; */
+hr {
+  @apply border-t-2 border-gray-200;
+}
 
-@import 'tailwindcss/utilities';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-semibold text-gray-900;
+}
+
+@tailwind components;
+
+/* @import './_prism.css'; */
+
+@tailwind utilities;

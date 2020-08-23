@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import NavItem from './NavItem'
 
 export default class Sidebar extends React.Component {
@@ -44,9 +46,9 @@ export default class Sidebar extends React.Component {
           <div className="w-full">
             <div className="w-full flex md:block justify-between items-center">
               <div>
-                <a href="#">
+                <Link href="/">
                   <h1 className="text-2xl font-bold text-gray-900">Zak Nesler</h1>
-                </a>
+                </Link>
                 <h4 className="text-xs font-medium tracking-wide uppercase text-gray-600">Full-Stack Developer</h4>
               </div>
 
