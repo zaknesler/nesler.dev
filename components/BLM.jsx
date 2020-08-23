@@ -1,6 +1,6 @@
 export default function BLM() {
   return (
-    <div className="mb-6 px-4 py-3 bg-black text-white rounded-md flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+    <div className="mb-6 px-4 py-3 bg-black text-white rounded-md flex flex-col sm:flex-row items-center justify-center sm:justify-between shadow-md">
       <div className="font-semibold text-center sm:text-left">
         <div>Black Lives Matter</div>
         <div className="text-xs opacity-75">The system is broken. Stop police brutality.</div>

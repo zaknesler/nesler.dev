@@ -47,20 +47,20 @@ export default class Sidebar extends React.Component {
             <div className="w-full flex md:block justify-between items-center">
               <div>
                 <Link href="/">
-                  <h1 className="text-2xl font-bold text-gray-900">Zak Nesler</h1>
+                  <a className="text-2xl font-bold text-gray-900">Zak Nesler</a>
                 </Link>
                 <h4 className="text-xs font-medium tracking-wide uppercase text-gray-600">Full-Stack Developer</h4>
               </div>
 
               <div className="block md:hidden">
-                <a
-                  href="#"
+                <div
+                  tabindex="0"
                   onClick={this.props.toggleNav}
                   title={this.props.navOpen ? 'Close Menu' : 'Open Menu'}
-                  className="block -mr-2 p-2 text-gray-600 hover:text-gray-900 rounded-lg overflow-hidden focus:shadow-outline focus:outline-none"
+                  className="block -mr-2 p-2 text-gray-600 hover:text-gray-900 rounded-lg overflow-hidden focus:shadow-outline focus:outline-none cursor-pointer"
                 >
                   {this.navMenuButton()}
-                </a>
+                </div>
               </div>
             </div>
 

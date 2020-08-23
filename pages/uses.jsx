@@ -191,8 +191,8 @@ export default function Uses() {
               quite a lot of work into, and I am very happy with it!
             </p>
 
-            <h5 class="-mb-1">Specs</h5>
-            <ul class="leading-snug">
+            <h5 className="-mb-1">Specs</h5>
+            <ul className="leading-snug">
               <li>i7-7700K @4.8 GHz</li>
               <li>EVGA GeForce GTX 970 SSC</li>
               <li>Corsair Vengeance 16 GB DDR4 3200MHz</li>
@@ -206,8 +206,8 @@ export default function Uses() {
               <li>Fractal Design Meshify C</li>
             </ul>
 
-            <h5 class="-mb-1">Peripherals</h5>
-            <ul class="leading-snug">
+            <h5 className="-mb-1">Peripherals</h5>
+            <ul className="leading-snug">
               <li>WASD Keyboards CODE &ndash; Cherry MX Brown</li>
               <li>SteelSeries Rival 600 Optical Mouse</li>
               <li>LG 27GL850-B 27 144Hz 2K IPS Monitor</li>
