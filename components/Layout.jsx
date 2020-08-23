@@ -28,7 +28,7 @@ export default class Layout extends React.Component {
             <Sidebar navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
 
             <div
-              className={'mx-auto md:mx-0 w-full md:max-w-xl md:mt-6' + (this.state.navOpen ? 'hidden md:block' : '')}
+              className={'mx-auto md:mx-0 w-full md:max-w-xl md:mt-6 ' + (this.state.navOpen ? 'hidden md:block' : '')}
             >
               <BLM />
 
