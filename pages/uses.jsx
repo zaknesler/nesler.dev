@@ -173,7 +173,7 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://spotify.com">Spotify</a>
-            <p>Because FLACs are not very portable.</p>
+            <p>Because FLACs are not very portable and it's great to discover new artists.</p>
           </li>
         </ul>
 
