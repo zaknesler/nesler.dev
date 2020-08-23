@@ -22,12 +22,10 @@ export default function Uses() {
             <p>
               I recently started using VS Code as my main editor, and I am quickly falling in love. It is highly
               customizable and has a huge community developing for it. I use{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=rahmanyerli.ra-spring">Ra Spring</a> as my
+              <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">Night Owl Light</a> as my
               light theme and{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=emroussel.atomize-atom-one-dark-theme">
-                Atomize
-              </a>{' '}
-              as my dark theme.
+              <a href="https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night">Tokyo Night Storm</a> as
+              my dark theme.
             </p>
           </li>
 
@@ -195,7 +193,7 @@ export default function Uses() {
             <ul className="leading-snug">
               <li>i7-7700K @4.8 GHz</li>
               <li>EVGA GeForce GTX 970 SSC</li>
-              <li>Corsair Vengeance 16 GB DDR4 3200MHz</li>
+              <li>16 GB Corsair Vengeance DDR4 3200MHz</li>
               <li>Asus PRIME Z270-A ATX Motherboard</li>
               <li>Samsung 970 EVO 500 GB M.2 NVME SSD</li>
               <li>Samsung 850 EVO 250 2.5" SSD</li>
