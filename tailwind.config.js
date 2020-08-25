@@ -52,4 +52,11 @@ module.exports = {
   variants: {
     typography: [],
   },
+  experimental: {
+    applyComplexClasses: true,
+    uniformColorPalette: true,
+  },
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
 }
