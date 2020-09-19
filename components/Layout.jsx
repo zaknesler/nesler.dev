@@ -13,6 +13,10 @@ export default class Layout extends React.Component {
     this.setState({ navOpen: !this.state.navOpen })
   }
 
+  title = () => {
+    return this.props.title ? `${this.props.title} – Zak Nesler` : 'Zak Nesler'
+  }
+
   render() {
     return (
       <div>
@@ -24,9 +28,9 @@ export default class Layout extends React.Component {
           <meta name="robots" content="index, follow" />
           <meta name="msapplication-starturl" content="/" />
           <meta name="mobile-web-app-capable" content="yes" />
-          <meta name="application-name" content="Zak Nesler" />
+          <meta name="application-name" content={this.title()} />
           <meta name="apple-mobile-web-app-capable" content="yes" />
-          <meta name="apple-mobile-web-app-title" content="Zak Nesler" />
+          <meta name="apple-mobile-web-app-title" content={this.title()} />
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta
             name="description"
@@ -36,8 +40,17 @@ export default class Layout extends React.Component {
             name="keywords"
             content="zak nesler, zak, nesler, zaknes, zaknesler, zachary nesler, web design, design, code, html, css, php, laravel, vue, programming, web development"
           />
-          <meta name="p:domain_verify" content="ff1f90db2750254f6843a167a5e5efb8" />.
-          <title>{this.props.title ? `${this.props.title} – Zak Nesler` : 'Zak Nesler'}</title>
+          <meta property="og:title" content={this.title()} />
+          <meta property="og:site_name" content="Zak Nesler" />
+          <meta property="og:url" content="https://nesler.dev" />
+          <meta
+            property="og:description"
+            content="Student full-stack developer from Pennsylvania with a passion for tasteful and minimal design, as well as tidy and efficient back-end code."
+          />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://nesler.dev/banner.png" />
+          <meta name="p:domain_verify" content="ff1f90db2750254f6843a167a5e5efb8" />
+          <title>{this.title()}</title>
           <link rel="icon" href="/favicon.png" />
           <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png" />
           <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/favicon.png" />
