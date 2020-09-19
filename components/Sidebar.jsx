@@ -47,9 +47,11 @@ export default class Sidebar extends React.Component {
             <div className="w-full flex md:block justify-between items-center">
               <div>
                 <Link href="/">
-                  <a className="text-2xl font-bold text-gray-900">Zak Nesler</a>
+                  <a className="text-2xl font-bold text-gray-900 dark:text-gray-100">Zak Nesler</a>
                 </Link>
-                <h4 className="text-xs font-medium tracking-wide uppercase text-gray-600">Full-Stack Developer</h4>
+                <h4 className="text-xs font-medium tracking-wide uppercase text-gray-600 dark:text-gray-400">
+                  Full-Stack Developer
+                </h4>
               </div>
 
               <div className="block md:hidden">
@@ -57,7 +59,7 @@ export default class Sidebar extends React.Component {
                   tabIndex="0"
                   onClick={this.props.toggleNav}
                   title={this.props.navOpen ? 'Close Menu' : 'Open Menu'}
-                  className="block -mr-2 p-2 text-gray-600 hover:text-gray-900 rounded-lg overflow-hidden focus:shadow-outline focus:outline-none cursor-pointer"
+                  className="block -mr-2 p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-100 dark:hover:bg-gray-800 rounded-lg overflow-hidden focus:shadow-outline focus:outline-none cursor-pointer"
                 >
                   {this.navMenuButton()}
                 </div>
@@ -75,7 +77,7 @@ export default class Sidebar extends React.Component {
               <NavItem href="/uses">Uses</NavItem>
             </ul>
 
-            <div className="my-6 mx-0 md:mx-auto md:mr-0 md:ml-auto w-12 h-1 bg-gray-200"></div>
+            <div className="my-6 mx-0 md:mx-auto md:mr-0 md:ml-auto w-12 h-1 bg-gray-200 dark:bg-gray-700"></div>
 
             <ul className="-mx-3 md:mx-0 space-y-1 md:space-y-2 text-base md:text-sm font-medium text-gray-600">
               <NavItem href="/resume.pdf">Résumé</NavItem>

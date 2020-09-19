@@ -3,11 +3,10 @@ import Layout from '../components/Layout'
 export default function Uses() {
   return (
     <Layout title="Uses">
-      <div className="prose">
+      <div className="prose dark:prose-dark">
         <p>
-          This is a collection of software, hardware, and websites I use on a daily basis. More than anything, this is a
-          place for me to keep track of everything I use and to act as a catalog if I need to look something up in the
-          future.
+          This is a collection of software, hardware, and websites I use daily. More than anything, this is a place for
+          me to keep track of everything I use and to act as a catalog if I need to look something up in the future.
         </p>
         <p>
           There are a lot of superlatives on this page, but it is only because most of the tools I use are the result of
@@ -22,10 +21,12 @@ export default function Uses() {
             <p>
               I recently started using VS Code as my main editor, and I am quickly falling in love. It is highly
               customizable and has a huge community developing for it. I use{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">Night Owl Light</a> as my
+              <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">GitHub</a> as my
               light theme and{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night">Tokyo Night Storm</a> as
-              my dark theme.
+              <a href="https://marketplace.visualstudio.com/items?itemName=emroussel.atomize-atom-one-dark-theme">
+                Atomize
+              </a>{' '}
+              as my dark theme.
             </p>
           </li>
 
@@ -44,12 +45,19 @@ export default function Uses() {
             <a href="https://brave.com">Brave</a>
             <p>
               I switched to Brave from Chrome for privacy reasons, after multiple failed attempts at trying Firefox. It
-              feels like Chrome without the privacy issues, just be sure turn off the silly Brave Rewards feature.
+              feels like Chrome without the privacy issues, just be sure to turn off the silly Brave Rewards feature.
             </p>
           </li>
           <li>
             <a href="https://figma.com">Figma</a>
-            <p>Hands-down the best design tool you can use, plus it's web-based and collaborative.</p>
+            <p>Hands-down the best design tool you can use, plus it's web-based and collaborative. I mean, come on!</p>
+          </li>
+          <li>
+            <a href="https://docker.com">Docker</a>
+            <p>
+              A great solution for containerizing your applications. Still relatively new to it but it's very fun to
+              use.
+            </p>
           </li>
           <li>
             <a href="https://laravel.com/docs/valet">Laravel Valet</a>
@@ -61,7 +69,7 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://iterm2.com">iTerm 2</a>
-            <p>My preferred terminal for MacOS. Highly customizable and very reliable.</p>
+            <p>My preferred terminal for macOS. Highly customizable and very reliable.</p>
           </li>
           <li>
             <a href="https://cmder.net">Cmder</a>
@@ -92,7 +100,7 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://github.com">GitHub</a>
-            <p>Huge fan. Since its acquisition by Microsoft it has only been getting better.</p>
+            <p>Huge fan. Since its acquisition by Microsoft, it has only been getting better.</p>
           </li>
           <li>
             <a href="https://hover.com">Hover</a>
@@ -109,8 +117,8 @@ export default function Uses() {
           <li>
             <a href="https://calendar.google.com">Google Calendar</a>
             <p>
-              I am adamant about putting every future event into my Calendar. Upcoming events are displayed on my phone
-              and I never have to worry about missing anything. Even my college schedule is in here.
+              I am adamant about putting every future event, including my college and work schedule, into my Calendar.
+              Upcoming events are displayed on my phone and I never have to worry about missing anything.
             </p>
           </li>
           <li>
@@ -167,11 +175,11 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://foobar2000.com">Foobar2000</a>
-            <p>What year is it again? Yeah I still use Foobar cause I love FLAC, baby!</p>
+            <p>What year is it again? Yeah, I still use Foobar cause I love FLAC, baby!</p>
           </li>
           <li>
             <a href="https://spotify.com">Spotify</a>
-            <p>Because FLACs are not very portable and it's great to discover new artists.</p>
+            <p>Great way to discover new artists and listen while driving.</p>
           </li>
         </ul>
 
@@ -197,8 +205,8 @@ export default function Uses() {
               <li>Asus PRIME Z270-A ATX Motherboard</li>
               <li>Samsung 970 EVO 500 GB M.2 NVME SSD</li>
               <li>Samsung 850 EVO 250 2.5" SSD</li>
-              <li>WD Black 2TB 7200RPM Interal HDD</li>
-              <li>WD Blue 4TB 5400RPM Interal HDD</li>
+              <li>WD Black 2TB 7200RPM Internal HDD</li>
+              <li>WD Blue 4TB 5400RPM Internal HDD</li>
               <li>EVGA SuperNOVA G2 750W 80+ Gold PSU</li>
               <li>Corsair H100i</li>
               <li>Fractal Design Meshify C</li>

@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 export default function Index() {
   return (
     <Layout>
-      <div className="prose">
+      <div className="prose dark:prose-dark">
         <p>
           <strong>Hey!</strong> I'm Zak, a 20-year-old student full-stack developer from Pennsylvania with a passion for
           tasteful and minimal design, as well as tidy and efficient back-end code.
@@ -17,7 +17,7 @@ export default function Index() {
         </p>
         <p>
           I am currently pursuing a Bachelor of Science degree in Computer Science, hoping to gain more knowledge and
-          experience doing what I love. In the meantime I like to work on side projects and contribute what I can to
+          experience doing what I love. In the meantime, I like to work on side projects and contribute what I can to
           open source.
         </p>
         <p>
