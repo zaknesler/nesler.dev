@@ -17,7 +17,7 @@ export default function Index() {
         </p>
         <p>
           I am currently pursuing a Bachelor of Science degree in Computer Science, hoping to gain more knowledge and
-          experience doing what I love. In the meantime I like to work on side projects and contribute what I can to
+          experience doing what I love. In the meantime, I like to work on side projects and contribute what I can to
           open source.
         </p>
         <p>

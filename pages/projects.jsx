@@ -5,11 +5,11 @@ export default function Projects() {
     <Layout title="Projects">
       <div className="prose dark:prose-dark">
         <p>
-          Here are the repositories of some of projects that I've worked on. It should come as no surprise that many of
-          them use Laravel, Vue.js, and Tailwind CSS.
+          Here are the repositories of some of the projects that I've worked on. It should come as no surprise that many
+          of them use Laravel, Vue.js, and Tailwind CSS.
         </p>
         <p>
-          The others are school assignments and example programs that I made in order to better understand a language,
+          The others are school assignments and example programs that I made to better understand a language,
           environment, tool, or programming paradigm.
         </p>
 

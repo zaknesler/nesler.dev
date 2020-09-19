@@ -5,9 +5,8 @@ export default function Uses() {
     <Layout title="Uses">
       <div className="prose dark:prose-dark">
         <p>
-          This is a collection of software, hardware, and websites I use on a daily basis. More than anything, this is a
-          place for me to keep track of everything I use and to act as a catalog if I need to look something up in the
-          future.
+          This is a collection of software, hardware, and websites I use daily. More than anything, this is a place for
+          me to keep track of everything I use and to act as a catalog if I need to look something up in the future.
         </p>
         <p>
           There are a lot of superlatives on this page, but it is only because most of the tools I use are the result of
@@ -46,7 +45,7 @@ export default function Uses() {
             <a href="https://brave.com">Brave</a>
             <p>
               I switched to Brave from Chrome for privacy reasons, after multiple failed attempts at trying Firefox. It
-              feels like Chrome without the privacy issues, just be sure turn off the silly Brave Rewards feature.
+              feels like Chrome without the privacy issues, just be sure to turn off the silly Brave Rewards feature.
             </p>
           </li>
           <li>
@@ -56,7 +55,8 @@ export default function Uses() {
           <li>
             <a href="https://docker.com">Docker</a>
             <p>
-              Great solution for containerizing your applications. Still relatively new to it but it's very fun to use.
+              A great solution for containerizing your applications. Still relatively new to it but it's very fun to
+              use.
             </p>
           </li>
           <li>
@@ -69,7 +69,7 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://iterm2.com">iTerm 2</a>
-            <p>My preferred terminal for MacOS. Highly customizable and very reliable.</p>
+            <p>My preferred terminal for macOS. Highly customizable and very reliable.</p>
           </li>
           <li>
             <a href="https://cmder.net">Cmder</a>
@@ -100,7 +100,7 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://github.com">GitHub</a>
-            <p>Huge fan. Since its acquisition by Microsoft it has only been getting better.</p>
+            <p>Huge fan. Since its acquisition by Microsoft, it has only been getting better.</p>
           </li>
           <li>
             <a href="https://hover.com">Hover</a>
@@ -117,8 +117,8 @@ export default function Uses() {
           <li>
             <a href="https://calendar.google.com">Google Calendar</a>
             <p>
-              I am adamant about putting every future event into my Calendar. Upcoming events are displayed on my phone
-              and I never have to worry about missing anything. Even my college schedule is in here.
+              I am adamant about putting every future event, including my college and work schedule, into my Calendar.
+              Upcoming events are displayed on my phone and I never have to worry about missing anything.
             </p>
           </li>
           <li>
@@ -175,11 +175,11 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://foobar2000.com">Foobar2000</a>
-            <p>What year is it again? Yeah I still use Foobar cause I love FLAC, baby!</p>
+            <p>What year is it again? Yeah, I still use Foobar cause I love FLAC, baby!</p>
           </li>
           <li>
             <a href="https://spotify.com">Spotify</a>
-            <p>Because FLACs are not very portable and it's great to discover new artists.</p>
+            <p>Great way to discover new artists and listen while driving.</p>
           </li>
         </ul>
 
