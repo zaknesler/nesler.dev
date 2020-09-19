@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 export default function Uses() {
   return (
     <Layout title="Uses">
-      <div className="prose">
+      <div className="prose dark:prose-dark">
         <p>
           This is a collection of software, hardware, and websites I use on a daily basis. More than anything, this is a
           place for me to keep track of everything I use and to act as a catalog if I need to look something up in the
@@ -22,10 +22,12 @@ export default function Uses() {
             <p>
               I recently started using VS Code as my main editor, and I am quickly falling in love. It is highly
               customizable and has a huge community developing for it. I use{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=sdras.night-owl">Night Owl Light</a> as my
+              <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">GitHub</a> as my
               light theme and{' '}
-              <a href="https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night">Tokyo Night Storm</a> as
-              my dark theme.
+              <a href="https://marketplace.visualstudio.com/items?itemName=emroussel.atomize-atom-one-dark-theme">
+                Atomize
+              </a>{' '}
+              as my dark theme.
             </p>
           </li>
 
@@ -49,7 +51,13 @@ export default function Uses() {
           </li>
           <li>
             <a href="https://figma.com">Figma</a>
-            <p>Hands-down the best design tool you can use, plus it's web-based and collaborative.</p>
+            <p>Hands-down the best design tool you can use, plus it's web-based and collaborative. I mean, come on!</p>
+          </li>
+          <li>
+            <a href="https://docker.com">Docker</a>
+            <p>
+              Great solution for containerizing your applications. Still relatively new to it but it's very fun to use.
+            </p>
           </li>
           <li>
             <a href="https://laravel.com/docs/valet">Laravel Valet</a>
@@ -197,8 +205,8 @@ export default function Uses() {
               <li>Asus PRIME Z270-A ATX Motherboard</li>
               <li>Samsung 970 EVO 500 GB M.2 NVME SSD</li>
               <li>Samsung 850 EVO 250 2.5" SSD</li>
-              <li>WD Black 2TB 7200RPM Interal HDD</li>
-              <li>WD Blue 4TB 5400RPM Interal HDD</li>
+              <li>WD Black 2TB 7200RPM Internal HDD</li>
+              <li>WD Blue 4TB 5400RPM Internal HDD</li>
               <li>EVGA SuperNOVA G2 750W 80+ Gold PSU</li>
               <li>Corsair H100i</li>
               <li>Fractal Design Meshify C</li>

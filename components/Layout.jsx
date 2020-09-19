@@ -15,7 +15,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <div className="font-sans font-normal text-base tracking-normal leading-normal bg-white text-gray-700">
+      <div>
         <Head>
           <title>{this.props.title ? `${this.props.title} – Zak Nesler` : 'Zak Nesler'}</title>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,700" />

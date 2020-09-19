@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
+  dark: 'media',
   theme: {
     extend: {
       colors: {
@@ -46,17 +47,45 @@ module.exports = {
           },
         },
       },
+      dark: {
+        css: {
+          color: theme('colors.gray.400'),
+          strong: {
+            color: theme('colors.gray.300'),
+          },
+          a: {
+            color: theme('colors.gray.300'),
+            fontWeight: theme('fontWeight.semibold'),
+            '&:hover': {
+              color: theme('colors.white'),
+            },
+          },
+          p: {
+            a: {
+              color: theme('colors.gray.300'),
+              fontWeight: theme('fontWeight.medium'),
+            },
+          },
+          'h1, h2, h3, h4, h5, h6': {
+            color: theme('colors.gray.100'),
+          },
+          h4: {
+            marginBottom: theme('spacing.3'),
+          },
+          'ul > li p': {
+            marginTop: theme('spacing.1'),
+          },
+        },
+      },
     }),
   },
   plugins: [require('@tailwindcss/typography')],
   variants: {
-    typography: [],
+    typography: ['dark'],
   },
-  experimental: {
-    applyComplexClasses: true,
-    uniformColorPalette: true,
-  },
+  experimental: 'all',
   future: {
     removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
   },
 }

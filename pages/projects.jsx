@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 export default function Projects() {
   return (
     <Layout title="Projects">
-      <div className="prose">
+      <div className="prose dark:prose-dark">
         <p>
           Here are the repositories of some of projects that I've worked on. It should come as no surprise that many of
           them use Laravel, Vue.js, and Tailwind CSS.
