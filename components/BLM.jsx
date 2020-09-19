@@ -9,6 +9,7 @@ export default function BLM() {
       <a
         href="https://support.eji.org/give/153413/#!/donation/checkout"
         target="_blank"
+        rel="noopener"
         className="mt-3 px-3 py-2 sm:mt-0 text-xs font-semibold inline-flex items-center text-white hover:text-black bg-gray-700 hover:bg-white rounded"
       >
         <span className="mr-2">Support Equal Justice Initiative</span>
