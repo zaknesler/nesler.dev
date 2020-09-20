@@ -59,7 +59,8 @@ export default class Layout extends React.Component {
         </Head>
 
         <div>
-          <div className="block w-full h-3 bg-gradient-to-r from-brand-500 to-brand-400"></div>
+          <div className="block w-full h-3 bg-gradient-to-r from-brand-500 to-brand-400 shadow-md"></div>
+
           <div className="mx-auto md:mt-12 p-6 w-full max-w-xl md:max-w-full flex flex-col md:flex-row md:justify-center">
             <Sidebar navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
 
