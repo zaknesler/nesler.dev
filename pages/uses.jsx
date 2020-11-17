@@ -201,7 +201,7 @@ export default function Uses() {
             <ul className="leading-snug">
               <li>i7-7700K @4.8 GHz</li>
               <li>EVGA GeForce GTX 970 SSC</li>
-              <li>16 GB Corsair Vengeance DDR4 3200MHz</li>
+              <li>16 GB G.SKILL Trident Z DDR4 3200MHz</li>
               <li>Asus PRIME Z270-A ATX Motherboard</li>
               <li>Samsung 970 EVO 500 GB M.2 NVME SSD</li>
               <li>Samsung 850 EVO 250 2.5" SSD</li>

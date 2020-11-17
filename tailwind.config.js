@@ -1,8 +1,12 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
-  dark: 'media',
+  purge: [
+    './components/**/*.{js,jsx}',
+    './pages/**/*.{js,jsx}',
+    './css/**/*.css',
+  ],
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
@@ -95,8 +99,4 @@ module.exports = {
     typography: ['dark'],
   },
   experimental: 'all',
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
 }
