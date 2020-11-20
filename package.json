@@ -1,5 +1,5 @@
 {
-  "name": "zak",
+  "name": "zak-nesler",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,16 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0",
-    "react": "17.0",
-    "react-dom": "17.0"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.2",
+    "@tailwindcss/typography": "^0.3",
     "autoprefixer": "^10.0",
+    "next": "10.0",
     "postcss": "^8.1",
-    "postcss-import": "^13.0",
-    "postcss-nesting": "^7.0",
-    "tailwindcss": "^2.0.0-alpha.25"
+    "react": "17.0",
+    "react-dom": "17.0",
+    "tailwindcss": "^2.0"
   }
 }

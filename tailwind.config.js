@@ -1,11 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: [
-    './components/**/*.{js,jsx}',
-    './pages/**/*.{js,jsx}',
-    './css/**/*.css',
-  ],
+  purge: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
   darkMode: 'media',
   theme: {
     extend: {
@@ -25,78 +21,79 @@ module.exports = {
       spacing: {
         sidebar: '10rem',
       },
-    },
-    typography: theme => ({
-      default: {
-        css: {
-          color: theme('colors.gray.700'),
-          strong: {
-            fontWeight: theme('fontWeight.semibold'),
-          },
-          a: {
-            color: theme('colors.gray.900'),
-            fontWeight: theme('fontWeight.semibold'),
-            '&:hover': {
-              color: theme('colors.black'),
+      typography: theme => ({
+        DEFAULT: {
+          css: {
+            color: theme('colors.gray.700'),
+            strong: {
+              fontWeight: theme('fontWeight.semibold'),
             },
-          },
-          p: {
             a: {
-              color: theme('colors.gray.800'),
-              fontWeight: theme('fontWeight.medium'),
+              color: theme('colors.gray.900'),
+              fontWeight: theme('fontWeight.semibold'),
+              '&:hover': {
+                color: theme('colors.black'),
+              },
             },
-          },
-          'h1, h2, h3, h4, h5, h6': {
-            fontWeight: theme('fontWeight.semibold'),
-          },
-          h4: {
-            marginBottom: theme('spacing.3'),
-          },
-          'ul > li p': {
-            marginTop: theme('spacing.1'),
+            p: {
+              a: {
+                color: theme('colors.gray.800'),
+                fontWeight: theme('fontWeight.medium'),
+              },
+            },
+            'h1, h2, h3, h4, h5, h6': {
+              fontWeight: theme('fontWeight.semibold'),
+            },
+            h4: {
+              marginBottom: theme('spacing.3'),
+            },
+            'ul > li p': {
+              marginTop: theme('spacing.1'),
+            },
           },
         },
-      },
-      dark: {
-        css: {
-          color: theme('colors.gray.400'),
-          strong: {
-            fontWeight: theme('fontWeight.semibold'),
-            color: theme('colors.gray.200'),
-          },
-          a: {
-            color: theme('colors.gray.200'),
-            fontWeight: theme('fontWeight.semibold'),
-            '&:hover': {
-              color: theme('colors.white'),
+        dark: {
+          css: {
+            color: theme('colors.gray.400'),
+            strong: {
+              fontWeight: theme('fontWeight.semibold'),
+              color: theme('colors.gray.200'),
             },
-          },
-          p: {
             a: {
               color: theme('colors.gray.200'),
-              fontWeight: theme('fontWeight.medium'),
+              fontWeight: theme('fontWeight.semibold'),
               '&:hover': {
                 color: theme('colors.white'),
               },
             },
-          },
-          'h1, h2, h3, h4, h5, h6': {
-            fontWeight: theme('fontWeight.semibold'),
-            color: theme('colors.gray.200'),
-          },
-          h4: {
-            marginBottom: theme('spacing.3'),
-          },
-          'ul > li p': {
-            marginTop: theme('spacing.1'),
+            p: {
+              a: {
+                color: theme('colors.gray.200'),
+                fontWeight: theme('fontWeight.medium'),
+                '&:hover': {
+                  color: theme('colors.white'),
+                },
+              },
+            },
+            'h1, h2, h3, h4, h5, h6': {
+              fontWeight: theme('fontWeight.semibold'),
+              color: theme('colors.gray.200'),
+            },
+            h4: {
+              marginBottom: theme('spacing.3'),
+            },
+            'ul > li p': {
+              marginTop: theme('spacing.1'),
+            },
           },
         },
-      },
-    }),
+      }),
+    },
   },
   plugins: [require('@tailwindcss/typography')],
   variants: {
-    typography: ['dark'],
+    extend: {
+      typography: ['dark'],
+    },
   },
-  experimental: 'all',
 }

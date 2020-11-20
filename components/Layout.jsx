@@ -1,5 +1,6 @@
-import Head from 'next/head'
+import React from 'react'
 
+import Head from 'next/head'
 import BLM from './BLM'
 import Sidebar from './Sidebar'
 
