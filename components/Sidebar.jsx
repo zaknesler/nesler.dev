@@ -1,6 +1,6 @@
 import React from 'react'
-
 import Link from 'next/link'
+
 import NavItem from './NavItem'
 
 export default class Sidebar extends React.Component {
@@ -76,6 +76,7 @@ export default class Sidebar extends React.Component {
               <NavItem href="/projects">Projects</NavItem>
               <NavItem href="/now">Now</NavItem>
               <NavItem href="/uses">Uses</NavItem>
+              <NavItem href="/tools">Tools</NavItem>
             </ul>
 
             <div className="my-6 mx-0 md:mx-auto md:mr-0 md:ml-auto w-12 h-1 bg-gray-200 dark:bg-gray-700"></div>
