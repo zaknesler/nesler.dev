@@ -63,9 +63,9 @@ export default class TextStatistics extends React.Component {
         sentences: val.match(/\s+[^.!?]*[.!?]+/g)?.length || 0,
       },
       time: {
-        reading: (words / 275) * 60,
+        reading: (words / 225) * 60,
         speaking: (words / 180) * 60,
-        writing: (val.match(/[^\s]/g)?.length / 68) * 60,
+        writing: (val.match(/[^\s]/g)?.length / 75) * 60,
       },
     })
   }

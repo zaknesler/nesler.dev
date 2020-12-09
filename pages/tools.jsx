@@ -43,7 +43,7 @@ export default function Tools() {
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
         <ToolItem
           name="Text Statistics"
-          desc="Get statistics from a body of text, such as word/character count and estimated reading time."
+          desc="Get statistics about a body of text, such as word count and reading time."
           url="/tools/text-statistics"
         >
           <path
@@ -56,8 +56,8 @@ export default function Tools() {
 
         <ToolItem
           name="Album Art Search"
-          desc="Search for album art from the iTunes, Amazon, and MusicBrainz Picard databases."
-          url="#"
+          desc="Quickly search for album art using the iTunes album database."
+          url="/tools/album-art-search"
         >
           <path
             strokeLinecap="round"

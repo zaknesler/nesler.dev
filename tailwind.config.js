@@ -94,6 +94,7 @@ module.exports = {
   variants: {
     extend: {
       typography: ['dark'],
+      display: ['group-hover'],
     },
   },
 }
