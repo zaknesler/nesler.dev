@@ -18,10 +18,7 @@ export default class AlbumArtSearch extends React.Component {
     this.setState({ results: [] })
 
     fetch(`https://itunes.apple.com/search?media=music&entity=album&limit=200&country=US&term=${query}`, {
-      // mode: 'no-cors',
-      headers: {
-        'Access-Control-Allow-Origin': '*',
-      },
+      mode: 'no-cors',
     })
       .then(response => response.json())
       .then(data => {
