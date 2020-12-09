@@ -17,7 +17,12 @@ export default class AlbumArtSearch extends React.Component {
 
     this.setState({ results: [] })
 
-    fetch(`https://itunes.apple.com/search?media=music&entity=album&limit=200&country=US&term=${query}`)
+    fetch(`https://itunes.apple.com/search?media=music&entity=album&limit=200&country=US&term=${query}`, {
+      // mode: 'no-cors',
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
+    })
       .then(response => response.json())
       .then(data => {
         data.results.forEach(result => {
@@ -82,18 +87,13 @@ export default class AlbumArtSearch extends React.Component {
                   <div className="mr-2">View Large</div>
 
                   <svg
-                    class="w-4 h-4 stroke-current"
+                    className="w-4 h-4 stroke-current"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </a>
               </div>
