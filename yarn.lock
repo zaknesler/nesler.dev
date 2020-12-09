@@ -3491,6 +3491,11 @@ schema-utils@^3.0.0:
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
+seconds-formater@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/seconds-formater/-/seconds-formater-1.2.0.tgz#b98232d4e6e33bd5510ccb621dad38f841714589"
+  integrity sha512-IAuG1TFhOVyspq2MvVeNeLvnr2ujKfDdlqBuI1AjEUqk/t528UeLe/cVq2D9ltyYVr4BYCDE0aqCOTOleHwklQ==
+
 semver@^5.4.1, semver@^5.6.0:
   version "5.7.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"

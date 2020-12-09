@@ -9,7 +9,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <Base>
+      <Base title={this.props.title}>
         {this.props.title ? (
           <div className="mb-6">
             <h3 className="text-lg font-semibold">{this.props.title}</h3>

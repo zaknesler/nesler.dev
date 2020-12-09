@@ -10,7 +10,7 @@ export default class Layout extends React.Component {
 
   render() {
     return (
-      <Base>
+      <Base title={this.props.name}>
         {this.props.name ? (
           <div className="mb-6">
             <h3 className="text-lg flex items-center">

@@ -33,7 +33,11 @@ export default function Tools() {
   return (
     <Layout title="Tools">
       <div className="prose dark:prose-dark">
-        <p>Here is a collection of web tools that I created for my personal use. I hope they may be of use to you!</p>
+        <p>
+          This is a collection of web tools that I have created for my own personal use. Existing tools like these
+          already exist on the internet, but sometimes I'm looking for something specific, so I made a few of my own. I
+          hope they may be of use to you!
+        </p>
       </div>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
