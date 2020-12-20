@@ -5,9 +5,9 @@ import Tool from '../../components/Tool'
 
 function Statistic({ name, value }) {
   return (
-    <div className="p-4 border border-gray-200 rounded-lg shadow-sm">
-      <div className="text-xs uppercase text-gray-500 tracking-wide font-semibold">{name}</div>
-      <div className="text-xl font-bold text-black">{value}</div>
+    <div className="p-4 border border-gray-200 dark:border-gray-800 rounded-lg shadow-sm">
+      <div className="text-xs uppercase text-gray-500 dark:text-gray-400 tracking-wide font-semibold">{name}</div>
+      <div className="text-xl font-bold text-black dark:text-white">{value}</div>
     </div>
   )
 }
@@ -84,7 +84,7 @@ export default class TextStatistics extends React.Component {
         </div>
 
         <textarea
-          className="p-4 block appearance-none w-full border border-gray-200 rounded-lg focus:outline-none focus:ring-2 shadow-sm"
+          className="p-4 block appearance-none w-full bg-transparent border border-gray-200 dark:border-gray-800 rounded-lg focus:outline-none focus:ring-2 shadow-sm"
           rows="10"
           value={this.state.value}
           onChange={this.handleChange}

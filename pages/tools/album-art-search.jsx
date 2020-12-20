@@ -51,8 +51,8 @@ export default class AlbumArtSearch extends React.Component {
       <Tool name="Album Art Search">
         <form className="flex" onSubmit={this.search}>
           <input
-            className="px-4 py-3 block appearance-none w-full border border-gray-200 rounded-lg focus:outline-none focus:ring-2 shadow-sm"
-            placeholder="Search for album... (eg. 'david bowie heroes')"
+            className="px-4 py-3 block appearance-none w-full text-gray-400 bg-transparent border border-gray-200 dark:border-gray-800 rounded-lg focus:outline-none focus:ring-2 shadow-sm"
+            placeholder='Search for album... (eg. "david bowie heroes")'
             type="text"
             value={this.state.query}
             onChange={this.handleChange}
@@ -61,16 +61,14 @@ export default class AlbumArtSearch extends React.Component {
           <input
             type="submit"
             value="Search"
-            className="ml-4 px-6 py-3 appearance-none font-medium bg-black hover:bg-gray-800 text-white rounded-lg shadow focus:outline-none focus:ring-4 cursor-pointer"
+            className="ml-4 px-6 py-3 appearance-none font-medium bg-black hover:bg-gray-800 dark:bg-gray-800 dark:hover:bg-gray-700 text-white rounded-lg shadow focus:outline-none focus:ring-4 cursor-pointer"
           />
         </form>
 
         {this.state.results?.length ? (
           <div className="mt-6 mb-3 text-xs">{this.state.results.length} results</div>
         ) : (
-          <div className="mt-6 px-6 py-20 w-full rounded-lg flex items-center justify-center bg-gray-50 shadow">
-            No results found.
-          </div>
+          <div className="mt-6">No results found.</div>
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -80,7 +78,7 @@ export default class AlbumArtSearch extends React.Component {
                 <a
                   href={result.imageUrlLarge}
                   target="_blank"
-                  className="px-3 py-2 inline-flex items-center bg-black text-white rounded-lg shadow-md"
+                  className="px-3 py-2 inline-flex items-center bg-black dark:bg-white text-white dark:text-black rounded-lg shadow-md"
                 >
                   <div className="mr-2">View Large</div>
 
@@ -96,9 +94,11 @@ export default class AlbumArtSearch extends React.Component {
                 </a>
               </div>
 
-              <div className="p-3 hidden group-hover:block absolute bottom-0 left-0 right-0 w-full text-sm rounded-b-lg bg-black text-white">
-                <div className="font-semibold text-gray-400 uppercase tracking-wide">{result.artist}</div>
-                <div className="mt-1 text-white">{result.album}</div>
+              <div className="p-3 hidden group-hover:block absolute bottom-0 left-0 right-0 w-full text-sm rounded-b-lg bg-black dark:bg-white text-white dark:text-black">
+                <div className="font-semibold text-gray-400 dark:text-black uppercase tracking-wide">
+                  {result.artist}
+                </div>
+                <div className="mt-1 text-white dark:text-black">{result.album}</div>
               </div>
 
               <img className="block w-full h-auto shadow rounded-lg" src={result.imageUrlSmall} alt={result.album} />

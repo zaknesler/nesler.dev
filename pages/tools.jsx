@@ -5,10 +5,10 @@ import Link from 'next/link'
 function ToolItem(props) {
   return (
     <Link href={props.url}>
-      <div className="p-4 rounded-lg border hover:border-gray-400 shadow-sm cursor-pointer">
+      <div className="p-4 rounded-lg border dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 shadow-sm cursor-pointer">
         <div className="flex items-center">
           <svg
-            className="w-6 h-6 text-gray-400 stroke-current"
+            className="w-6 h-6 text-gray-400 dark:text-gray-700 stroke-current"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -22,7 +22,7 @@ function ToolItem(props) {
         </div>
 
         <div className="ml-8 mt-2">
-          <div className="text-sm text-gray-500">{props.desc}</div>
+          <div className="text-sm text-gray-500 dark:text-gray-400">{props.desc}</div>
         </div>
       </div>
     </Link>
