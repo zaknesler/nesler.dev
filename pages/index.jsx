@@ -1,5 +1,7 @@
 import Layout from '../components/Layout'
 
+import Link from 'next/link'
+
 export default function Index() {
   return (
     <Layout>
@@ -21,8 +23,8 @@ export default function Index() {
         </p>
         <p>
           If you’re interested in knowing more about me, please feel free to take a look at my{' '}
-          <a href="{{ route('resume') }}">résumé</a> or send me an <a href="mailto:zak@nesler.dev">email</a> and I'll
-          get back to you!
+          <Link href="/resume.pdf">résumé</Link> or send me an <a href="mailto:zak@nesler.dev">email</a> and I'll get
+          back to you!
         </p>
       </div>
     </Layout>
