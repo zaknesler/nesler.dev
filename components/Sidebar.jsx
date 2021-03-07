@@ -76,7 +76,6 @@ export default class Sidebar extends React.Component {
               <NavItem href="/projects">Projects</NavItem>
               <NavItem href="/now">Now</NavItem>
               <NavItem href="/uses">Uses</NavItem>
-              <NavItem href="/tools">Tools</NavItem>
             </ul>
 
             <div className="w-12 h-1 mx-0 my-6 bg-gray-200 md:mx-auto md:mr-0 md:ml-auto dark:bg-gray-700"></div>

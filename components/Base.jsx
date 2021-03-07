@@ -60,13 +60,13 @@ export default class Base extends React.Component {
         </Head>
 
         <div>
-          <div className="block w-full h-3 bg-gradient-to-r from-brand-500 to-brand-400 shadow-md"></div>
+          <div className="block w-full h-3 shadow-md bg-gradient-to-r from-brand-500 to-brand-400"></div>
 
-          <div className="mx-auto md:mt-12 p-6 w-full max-w-xl md:max-w-full flex flex-col md:flex-row md:justify-center">
+          <div className="flex flex-col w-full max-w-xl p-6 mx-auto md:mt-12 md:max-w-full md:flex-row md:justify-center">
             <Sidebar navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
 
             <div
-              className={'mx-auto md:mx-0 w-full md:max-w-2xl md:mt-6 ' + (this.state.navOpen ? 'hidden md:block' : '')}
+              className={'mx-auto md:mx-0 w-full md:max-w-xl md:mt-6 ' + (this.state.navOpen ? 'hidden md:block' : '')}
             >
               <BLM />
 
