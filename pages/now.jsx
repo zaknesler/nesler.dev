@@ -6,14 +6,17 @@ export default function Now() {
       <div className="prose dark:prose-dark">
         <h4>College</h4>
         <p>
-          This year, 2021, I am completing the third year of my B.S. degree in Computer Science. My CS classes this year
-          focused on Algorithms, Theory of Computation, Computer Architecture, Software Engineering, Computer Networks,
-          and Principles of Programming Languages.
+          This year, I am completing the third year of my B.S. degree in Computer Science. My CS classes this year
+          include Algorithms, Theory of Computation, Computer Architecture, Software Engineering, Computer Networks, and
+          Principles of Programming Languages.
         </p>
         <p>
           I am largely self-taught, and I have been since middle school; however, my college education in my opinion is
-          irreplaceable. I have learned an incredible amount, including experience working in teams, on existing code,
-          with specific specifications, and focusing on performance.
+          irreplaceable.
+        </p>
+        <p>
+          I have learned an incredible amount so far, including experience working in teams, on existing code, with
+          specific requirements, and with a focus on performance and careful implementation.
         </p>
 
         <h4>Web Development</h4>
