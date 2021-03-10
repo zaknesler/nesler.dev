@@ -6,25 +6,24 @@ export default function Now() {
       <div className="prose dark:prose-dark">
         <h4>College</h4>
         <p>
-          This year I finished the second year of my B.S. degree in Computer Science. My CS classes this year focused on
-          creating data structures using Java and C++, such as trees, graphs, linked lists, queues, and stacks. My Fall
-          2020 semester includes CS courses Theory of Computation and Algorithms.
+          This year, 2021, I am completing the third year of my B.S. degree in Computer Science. My CS classes this year
+          focused on Algorithms, Theory of Computation, Computer Architecture, Software Engineering, Computer Networks,
+          and Principles of Programming Languages.
+        </p>
+        <p>
+          I am largely self-taught, and I have been since middle school; however, my college education in my opinion is
+          irreplaceable. I have learned an incredible amount, including experience working in teams, on existing code,
+          with specific specifications, and focusing on performance.
         </p>
 
         <h4>Web Development</h4>
         <p>
-          So far this year I have been trying to learn several more technologies that I've always wanted to learn.
-          Primarily React, Next.js, and Docker. I am enjoying using Next.js and React; in fact, this site is built with
-          Next.js!
+          This past year or so I have been working on trying to learn more technologies, as well as improving my
+          existing skills. This mainly includes learning React, Next.js, and Docker.
         </p>
         <p>
-          It's likely that I won't switch from Vue.js, as I much prefer the syntax and simplicity of Vue components, but
-          starting to learn React was a very important goal that I am glad to have achieved.
-        </p>
-        <p>
-          I've also slowly started learning Docker, I love the idea of containerization and keeping web servers off of
-          my local machine. I plan on reinstalling my OS soon, something I normally do once a year, and Docker seems
-          like a great way to avoid having to install a handful of unnecessary services (MySQL, PHP, etc.) locally.
+          Docker has quickly become one of my favorite tools that I now use regularly. I have converted all of my old
+          projects over to Docker, and continue to use it as my main development environment.
         </p>
 
         <h4>Adventures into Art</h4>
@@ -36,12 +35,12 @@ export default function Now() {
         </p>
         <p>
           After becoming addicted to Blender and devouring all the content I could, I switched over to learning
-          traditional and digital art. This year I have been practicing gesture, figure drawing, and anatomy, albeit at
-          a snail's pace.
+          traditional and digital art. This past year I have been practicing gesture, figure drawing, and anatomy,
+          albeit at a snail's pace.
         </p>
         <p>
-          I plan on continuing my journey into art as a side hobby slowly and surely, practicing a little bit every day.
-          I've discovered a creative side that I didn't know I had.
+          Having discovered a creative side I didn't know I had, I plan on continuing my journey into art. I try to find
+          time every day to practice my skills as an artist, and I don't ever plan on stopping!
         </p>
       </div>
     </Layout>

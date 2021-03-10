@@ -9,8 +9,8 @@ export default function Projects() {
           of them use Laravel, Vue.js, and Tailwind CSS.
         </p>
         <p>
-          The others are school assignments and example programs that I made to better understand a language,
-          environment, tool, or programming paradigm.
+          Others include applications that I have made to learn a language, environment, or tool, including designing or
+          recreating existing applications to test my skills.
         </p>
 
         <h4>
@@ -31,7 +31,7 @@ export default function Projects() {
         </p>
 
         <h4>
-          <a href="https://github.com/zaknesler/java">Java</a>
+          <a href="https://github.com/zaknesler/java">Java/Android Projects</a>
         </h4>
         <p>
           Code from my high school Java I (intro to Java) and Java II (Android Development) classes. These projects

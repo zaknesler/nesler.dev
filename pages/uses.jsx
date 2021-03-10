@@ -5,12 +5,14 @@ export default function Uses() {
     <Layout title="Uses">
       <div className="prose dark:prose-dark">
         <p>
-          This is a collection of software, hardware, and websites I use daily. More than anything, this is a place for
-          me to keep track of everything I use and to act as a catalog if I need to look something up in the future.
+          This is a collection of software, hardware, apps, and websites I use daily. More than anything, this is a
+          place for me to keep track of everything I use and to act as a catalog if I need to look something up in the
+          future.
         </p>
         <p>
-          There are a lot of superlatives on this page, but it is only because most of the tools I use are the result of
-          years of searching, switching, and customizing until I have found the absolute best for my workflow.
+          There is an overwhelming amount of superlatives on this page, but it is only because most of the tools I use
+          are the result of years of searching, switching, and customizing until I have found the absolute best for my
+          workflow.
         </p>
 
         <h4>Development</h4>
@@ -19,8 +21,8 @@ export default function Uses() {
           <li>
             <a href="https://code.visualstudio.com/">Visual Studio Code</a>
             <p>
-              I recently started using VS Code as my main editor, and I am quickly falling in love. It is highly
-              customizable and has a huge community developing for it. I use{' '}
+              Around the start of 2020, I switched to using VS Code as my primary editor, and I absolutely love it. It
+              is highly customizable and has a huge community behind it. I use{' '}
               <a href="https://marketplace.visualstudio.com/items?itemName=GitHub.github-vscode-theme">GitHub</a> as my
               light theme and{' '}
               <a href="https://marketplace.visualstudio.com/items?itemName=emroussel.atomize-atom-one-dark-theme">
@@ -34,46 +36,48 @@ export default function Uses() {
             <a href="https://sublimetext.com">Sublime Text 3</a>
             <p>
               For the longest time, Sublime has been my editor of choice, and to this day nothing comes close to its
-              speed. I use a{' '}
-              <a href="https://gist.github.com/zaknesler/436c4d7e6c607321e2a56de9e28795e8">highly-customized</a>,
-              minimal theme for <a href="https://github.com/Krypto/sublime-da-ui">DA UI</a>, and my favorite color
-              scheme is DA Light, found in <a href="https://github.com/Krypto/sublime-da-cs">DA CS</a>. I will forever
-              stand by my $70 purchase.
+              speed. I will forever stand by my $70 purchase and still find excuses to use it.
+            </p>
+            <p>
+              I use a <a href="https://gist.github.com/zaknesler/436c4d7e6c607321e2a56de9e28795e8">highly-customized</a>{' '}
+              theme for <a href="https://github.com/Krypto/sublime-da-ui">DA UI</a>, and my favorite color scheme is DA
+              Light, which is found in the <a href="https://github.com/Krypto/sublime-da-cs">DA CS</a> package.
             </p>
           </li>
+
           <li>
             <a href="https://brave.com">Brave</a>
             <p>
-              I switched to Brave from Chrome for privacy reasons, after multiple failed attempts at trying Firefox. It
-              feels like Chrome without the privacy issues, just be sure to turn off the silly Brave Rewards feature.
+              Brave is Chrome without Google! I have tried many times to switch to Firefox, but it has never quite
+              worked out.
             </p>
           </li>
+
+          <li>
+            <a href="https://docker.com">Docker</a>
+            <p>My daily development environment. Docker is pure magic and is so much fun to use!</p>
+          </li>
+
           <li>
             <a href="https://figma.com">Figma</a>
             <p>Hands-down the best design tool you can use, plus it's web-based and collaborative. I mean, come on!</p>
           </li>
-          <li>
-            <a href="https://docker.com">Docker</a>
-            <p>
-              A great solution for containerizing your applications. Still relatively new to it but it's very fun to
-              use.
-            </p>
-          </li>
-          <li>
-            <a href="https://laravel.com/docs/valet">Laravel Valet</a>
-            <p>Super fast and lightweight local development environment. Amazing solution for Mac developers.</p>
-          </li>
-          <li>
-            <a href="https://laragon.org">Laragon</a>
-            <p>The most compact and simplified solution for web development on Windows.</p>
-          </li>
+
           <li>
             <a href="https://iterm2.com">iTerm 2</a>
             <p>My preferred terminal for macOS. Highly customizable and very reliable.</p>
           </li>
+
           <li>
-            <a href="https://cmder.net">Cmder</a>
-            <p>Console emulator for Windows. It's a superb experience on an otherwise developer-unfriendly OS.</p>
+            <a href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701">Windows Terminal</a>
+            <p>
+              A fantastic terminal that supports multiple environments. You can have Ubuntu, Command Prompt, PowerShell,
+              etc. running in the same window. It's sweet!
+            </p>
+            <p>
+              I also use <a href="https://cmder.net">Cmder</a> as a console emulator for work on the Windows filesystem,
+              you just point Windows Terminal to the batch file and you're set.
+            </p>
           </li>
         </ul>
 
@@ -87,6 +91,7 @@ export default function Uses() {
               droplet to test out projects or software.
             </p>
           </li>
+
           <li>
             <a href="https://forge.laravel.com">Laravel Forge</a>
             <p>
@@ -94,19 +99,22 @@ export default function Uses() {
               databases to daemons can be managed on a web interface.
             </p>
           </li>
+
           <li>
             <a href="https://cloudflare.com">Cloudflare</a>
-            <p>I refuse to host a website that doesn't go through Cloudflare.</p>
+            <p>No explanation is needed! Cloudflare is awesome.</p>
           </li>
+
           <li>
             <a href="https://github.com">GitHub</a>
-            <p>Huge fan. Since its acquisition by Microsoft, it has only been getting better.</p>
+            <p>Huge fan! Since its acquisition by Microsoft, it has only been getting better.</p>
           </li>
+
           <li>
             <a href="https://hover.com">Hover</a>
             <p>
-              I've been through at least three other domain registrars; Hover is the only one with a clean UI and
-              incredible customer support.
+              I've been through at least three other domain registrars; Hover has a super clean UI and incredible
+              customer support.
             </p>
           </li>
         </ul>
@@ -121,6 +129,7 @@ export default function Uses() {
               Upcoming events are displayed on my phone and I never have to worry about missing anything.
             </p>
           </li>
+
           <li>
             <a href="https://www.alfredapp.com">Alfred</a>
             <p>
@@ -128,18 +137,21 @@ export default function Uses() {
               on my Mac.
             </p>
           </li>
+
           <li>
             <a href="https://1password.com">1Password</a>
             <p>Speechless. I couldn't imagine my life without 1Password.</p>
           </li>
+
           <li>
             <a href="https://bear.app">Bear</a>
-            <p>I use Bear because I am a huge fan of Markdown! I take all of my notes for college with this.</p>
+            <p>I use Bear because I love Markdown! I take all of my notes for college with this.</p>
           </li>
+
           <li>
             <a href="https://fastmail.com">FastMail</a>
             <p>
-              I use this to handle my domain email addresses. $50 a year for virtually unlimited domains and aliases,
+              I use this to handle my domain email addresses. $50 a year for virtually unlimited domains and aliases is
               such a great deal.
             </p>
           </li>
@@ -152,13 +164,12 @@ export default function Uses() {
             <a href="https://nordvpn.com">NordVPN</a>
             <p>Reputable, fast, inexpensive. I'm always connected to a VPN and you should be as well.</p>
           </li>
+
           <li>
             <a href="https://one.google.com">Google One</a>
-            <p>
-              I use Google One (Google Drive) for backing up important data, including my dotfiles that are symlinked to
-              my local drive.
-            </p>
+            <p>I use Google One (Google Drive) for backing up important data and syncing between devices.</p>
           </li>
+
           <li>
             <a href="https://winmerge.org/">WinMerge</a>
             <p>
@@ -166,20 +177,45 @@ export default function Uses() {
               and only copy over changed/new files.
             </p>
           </li>
+
           <li>
             <a href="https://plex.tv">Plex</a>
-            <p>
-              A great media streaming solution. Cable/Satellite/Streaming is pretty much dead. Buy your favorite shows
-              and movies and own them forever.
-            </p>
+            <p>A great media streaming solution. Buy your favorite shows, movies, and music and own them forever!</p>
           </li>
+
           <li>
             <a href="https://foobar2000.com">Foobar2000</a>
-            <p>What year is it again? Yeah, I still use Foobar cause I love FLAC, baby!</p>
+            <p>What year is it again? Yeah, I still use Foobar cause I love FLAC!</p>
           </li>
+
           <li>
             <a href="https://spotify.com">Spotify</a>
             <p>Great way to discover new artists and listen while driving.</p>
+          </li>
+        </ul>
+
+        <h4>Apps</h4>
+
+        <ul>
+          <li>
+            <a href="https://bobbyapp.co">Bobby</a>
+            <p>
+              Useful little app for keeping track of all of any subscriptions and recurring billing. Includes weekly,
+              monthly, and yearly cost-breakdowns.
+            </p>
+          </li>
+
+          <li>
+            <a href="https://www.signal.org">Signal</a>
+            <p>Open-source, encrypted messaging!</p>
+          </li>
+
+          <li>
+            <a href="https://www.unifiedremote.com">Unified Remove</a>
+            <p>
+              A handy app for controlling your computer remotely. More than just a wireless mouse and keyboard, it has
+              support for popular applications and websites as well.
+            </p>
           </li>
         </ul>
 
@@ -190,6 +226,7 @@ export default function Uses() {
             <strong>13" MacBook Pro &ndash; 2016</strong>
             <p>2.9 GHz Dual-core i5, 8 GB 2133 MHz. Light, portable, and fast!</p>
           </li>
+
           <li>
             <strong>Custom Windows 10 PC</strong>
             <p>
