@@ -7,7 +7,7 @@ export default function Index() {
     <Layout>
       <div className="prose dark:prose-dark">
         <p>
-          <strong>Hey!</strong> I'm Zak, a 20-year-old student full-stack developer from Pennsylvania with a passion for
+          <strong>Hey!</strong> I'm Zak, a student full-stack developer from Pennsylvania with a passion for
           tasteful and minimal design.
         </p>
         <p>
