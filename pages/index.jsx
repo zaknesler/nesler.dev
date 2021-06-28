@@ -7,8 +7,8 @@ export default function Index() {
     <Layout>
       <div className="prose dark:prose-dark">
         <p>
-          <strong>Hey!</strong> I'm Zak, a student full-stack developer from Pennsylvania with a passion for
-          tasteful and minimal design.
+          <strong>Hey!</strong> I'm Zak, a student full-stack developer from Pennsylvania with a passion for tasteful
+          and minimal design.
         </p>
         <p>
           Over the past few years, I have fallen in love with the <a href="https://laravel.com">Laravel</a> PHP

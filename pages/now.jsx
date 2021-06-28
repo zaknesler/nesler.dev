@@ -5,28 +5,17 @@ export default function Now() {
     <Layout title="Now">
       <div className="prose dark:prose-dark">
         <h4>College</h4>
+
         <p>
-          This year, I am completing the third year of my B.S. degree in Computer Science. My CS classes this year
-          include Algorithms, Theory of Computation, Computer Architecture, Software Engineering, Computer Networks, and
-          Principles of Programming Languages.
-        </p>
-        <p>
-          I am largely self-taught, and I have been since middle school; however, my college education in my opinion is
-          irreplaceable.
-        </p>
-        <p>
-          I have learned an incredible amount so far, including experience working in teams, on existing code, with
-          specific requirements, and with a focus on performance and careful implementation.
+          This year I will be starting my senior year of my B.S. degree in Computer Science. My courses include
+          Operating Systems and Web Development, as well as several art classes.
         </p>
 
         <h4>Web Development</h4>
         <p>
-          This past year or so I have been working on trying to learn more technologies, as well as improving my
-          existing skills. This mainly includes learning React, Next.js, and Docker.
-        </p>
-        <p>
-          Docker has quickly become one of my favorite tools that I now use regularly. I have converted all of my old
-          projects over to Docker, and continue to use it as my main development environment.
+          This past year I have taken a bit of a hiatus from web development to focus on my creative skills, however I
+          still try to keep up to date on all that's happening. I have plans to continue learning React/Next.js,
+          GraphQL, and possibly other web frameworks.
         </p>
 
         <h4>Adventures into Art</h4>
@@ -42,8 +31,9 @@ export default function Now() {
           albeit at a snail's pace.
         </p>
         <p>
-          Having discovered a creative side I didn't know I had, I plan on continuing my journey into art. I try to find
-          time every day to practice my skills as an artist, and I don't ever plan on stopping!
+          Having discovered a creative side I didn't know I had, I plan on continuing my journey into art. I had always
+          been into photography but could never find the motivation to learn other forms of art. I try to find time
+          every day to practice my skills as an artist, and I don't ever plan on stopping!
         </p>
       </div>
     </Layout>

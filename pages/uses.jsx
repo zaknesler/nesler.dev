@@ -36,7 +36,7 @@ export default function Uses() {
             <a href="https://sublimetext.com">Sublime Text 3</a>
             <p>
               For the longest time, Sublime has been my editor of choice, and to this day nothing comes close to its
-              speed. I will forever stand by my $70 purchase and still find excuses to use it.
+              speed. I will forever stand behind my $70 purchase.
             </p>
             <p>
               I use a <a href="https://gist.github.com/zaknesler/436c4d7e6c607321e2a56de9e28795e8">highly-customized</a>{' '}
@@ -236,13 +236,13 @@ export default function Uses() {
 
             <h5 className="-mb-1">Specs</h5>
             <ul className="leading-snug">
-              <li>i7-7700K @4.8 GHz</li>
+              <li>i7-7700K @ 4.8 GHz</li>
               <li>EVGA GeForce GTX 970 SSC</li>
-              <li>16 GB G.SKILL Trident Z DDR4 3200MHz</li>
+              <li>16 GB G.SKILL Trident Z DDR4 3200 MHz</li>
               <li>Asus PRIME Z270-A ATX Motherboard</li>
               <li>Samsung 970 EVO 500 GB M.2 NVME SSD</li>
               <li>Samsung 850 EVO 250 2.5" SSD</li>
-              <li>WD Black 2TB 7200RPM Internal HDD</li>
+              <li>WD Black 6TB 7200RPM Internal HDD</li>
               <li>WD Blue 4TB 5400RPM Internal HDD</li>
               <li>EVGA SuperNOVA G2 750W 80+ Gold PSU</li>
               <li>Corsair H100i</li>
@@ -261,7 +261,7 @@ export default function Uses() {
               <li>MXL 990 Condenser Microphone</li>
               <li>2x Mackie MR524 Studio Monitors</li>
               <li>Sennheiser HD 58X Jubilee Open-back</li>
-              <li>Audio-Technica ATH-MSR7 Closed-back</li>
+              <li>Audio-Technica MSR7 Closed-back</li>
             </ul>
           </li>
         </ul>
