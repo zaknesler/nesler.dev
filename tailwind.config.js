@@ -1,8 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
+  content: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
   darkMode: 'media',
   theme: {
     extend: {
@@ -91,11 +90,11 @@ module.exports = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/typography')],
   variants: {
     extend: {
       typography: ['dark'],
       display: ['group-hover'],
     },
   },
+  plugins: [require('@tailwindcss/typography')],
 }

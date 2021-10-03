@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 
-import BLM from './BLM'
 import Sidebar from './Sidebar'
 
 export default class Base extends React.Component {
@@ -60,16 +59,14 @@ export default class Base extends React.Component {
         </Head>
 
         <div>
-          <div className="block w-full h-3 shadow-md bg-gradient-to-r from-brand-500 to-brand-400"></div>
+          <div className="bg-gradient-to-r from-brand-500 to-brand-400 block w-full h-3 shadow-md"></div>
 
-          <div className="flex flex-col w-full max-w-xl p-6 mx-auto md:mt-12 md:max-w-full md:flex-row md:justify-center">
+          <div className="md:mt-12 md:max-w-full md:flex-row md:justify-center flex flex-col w-full max-w-xl p-6 mx-auto">
             <Sidebar navOpen={this.state.navOpen} toggleNav={this.toggleNav} />
 
             <div
               className={'mx-auto md:mx-0 w-full md:max-w-xl md:mt-6 ' + (this.state.navOpen ? 'hidden md:block' : '')}
             >
-              <BLM />
-
               {this.props.children}
             </div>
           </div>
