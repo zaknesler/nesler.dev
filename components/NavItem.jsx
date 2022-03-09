@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function NavItem({ href, children }) {
+export default function NavItem({ children, href }) {
   const router = useRouter()
 
   return (

@@ -2,25 +2,19 @@ import React from 'react'
 
 import Base from './Base'
 
-export default class Layout extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+export default function Layout({ children, title }) {
+  return (
+    <Base title={title}>
+      {title ? (
+        <div className="mb-6">
+          <h3 className="text-lg font-semibold">{title}</h3>
+          <hr className="mt-2" />
+        </div>
+      ) : (
+        ''
+      )}
 
-  render() {
-    return (
-      <Base title={this.props.title}>
-        {this.props.title ? (
-          <div className="mb-6">
-            <h3 className="text-lg font-semibold">{this.props.title}</h3>
-            <hr className="mt-2" />
-          </div>
-        ) : (
-          ''
-        )}
-
-        {this.props.children}
-      </Base>
-    )
-  }
+      {children}
+    </Base>
+  )
 }
