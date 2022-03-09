@@ -16,7 +16,11 @@ export default function Index() {
           <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility-first CSS framework; I would consider myself to
           be very proficient in each.
         </p>
-        <p>I have also been working a lot with React and Next.js,</p>
+        <p>
+          I am currently pursuing a Bachelor of Science degree in Computer Science, hoping to gain more knowledge and
+          experience doing what I love. In the meantime, I like to work on side projects and contribute what I can to
+          open source.
+        </p>
         <p>
           If you would like to get in touch, please feel free to take a look at my <Link href="/resume">résumé</Link> or
           send me an <a href="mailto:zak@nesler.dev">email</a>, and I'll get back to you!
