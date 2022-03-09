@@ -15,14 +15,14 @@ export default function Resume() {
 
   return (
     <Base full={true} title="Résumé">
-      <div className="max-w-4xl p-8 mx-auto space-y-10 text-gray-600">
+      <div className="dark:text-gray-400 max-w-4xl p-8 mx-auto space-y-10 text-gray-600">
         <div className="flex items-center justify-between max-w-4xl mx-auto">
           <Link href="/">
-            <a className="hover:text-black">&larr; Go to Home</a>
+            <a className="hover:text-black dark:hover:text-gray-200">&larr; Go to Home</a>
           </Link>
 
           <Link href="/resume.pdf">
-            <a className="hover:text-blue-900 bg-blue-50 hover:bg-blue-100 flex items-center px-2 py-1 mt-2 text-sm font-medium text-blue-700 rounded-md">
+            <a className="hover:text-blue-900 bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 dark:hover:bg-blue-900 hover:bg-blue-100 dark:text-blue-200 dark:hover:text-white flex items-center px-2 py-1 mt-2 text-sm font-medium text-blue-700 rounded-md">
               Download as PDF
             </a>
           </Link>
@@ -30,8 +30,8 @@ export default function Resume() {
 
         <section className="flex justify-between">
           <div>
-            <div className="text-xl font-semibold text-black">Zak Nesler</div>
-            <div className="text-gray-600">Student Full-Stack Developer</div>
+            <div className="dark:text-gray-200 text-xl font-semibold text-black">Zak Nesler</div>
+            <div className="dark:text-gray-400 text-gray-600">Student Full-Stack Developer</div>
           </div>
 
           <div className="space-y-2 font-medium text-right">
@@ -54,7 +54,7 @@ export default function Resume() {
 
               <a href="https://github.com/zaknesler">
                 <svg
-                  className="w-5 h-5"
+                  className="w-5 h-5 fill-current text-[#24292E] dark:text-gray-100"
                   width="15"
                   height="15"
                   viewBox="0 0 15 15"
@@ -65,7 +65,6 @@ export default function Resume() {
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M7.52481 0C3.36108 0 0 3.43995 0 7.70138C0 11.09 2.15711 13.9652 5.16703 14.992C5.56836 15.0434 5.66869 14.838 5.66869 14.6326V13.2977C3.56174 13.7598 3.11025 12.2709 3.11025 12.2709C2.7591 11.398 2.25744 11.1413 2.25744 11.1413C1.55513 10.6792 2.30761 10.6792 2.30761 10.6792C3.06009 10.7306 3.46141 11.4494 3.46141 11.4494C4.11356 12.6303 5.2172 12.2709 5.66869 12.0655C5.71885 11.5521 5.91951 11.244 6.17034 11.0386C4.51488 10.8333 2.7591 10.1658 2.7591 7.2393C2.7591 6.41782 3.06009 5.69902 3.51158 5.1856C3.41125 4.98023 3.16042 4.21009 3.56174 3.13189C3.56174 3.13189 4.21389 2.92652 5.61852 3.90203C6.22051 3.74801 6.87266 3.64532 7.52481 3.64532C8.17695 3.64532 8.8291 3.74801 9.43109 3.90203C10.8859 2.92652 11.4879 3.13189 11.4879 3.13189C11.8892 4.21009 11.6384 4.98023 11.538 5.1856C12.0397 5.69902 12.2905 6.41782 12.2905 7.2393C12.2905 10.2172 10.5347 10.8333 8.87927 11.0386C9.1301 11.2954 9.38092 11.7574 9.38092 12.4762V14.5813C9.38092 14.7867 9.53142 15.0434 9.88258 14.9407C12.8925 13.9138 14.9994 11.0386 14.9994 7.65004C15.0496 3.43995 11.6885 0 7.52481 0Z"
-                    fill="#24292E"
                   />
                 </svg>
               </a>
@@ -90,7 +89,7 @@ export default function Resume() {
             </div>
 
             <div>
-              <a href="mailto:zak@nesler.dev" className="hover:text-black">
+              <a href="mailto:zak@nesler.dev" className="hover:text-black dark:hover:text-gray-200">
                 zak@nesler.dev
               </a>
             </div>
@@ -99,8 +98,8 @@ export default function Resume() {
 
         <section>
           <div>
-            <div className="font-bold text-black">Professional Qualities</div>
-            <div className="mt-1 border-b-2 border-gray-200"></div>
+            <div className="dark:text-gray-200 font-bold text-black">Professional Qualities</div>
+            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
           </div>
 
           <div className="mt-4">
@@ -116,22 +115,22 @@ export default function Resume() {
         <section>
           <div>
             <div className="flex items-center justify-between">
-              <div className="font-bold text-black">Skills</div>
-              <div className="text-sm text-gray-500">Ready and willing to learn anything!</div>
+              <div className="dark:text-gray-200 font-bold text-black">Skills</div>
+              <div className="dark:text-gray-400 text-sm text-gray-500">Ready and willing to learn anything!</div>
             </div>
-            <div className="mt-1 border-b-2 border-gray-200"></div>
+            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
           </div>
 
           <div className="lg:grid-cols-5 grid grid-cols-1 gap-4 mt-4">
-            <div className="col-span-1 font-medium text-black">Technologies</div>
+            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Technologies</div>
             <div className="col-span-4">Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js</div>
 
-            <div className="col-span-1 font-medium text-black">Languages</div>
+            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Languages</div>
             <div className="col-span-4">
               PHP, HTML/CSS, JavaScript, SQL, Python, Node.js, Java, C, C++, Go, Bash, Regex
             </div>
 
-            <div className="col-span-1 font-medium text-black">Software</div>
+            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Software</div>
             <div className="col-span-4">
               Docker, Git, PHPUnit, VS Code, Sublime Text, Ubuntu, Debian, LEMP, LAMP, Figma, Photoshop, Blender, Excel
             </div>
@@ -140,16 +139,18 @@ export default function Resume() {
 
         <section>
           <div>
-            <div className="font-bold text-black">Experience</div>
-            <div className="mt-1 border-b-2 border-gray-200"></div>
+            <div className="dark:text-gray-200 font-bold text-black">Experience</div>
+            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
           </div>
 
           <div className="md:grid-cols-3 lg:grid-cols-4 grid gap-4 mt-4">
             <div className="col-span-1">
-              <div className="font-medium text-black">Computer Visionaries, Inc.</div>
+              <div className="dark:text-gray-200 font-medium text-black">Computer Visionaries, Inc.</div>
               <div className="mt-1 text-sm text-gray-500">Pittston, PA</div>
-              <div className="flex items-center mt-2 text-xs font-medium text-blue-700">
-                <div className="bg-blue-50 px-2 py-1 rounded-md">November 2021 – Present</div>
+              <div className="dark:text-blue-200 flex items-center mt-2 text-xs font-medium text-blue-700">
+                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 rounded-md">
+                  November 2021 – Present
+                </div>
               </div>
             </div>
 
@@ -167,17 +168,19 @@ export default function Resume() {
 
         <section>
           <div>
-            <div className="font-bold text-black">Education</div>
-            <div className="mt-1 border-b-2 border-gray-200"></div>
+            <div className="dark:text-gray-200 font-bold text-black">Education</div>
+            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
           </div>
 
           <div className="md:grid-cols-3 lg:grid-cols-4 grid gap-4 mt-4">
             <div className="col-span-1">
-              <div className="font-medium text-black">Wilkes University</div>
+              <div className="dark:text-gray-200 font-medium text-black">Wilkes University</div>
               <div className="mt-1 text-sm text-gray-500">Expected May 2022</div>
-              <div className="flex items-center mt-2 text-xs font-medium text-blue-700">
-                <div className="bg-blue-50 px-2 py-1 rounded-md">GPA: 3.55</div>
-                <div className="bg-blue-50 px-2 py-1 ml-2 rounded-md">Major GPA: 3.61</div>
+              <div className="dark:text-blue-200 flex items-center mt-2 text-xs font-medium text-blue-700">
+                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 rounded-md">GPA: 3.55</div>
+                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 ml-2 rounded-md">
+                  Major GPA: 3.61
+                </div>
               </div>
             </div>
 
@@ -185,7 +188,7 @@ export default function Resume() {
               <div>Currently studying for a Bachelor of Science degree in Computer Science.</div>
 
               <div>
-                <div className="font-bold text-black">Relevant Courses & Skills</div>
+                <div className="dark:text-gray-200 font-bold text-black">Relevant Courses & Skills</div>
 
                 <div className="lg:grid-cols-2 grid grid-cols-1 gap-4 mt-2">
                   {list([
