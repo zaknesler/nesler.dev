@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ['./components/**/*.{js,jsx}', './pages/**/*.{js,jsx}'],
+  content: ['./components/**/*.{js,jsx,mdx}', './pages/**/*.{js,jsx,mdx}'],
   darkMode: 'media',
   theme: {
     extend: {
@@ -47,8 +47,18 @@ module.exports = {
             h4: {
               marginBottom: theme('spacing.3'),
             },
-            'ul > li p': {
-              marginTop: theme('spacing.1'),
+            ul: {
+              li: {
+                p: {
+                  '&:first-child': {
+                    marginBottom: `-${theme('spacing.4')}`,
+
+                    a: {
+                      fontWeight: theme('fontWeight.semibold'),
+                    },
+                  },
+                },
+              },
             },
           },
         },
@@ -82,8 +92,18 @@ module.exports = {
             h4: {
               marginBottom: theme('spacing.3'),
             },
-            'ul > li p': {
-              marginTop: theme('spacing.1'),
+            ul: {
+              li: {
+                p: {
+                  '&:first-child': {
+                    marginBottom: `-${theme('spacing.4')}`,
+
+                    a: {
+                      fontWeight: theme('fontWeight.semibold'),
+                    },
+                  },
+                },
+              },
             },
           },
         },

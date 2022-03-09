@@ -18,7 +18,7 @@ export default function Resume() {
       <div className="max-w-4xl p-8 mx-auto space-y-10 text-gray-600">
         <div className="flex items-center justify-between max-w-4xl mx-auto">
           <Link href="/">
-            <a className="hover:text-black">&larr; Go back</a>
+            <a className="hover:text-black">&larr; Go to Home</a>
           </Link>
 
           <Link href="/resume.pdf">
