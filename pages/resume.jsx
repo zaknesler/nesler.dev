@@ -71,7 +71,7 @@ export default function Resume() {
                 </svg>
               </a>
 
-              <a href="https://linkedin.com/zaknesler">
+              <a href="https://linkedin.com/in/zaknesler">
                 <svg
                   className="w-5 h-5"
                   width="15"
