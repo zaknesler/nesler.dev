@@ -12,7 +12,6 @@ class Document extends NextDocument {
         <Head>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta name="author" content="Zak Nesler" />
           <meta name="robots" content="index, follow" />
           <meta name="msapplication-starturl" content="/" />
@@ -39,7 +38,6 @@ class Document extends NextDocument {
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://nesler.dev/banner.png" />
           <meta name="p:domain_verify" content="ff1f90db2750254f6843a167a5e5efb8" />
-          <title>Zak Nesler</title>
           <link rel="icon" href="/favicon.png" />
           <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png" />
           <link rel="apple-touch-icon" type="image/png" sizes="128x128" href="/favicon.png" />

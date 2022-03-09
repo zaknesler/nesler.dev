@@ -11,10 +11,10 @@ export default function Index() {
           tidy code.
         </p>
         <p>
-          I am a huge fan of the <a href="https://laravel.com">Laravel</a> PHP framework, the{' '}
-          <a href="https://vuejs.org">Vue</a> JavaScript framework, and{' '}
-          <a href="https://tailwindcss.com">Tailwind CSS</a>, a utility-first CSS framework; I would consider myself to
-          be very proficient in each.
+          I am a huge fan of the <Link href="https://laravel.com">Laravel</Link> PHP framework, the{' '}
+          <Link href="https://vuejs.org">Vue</Link> JavaScript framework, and{' '}
+          <Link href="https://tailwindcss.com">Tailwind CSS</Link>, a utility-first CSS framework; I would consider
+          myself to be very proficient in each.
         </p>
         <p>
           I am currently pursuing a Bachelor of Science degree in Computer Science, hoping to gain more knowledge and
@@ -23,7 +23,7 @@ export default function Index() {
         </p>
         <p>
           If you would like to get in touch, please feel free to take a look at my <Link href="/resume">résumé</Link> or
-          send me an <a href="mailto:zak@nesler.dev">email</a>, and I'll get back to you!
+          send me an <Link href="mailto:zak@nesler.dev">email</Link>, and I'll get back to you!
         </p>
       </div>
     </Layout>

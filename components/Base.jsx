@@ -17,6 +17,7 @@ export default function Base({ children, title, full = false }) {
   const getHead = () => {
     return (
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="application-name" content={getTitle()} />
         <meta name="apple-mobile-web-app-title" content={getTitle()} />
         <meta property="og:title" content={getTitle()} />
