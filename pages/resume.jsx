@@ -15,7 +15,7 @@ export default function Resume() {
 
   return (
     <Base full={true} title="Résumé">
-      <div className="dark:text-gray-400 max-w-4xl p-8 mx-auto space-y-10 text-gray-600">
+      <div className="dark:text-gray-400 max-w-4xl p-6 mx-auto space-y-10 text-gray-600">
         <div className="flex items-center justify-between max-w-4xl mx-auto">
           <Link href="/">
             <a className="hover:text-black dark:hover:text-gray-200">&larr; Home</a>
@@ -192,7 +192,7 @@ export default function Resume() {
               <div>
                 <div className="dark:text-gray-200 font-bold text-black">Relevant Courses & Skills</div>
 
-                <div className="lg:grid-cols-2 grid grid-cols-1 gap-4 mt-2">
+                <div className="lg:grid-cols-2 lg:gap-4 grid grid-cols-1 gap-2 mt-2">
                   {list([
                     'Algorithms',
                     'Data Structures',
