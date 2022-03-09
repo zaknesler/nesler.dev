@@ -162,7 +162,7 @@ export default function Resume() {
                 'Improved UI/UX of customer input fields',
                 'Improved UX and loading times of main dashboard page',
                 'Optimized SQL stored procedures',
-                'Utilized Angular front-end, Electron.js back-end, and SQL Server',
+                'Utilized Angular front-end, Express.js back-end, and SQL Server',
               ])}
             </div>
           </div>
