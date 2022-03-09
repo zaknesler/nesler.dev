@@ -18,7 +18,7 @@ export default function Resume() {
       <div className="dark:text-gray-400 max-w-4xl p-8 mx-auto space-y-10 text-gray-600">
         <div className="flex items-center justify-between max-w-4xl mx-auto">
           <Link href="/">
-            <a className="hover:text-black dark:hover:text-gray-200">&larr; Go to Home</a>
+            <a className="hover:text-black dark:hover:text-gray-200">&larr; Home</a>
           </Link>
 
           <Link href="/resume.pdf">
@@ -28,14 +28,16 @@ export default function Resume() {
           </Link>
         </div>
 
-        <section className="flex justify-between">
+        <section className="sm:flex-row sm:text-left flex flex-col items-center justify-between text-center">
           <div>
-            <div className="dark:text-gray-200 text-xl font-semibold text-black">Zak Nesler</div>
-            <div className="dark:text-gray-400 text-gray-600">Student Full-Stack Developer</div>
+            <div className="dark:text-gray-200 text-xl font-bold text-gray-900">Zak Nesler</div>
+            <div className="dark:text-gray-400 text-xs font-medium tracking-wide text-gray-600 uppercase">
+              Full-Stack Developer
+            </div>
           </div>
 
-          <div className="space-y-2 font-medium text-right">
-            <div className="flex items-center space-x-2">
+          <div className="sm:text-right sm:mt-0 mt-4 space-y-2 font-medium">
+            <div className="sm:justify-end flex items-center justify-center space-x-2">
               <a href="https://twitter.com/zaknesler">
                 <svg
                   className="w-6 h-6"
@@ -121,16 +123,16 @@ export default function Resume() {
             <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
           </div>
 
-          <div className="lg:grid-cols-5 grid grid-cols-1 gap-4 mt-4">
-            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Technologies</div>
+          <div className="md:grid-cols-5 grid grid-cols-1 gap-4 mt-4">
+            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Technologies</div>
             <div className="col-span-4">Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js</div>
 
-            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Languages</div>
+            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Languages</div>
             <div className="col-span-4">
               PHP, HTML/CSS, JavaScript, SQL, Python, Node.js, Java, C, C++, Go, Bash, Regex
             </div>
 
-            <div className="dark:text-gray-200 col-span-1 font-medium text-black">Software</div>
+            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Software</div>
             <div className="col-span-4">
               Docker, Git, PHPUnit, VS Code, Sublime Text, Ubuntu, Debian, LEMP, LAMP, Figma, Photoshop, Blender, Excel
             </div>
