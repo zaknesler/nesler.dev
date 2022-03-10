@@ -52,7 +52,6 @@ module.exports = {
                 p: {
                   '&:first-child': {
                     marginBottom: `-${theme('spacing.4')}`,
-
                     a: {
                       fontWeight: theme('fontWeight.semibold'),
                     },
