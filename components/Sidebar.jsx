@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 export default function Sidebar({ navOpen, toggleNav }) {
+  const router = useRouter()
+
   const NavMenuButton = () => {
     return (
       <svg
@@ -20,8 +22,6 @@ export default function Sidebar({ navOpen, toggleNav }) {
   }
 
   const NavItem = ({ children, href }) => {
-    const router = useRouter()
-
     return (
       <li>
         <Link href={href}>
