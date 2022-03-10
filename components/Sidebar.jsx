@@ -1,10 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
-
-import NavItem from './NavItem'
+import { useRouter } from 'next/router'
 
 export default function Sidebar({ navOpen, toggleNav }) {
-  const navMenuButton = () => {
+  const NavMenuButton = () => {
     return (
       <svg
         className="w-6 h-6"
@@ -17,6 +16,27 @@ export default function Sidebar({ navOpen, toggleNav }) {
       >
         {navOpen ? <path d="M6 18L18 6M6 6l12 12"></path> : <path d="M4 6h16M4 12h16M4 18h16"></path>}
       </svg>
+    )
+  }
+
+  const NavItem = ({ children, href }) => {
+    const router = useRouter()
+
+    return (
+      <li>
+        <Link href={href}>
+          <a
+            className={
+              (router.pathname === href
+                ? 'font-bold text-gray-900 dark:text-white'
+                : 'text-gray-600 dark:text-gray-400') +
+              ' hover:text-black dark:hover:text-gray-100 block p-3 md:p-0 w-full hover:bg-gray-100 dark:hover:bg-gray-800 md:hover:bg-transparent rounded-lg md:rounded-none'
+            }
+          >
+            {children}
+          </a>
+        </Link>
+      </li>
     )
   }
 
@@ -41,7 +61,7 @@ export default function Sidebar({ navOpen, toggleNav }) {
                 title={navOpen ? 'Close Menu' : 'Open Menu'}
                 className="hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-gray-100 dark:hover:bg-gray-800 focus:shadow-outline focus:outline-none block p-2 -mr-2 overflow-hidden text-gray-600 rounded-lg cursor-pointer"
               >
-                {navMenuButton()}
+                <NavMenuButton />
               </div>
             </div>
           </div>
