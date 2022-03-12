@@ -117,8 +117,8 @@ export default function Resume() {
             {list([
               'Keen eye for detail and design',
               'Experienced with popular web technologies such as Laravel and Tailwind CSS',
-              'Focused on writing self-documenting, tested, and tidy code',
-              'Personal experience with configuring LAMP/LEMP stacks from scratch in Linux environments',
+              'Focused on writing self-documenting, tested (using TDD), and tidy code',
+              'Experience with configuring LAMP/LEMP stacks from scratch',
             ])}
           </div>
         </section>
