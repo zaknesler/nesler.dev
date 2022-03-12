@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Resume() {
   const list = items => {
     return (
-      <ul className="ml-6 space-y-2 list-disc">
+      <ul className="ml-6 list-disc space-y-2">
         {items.map((item, i) => (
           <li key={i}>{item}</li>
         ))}
@@ -15,32 +15,36 @@ export default function Resume() {
 
   return (
     <Base full={true} title="Résumé">
-      <div className="dark:text-gray-400 max-w-4xl p-6 mx-auto space-y-10 text-gray-600">
-        <div className="flex items-center justify-between max-w-4xl mx-auto">
+      <div className="mx-auto max-w-4xl space-y-10 p-6 text-gray-600 dark:text-gray-400">
+        <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link href="/">
-            <a className="hover:text-black dark:hover:text-gray-200">&larr; Home</a>
+            <a className="hover:text-black dark:hover:text-gray-200">
+              &larr; Home
+            </a>
           </Link>
 
           <Link href="/resume.pdf">
-            <a className="hover:text-blue-900 bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 dark:hover:bg-blue-900 hover:bg-blue-100 dark:text-blue-200 dark:hover:text-white flex items-center px-2 py-1 mt-2 text-sm font-medium text-blue-700 rounded-md">
+            <a className="mt-2 flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 hover:text-blue-900 dark:bg-blue-800 dark:bg-opacity-50 dark:text-blue-200 dark:hover:bg-blue-900 dark:hover:text-white">
               Download as PDF
             </a>
           </Link>
         </div>
 
-        <section className="sm:flex-row sm:text-left flex flex-col items-center justify-between text-center">
+        <section className="flex flex-col items-center justify-between text-center sm:flex-row sm:text-left">
           <div>
-            <div className="dark:text-gray-200 text-xl font-bold text-gray-900">Zak Nesler</div>
-            <div className="dark:text-gray-400 text-xs font-medium tracking-wide text-gray-600 uppercase">
+            <div className="text-xl font-bold text-gray-900 dark:text-gray-200">
+              Zak Nesler
+            </div>
+            <div className="text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
               Full-Stack Developer
             </div>
           </div>
 
-          <div className="sm:text-right sm:mt-0 mt-4 space-y-2 font-medium">
-            <div className="sm:justify-end flex items-center justify-center space-x-2">
+          <div className="mt-4 space-y-2 font-medium sm:mt-0 sm:text-right">
+            <div className="flex items-center justify-center space-x-2 sm:justify-end">
               <a href="https://twitter.com/zaknesler">
                 <svg
-                  className="w-6 h-6"
+                  className="h-6 w-6"
                   width="21"
                   height="15"
                   viewBox="0 0 21 15"
@@ -56,7 +60,7 @@ export default function Resume() {
 
               <a href="https://github.com/zaknesler">
                 <svg
-                  className="w-5 h-5 fill-current text-[#24292E] dark:text-gray-100"
+                  className="h-5 w-5 fill-current text-[#24292E] dark:text-gray-100"
                   width="15"
                   height="15"
                   viewBox="0 0 15 15"
@@ -73,7 +77,7 @@ export default function Resume() {
 
               <a href="https://linkedin.com/in/zaknesler">
                 <svg
-                  className="w-5 h-5"
+                  className="h-5 w-5"
                   width="15"
                   height="15"
                   viewBox="0 0 15 15"
@@ -91,7 +95,10 @@ export default function Resume() {
             </div>
 
             <div>
-              <a href="mailto:zak@nesler.dev" className="hover:text-black dark:hover:text-gray-200">
+              <a
+                href="mailto:zak@nesler.dev"
+                className="hover:text-black dark:hover:text-gray-200"
+              >
                 zak@nesler.dev
               </a>
             </div>
@@ -100,8 +107,10 @@ export default function Resume() {
 
         <section>
           <div>
-            <div className="dark:text-gray-200 font-bold text-black">Professional Qualities</div>
-            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
+            <div className="font-bold text-black dark:text-gray-200">
+              Professional Qualities
+            </div>
+            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
           </div>
 
           <div className="mt-4">
@@ -117,46 +126,64 @@ export default function Resume() {
         <section>
           <div>
             <div className="flex items-center justify-between">
-              <div className="dark:text-gray-200 font-bold text-black">Skills</div>
-              <div className="dark:text-gray-400 text-sm text-gray-500">Ready and willing to learn anything!</div>
+              <div className="font-bold text-black dark:text-gray-200">
+                Skills
+              </div>
+              <div className="text-sm text-gray-500 dark:text-gray-400">
+                Ready and willing to learn anything!
+              </div>
             </div>
-            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
+            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
           </div>
 
-          <div className="md:grid-cols-5 grid grid-cols-1 gap-4 mt-4">
-            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Technologies</div>
-            <div className="col-span-4">Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js</div>
-
-            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Languages</div>
+          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-5">
+            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+              Technologies
+            </div>
             <div className="col-span-4">
-              PHP, HTML/CSS, JavaScript, SQL, Python, Node.js, Java, C, C++, Go, Bash, Regex
+              Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js
             </div>
 
-            <div className="dark:text-gray-200 md:mb-0 col-span-1 -mb-2 font-medium text-black">Software</div>
+            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+              Languages
+            </div>
             <div className="col-span-4">
-              Docker, Git, PHPUnit, VS Code, Sublime Text, Ubuntu, Debian, LEMP, LAMP, Figma, Photoshop, Blender, Excel
+              PHP, HTML/CSS, JavaScript, SQL, Python, Node.js, Java, C, C++, Go,
+              Bash, Regex
+            </div>
+
+            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+              Software
+            </div>
+            <div className="col-span-4">
+              Docker, Git, PHPUnit, VS Code, Sublime Text, Ubuntu, Debian, LEMP,
+              LAMP, Figma, Photoshop, Blender, Excel
             </div>
           </div>
         </section>
 
         <section>
           <div>
-            <div className="dark:text-gray-200 font-bold text-black">Experience</div>
-            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
+            <div className="font-bold text-black dark:text-gray-200">
+              Experience
+            </div>
+            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
           </div>
 
-          <div className="md:grid-cols-3 lg:grid-cols-4 grid gap-4 mt-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-3 lg:grid-cols-4">
             <div className="col-span-1">
-              <div className="dark:text-gray-200 font-medium text-black">Computer Visionaries, Inc.</div>
+              <div className="font-medium text-black dark:text-gray-200">
+                Computer Visionaries, Inc.
+              </div>
               <div className="mt-1 text-sm text-gray-500">Pittston, PA</div>
-              <div className="dark:text-blue-200 flex items-center mt-2 text-xs font-medium text-blue-700">
-                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 rounded-md">
+              <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
+                <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
                   November 2021 – Present
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-3 col-span-2 space-y-4">
+            <div className="col-span-2 space-y-4 lg:col-span-3">
               {list([
                 'Implemented new communication logging feature covering front-end, back-end, and database with great feedback from customers',
                 'Improved UI/UX of customer input fields',
@@ -170,29 +197,42 @@ export default function Resume() {
 
         <section>
           <div>
-            <div className="dark:text-gray-200 font-bold text-black">Education</div>
-            <div className="dark:border-gray-800 mt-1 border-b-2 border-gray-200"></div>
+            <div className="font-bold text-black dark:text-gray-200">
+              Education
+            </div>
+            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
           </div>
 
-          <div className="md:grid-cols-3 lg:grid-cols-4 grid gap-4 mt-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-3 lg:grid-cols-4">
             <div className="col-span-1">
-              <div className="dark:text-gray-200 font-medium text-black">Wilkes University</div>
-              <div className="mt-1 text-sm text-gray-500">Expected May 2022</div>
-              <div className="dark:text-blue-200 flex items-center mt-2 text-xs font-medium text-blue-700">
-                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 rounded-md">GPA: 3.55</div>
-                <div className="bg-blue-50 dark:bg-blue-800 dark:bg-opacity-50 px-2 py-1 ml-2 rounded-md">
+              <div className="font-medium text-black dark:text-gray-200">
+                Wilkes University
+              </div>
+              <div className="mt-1 text-sm text-gray-500">
+                Expected May 2022
+              </div>
+              <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
+                <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
+                  GPA: 3.55
+                </div>
+                <div className="ml-2 rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
                   Major GPA: 3.61
                 </div>
               </div>
             </div>
 
-            <div className="lg:col-span-3 col-span-2 space-y-4">
-              <div>Currently studying for a Bachelor of Science degree in Computer Science.</div>
+            <div className="col-span-2 space-y-4 lg:col-span-3">
+              <div>
+                Currently studying for a Bachelor of Science degree in Computer
+                Science.
+              </div>
 
               <div>
-                <div className="dark:text-gray-200 font-bold text-black">Relevant Courses & Skills</div>
+                <div className="font-bold text-black dark:text-gray-200">
+                  Relevant Courses & Skills
+                </div>
 
-                <div className="lg:grid-cols-2 lg:gap-4 grid grid-cols-1 gap-2 mt-2">
+                <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
                   {list([
                     'Algorithms',
                     'Data Structures',
