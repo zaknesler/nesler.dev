@@ -21,7 +21,6 @@ export default function Resume() {
           <Link href="/">
             <a className="flex items-center hover:text-black dark:hover:text-gray-200">
               <ArrowLeftIcon className="h-4 w-4 opacity-75" />
-
               <span className="ml-1">Home</span>
             </a>
           </Link>
@@ -41,6 +40,8 @@ export default function Resume() {
             <div className="text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
               Full-Stack Developer
             </div>
+
+            <div className="mx-auto mt-3 h-1 w-32 bg-gradient-to-r from-brand-500 to-brand-400 sm:mx-0"></div>
           </div>
 
           <div className="mt-4 space-y-2 font-medium sm:mt-0 sm:text-right">
@@ -102,14 +103,14 @@ export default function Resume() {
           </div>
 
           <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-5">
-            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+            <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
               Technologies
             </div>
             <div className="col-span-4">
               Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js
             </div>
 
-            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+            <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
               Languages
             </div>
             <div className="col-span-4">
@@ -117,7 +118,7 @@ export default function Resume() {
               Bash, Regex
             </div>
 
-            <div className="col-span-1 -mb-2 font-medium text-black dark:text-gray-200 md:mb-0">
+            <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
               Software
             </div>
             <div className="col-span-4">
