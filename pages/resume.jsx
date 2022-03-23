@@ -45,17 +45,32 @@ export default function Resume() {
           </div>
 
           <div className="mt-4 space-y-2 font-medium sm:mt-0 sm:text-right">
-            <div className="flex items-center justify-center space-x-2 sm:justify-end">
-              <a href="https://twitter.com/zaknesler">
+            <div className="-mb-2 flex items-center justify-center sm:justify-end">
+              <a
+                href="https://twitter.com/zaknesler"
+                aria-label="Twitter Profile"
+                title="Twitter Profile"
+                className="p-3 hover:opacity-75 sm:p-2"
+              >
                 <TwitterIcon />
               </a>
-              <a href="https://github.com/zaknesler">
+              <a
+                href="https://github.com/zaknesler"
+                aria-label="GitHub Profile"
+                title="GitHub Profile"
+                className="p-3 hover:opacity-75 sm:p-2"
+              >
                 <GitHubIcon />
               </a>
-              <a href="https://linkedin.com/in/zaknesler">
+              <a
+                href="https://linkedin.com/in/zaknesler"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn Profile"
+                className="p-3 hover:opacity-75 sm:p-2"
+              >
                 <LinkedInIcon />
               </a>
-              <div className="ml-2">@zaknesler</div>
+              <div className="ml-3 sm:ml-2">@zaknesler</div>
             </div>
 
             <div>
@@ -138,7 +153,7 @@ export default function Resume() {
 
           <div className="mt-4 grid gap-4 md:grid-cols-3 lg:grid-cols-4">
             <div className="col-span-1">
-              <div className="font-medium text-black dark:text-gray-200">
+              <div className="font-medium leading-tight text-black dark:text-gray-200">
                 Computer Visionaries, Inc.
               </div>
               <div className="mt-1 text-sm text-gray-500">Pittston, PA</div>
@@ -173,7 +188,7 @@ export default function Resume() {
 
           <div className="mt-4 grid gap-4 md:grid-cols-3 lg:grid-cols-4">
             <div className="col-span-1">
-              <div className="font-medium text-black dark:text-gray-200">
+              <div className="font-medium leading-tight text-black dark:text-gray-200">
                 Wilkes University
               </div>
               <div className="mt-1 text-sm text-gray-500">

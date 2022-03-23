@@ -91,7 +91,7 @@ export default function Sidebar({ navOpen, toggleNav }) {
 
           <ul className="-mx-3 space-y-1 text-base font-medium text-gray-600 md:mx-0 md:space-y-2 md:text-sm">
             <NavItem href="/resume">Résumé</NavItem>
-            <NavItem href="https://github.com/zaknesler">Github</NavItem>
+            <NavItem href="https://github.com/zaknesler">GitHub</NavItem>
             <NavItem href="https://twitter.com/zaknesler">Twitter</NavItem>
             <NavItem href="https://linkedin.com/in/zaknesler">LinkedIn</NavItem>
           </ul>
