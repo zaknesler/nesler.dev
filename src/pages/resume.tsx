@@ -3,8 +3,8 @@ import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../lib/icons'
 import Base from '../components/Base'
 import Link from 'next/link'
 
-export default function Resume() {
-  const ListGroup = ({ items }) => {
+const Resume = () => {
+  const ListGroup = ({ items }: { items: Array<string> }) => {
     return (
       <ul className="ml-6 list-disc space-y-2">
         {items.map((item, i) => (
@@ -247,3 +247,5 @@ export default function Resume() {
     </Base>
   )
 }
+
+export default Resume

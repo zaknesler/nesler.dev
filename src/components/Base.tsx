@@ -1,9 +1,16 @@
-import { React, useState } from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
-
 import Sidebar from './Sidebar'
 
-export default function Base({ children, title, full = false }) {
+const Base = ({
+  children,
+  title,
+  full = false,
+}: {
+  children?: JSX.Element
+  title?: string
+  full?: boolean
+}) => {
   const [navOpen, setNavOpen] = useState(false)
 
   const toggleNav = () => {
@@ -14,7 +21,7 @@ export default function Base({ children, title, full = false }) {
     return title ? `${title} – Zak Nesler` : 'Zak Nesler'
   }
 
-  const getHead = () => {
+  const BaseHead = () => {
     return (
       <Head>
         <meta
@@ -29,18 +36,18 @@ export default function Base({ children, title, full = false }) {
     )
   }
 
-  const accentBar = () => {
+  const AccentBar = () => {
     return (
       <div className="block h-3 w-full bg-gradient-to-r from-brand-500 to-brand-400 shadow-md"></div>
     )
   }
 
   return (
-    <div>
-      {getHead()}
+    <>
+      <BaseHead />
 
       <div>
-        {accentBar()}
+        <AccentBar />
 
         {full ? (
           children
@@ -49,16 +56,18 @@ export default function Base({ children, title, full = false }) {
             <Sidebar navOpen={navOpen} toggleNav={toggleNav} />
 
             <div
-              className={
-                'mx-auto w-full md:mx-0 md:mt-6 md:max-w-xl ' +
-                (navOpen ? 'hidden md:block' : '')
-              }
+              className={[
+                'mx-auto w-full md:mx-0 md:mt-6 md:max-w-xl',
+                navOpen && 'hidden md:block',
+              ].join(' ')}
             >
               {children}
             </div>
           </div>
         )}
       </div>
-    </div>
+    </>
   )
 }
+
+export default Base

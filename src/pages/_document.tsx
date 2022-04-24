@@ -1,7 +1,16 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
+import NextDocument, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from 'next/document'
 
 class Document extends NextDocument {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(
+    ctx: DocumentContext,
+  ): Promise<DocumentInitialProps> {
     const initialProps = await NextDocument.getInitialProps(ctx)
     return { ...initialProps }
   }

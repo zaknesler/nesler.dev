@@ -1,45 +1,76 @@
 import React from 'react'
-import Link from 'next/link'
+import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 
-export default function Sidebar({ navOpen, toggleNav }) {
+const Sidebar = ({
+  navOpen,
+  toggleNav,
+}: {
+  navOpen: boolean
+  toggleNav: any
+}) => {
   const router = useRouter()
 
-  const NavMenuButton = () => {
-    return (
-      <svg
-        className="h-6 w-6"
-        fill="none"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        {navOpen ? (
-          <path d="M6 18L18 6M6 6l12 12"></path>
-        ) : (
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        )}
-      </svg>
-    )
+  const NavMenuButton = () => (
+    <svg
+      className="h-6 w-6"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      {navOpen ? (
+        <path d="M6 18L18 6M6 6l12 12"></path>
+      ) : (
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      )}
+    </svg>
+  )
+
+  interface NavItemProps extends LinkProps {
+    children: JSX.Element | string
+    external?: boolean
+    otherProps?: any
   }
 
-  const NavItem = ({ children, href }) => {
+  const NavItem = ({
+    children,
+    href,
+    external = false,
+    ...otherProps
+  }: NavItemProps) => {
+    const baseClass =
+      'block w-full rounded-lg p-3 hover:bg-gray-100 hover:text-black dark:hover:bg-gray-800 dark:hover:text-gray-100 md:rounded-none md:p-0 md:hover:bg-transparent'
     return (
       <li>
-        <Link href={href}>
+        {external ? (
           <a
-            className={
-              (router.pathname === href
-                ? 'font-bold text-gray-900 dark:text-white'
-                : 'text-gray-600 dark:text-gray-400') +
-              ' block w-full rounded-lg p-3 hover:bg-gray-100 hover:text-black dark:hover:bg-gray-800 dark:hover:text-gray-100 md:rounded-none md:p-0 md:hover:bg-transparent'
-            }
+            href={String(href)}
+            target="_blank"
+            rel="noreferrer"
+            className={[baseClass, 'text-gray-600 dark:text-gray-400'].join(
+              ' ',
+            )}
+            {...otherProps}
           >
             {children}
           </a>
-        </Link>
+        ) : (
+          <Link href={href} {...otherProps}>
+            <a
+              className={[
+                baseClass,
+                router.pathname === href
+                  ? 'font-bold text-gray-900 dark:text-white'
+                  : 'text-gray-600 dark:text-gray-400',
+              ].join(' ')}
+            >
+              {children}
+            </a>
+          </Link>
+        )}
       </li>
     )
   }
@@ -62,7 +93,7 @@ export default function Sidebar({ navOpen, toggleNav }) {
 
             <div className="block md:hidden">
               <div
-                tabIndex="0"
+                tabIndex={0}
                 onClick={toggleNav}
                 title={navOpen ? 'Close Menu' : 'Open Menu'}
                 className="-mr-2 block cursor-pointer overflow-hidden rounded-lg p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:shadow-outline focus:outline-none dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-gray-100"
@@ -76,9 +107,10 @@ export default function Sidebar({ navOpen, toggleNav }) {
         </div>
 
         <div
-          className={
-            'mb-6 w-full flex-grow md:block ' + (navOpen ? '' : 'hidden')
-          }
+          className={[
+            'mb-6 w-full flex-grow md:block',
+            !navOpen && 'hidden',
+          ].join(' ')}
         >
           <ul className="-mx-3 space-y-1 text-lg font-medium md:mx-0 md:space-y-2 md:text-base">
             <NavItem href="/">About</NavItem>
@@ -91,12 +123,20 @@ export default function Sidebar({ navOpen, toggleNav }) {
 
           <ul className="-mx-3 space-y-1 text-base font-medium text-gray-600 md:mx-0 md:space-y-2 md:text-sm">
             <NavItem href="/resume">Résumé</NavItem>
-            <NavItem href="https://github.com/zaknesler">GitHub</NavItem>
-            <NavItem href="https://twitter.com/zaknesler">Twitter</NavItem>
-            <NavItem href="https://linkedin.com/in/zaknesler">LinkedIn</NavItem>
+            <NavItem href="https://github.com/zaknesler" external={true}>
+              GitHub
+            </NavItem>
+            <NavItem href="https://twitter.com/zaknesler" external={true}>
+              Twitter
+            </NavItem>
+            <NavItem href="https://linkedin.com/in/zaknesler" external={true}>
+              LinkedIn
+            </NavItem>
           </ul>
         </div>
       </div>
     </div>
   )
 }
+
+export default Sidebar
