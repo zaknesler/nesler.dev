@@ -96,9 +96,9 @@ const Resume = () => {
             <ListGroup
               items={[
                 'Keen eye for detail and design',
-                'Experienced with popular web technologies such as Laravel and Tailwind CSS',
+                'Experienced with popular web technologies such as Laravel, React, and Tailwind CSS',
                 'Focused on writing self-documenting, tested (using TDD), and tidy code',
-                'Experience with configuring LAMP/LEMP stacks from scratch',
+                'Experienced with configuring LAMP/LEMP stacks from scratch',
               ]}
             />
           </div>
@@ -122,15 +122,15 @@ const Resume = () => {
               Technologies
             </div>
             <div className="col-span-4">
-              Laravel, Tailwind CSS, Vue.js, React, Next.js, Nuxt.js
+              Laravel, Tailwind CSS, React + Next.js, Vue.js + Nuxt.js
             </div>
 
             <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
               Languages
             </div>
             <div className="col-span-4">
-              PHP, HTML/CSS, JavaScript, SQL, Python, Node.js, Java, C, C++, Go,
-              Bash, Regex
+              PHP, HTML/CSS, TypeScript, JavaScript, SQL, Python, Node.js, Java,
+              C, C++, Go, Bash, Regex
             </div>
 
             <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
@@ -167,7 +167,7 @@ const Resume = () => {
             <div className="col-span-2 space-y-4 lg:col-span-3">
               <ListGroup
                 items={[
-                  'Implemented new communication logging feature covering front-end, back-end, and database with great feedback from customers',
+                  'Implemented new communication logging feature covering front-end, back-end, and database with great feedback from end users',
                   'Improved UI/UX of customer input fields',
                   'Improved UX and loading times of main dashboard page',
                   'Optimized SQL stored procedures',
