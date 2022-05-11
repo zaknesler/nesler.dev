@@ -120,7 +120,7 @@ const Resume = () => {
             {Object.entries(data.skills).map(([name, items]) => (
               <div className="grid grid-cols-1 gap-4 md:grid-cols-5" key={name}>
                 <div className="col-span-1 -mb-3 font-medium text-black dark:text-gray-200 md:mb-0">
-                  {name}
+                  {name.charAt(0).toUpperCase() + name.slice(1)}
                 </div>
                 <div className="col-span-4">{items.join(', ')}</div>
               </div>
@@ -185,7 +185,7 @@ const Resume = () => {
                   {item.school}
                 </div>
                 <div className="mt-1 text-sm text-gray-500">
-                  {item.graduation}
+                  {item.graduation_date}
                 </div>
                 <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
                   <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">

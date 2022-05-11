@@ -15,8 +15,8 @@
     "Experienced with configuring LAMP/LEMP stacks from scratch"
   ],
   "skills": {
-    "Technologies": ["Laravel", "Tailwind CSS", "React + Next.js", "Vue.js + Nuxt.js"],
-    "Languages": [
+    "technologies": ["Laravel", "Tailwind CSS", "React + Next.js", "Vue.js + Nuxt.js"],
+    "languages": [
       "PHP",
       "HTML/CSS",
       "TypeScript",
@@ -31,7 +31,7 @@
       "Bash",
       "Regex"
     ],
-    "Software": [
+    "software": [
       "Docker",
       "Git",
       "PHPUnit",
@@ -64,7 +64,7 @@
   "education": [
     {
       "school": "Wilkes University",
-      "graduation": "Expected May 2022",
+      "graduation_date": "Expected May 2022",
       "gpa": 3.55,
       "gpa_major": 3.61,
       "description": "Currently studying for a Bachelor of Science degree in Computer Science. Recevied Outstanding Senior Award in Computer Science.",
