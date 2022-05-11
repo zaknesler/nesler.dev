@@ -1,0 +1,88 @@
+{
+  "name": "Zak Nesler",
+  "title": "Full-Stack Developer",
+  "email": "zak[at]nesler[dot]dev",
+  "username": "zaknesler",
+  "urls": {
+    "github": "https://github.com/zaknesler",
+    "twitter": "https://twitter.com/zaknesler",
+    "linkedin": "https://linkedin.com/in/zaknesler"
+  },
+  "qualitites": [
+    "Keen eye for detail and design",
+    "Experienced with popular web technologies such as Laravel, React, and Tailwind CSS",
+    "Focused on writing self-documenting, tested (using TDD), and tidy code",
+    "Experienced with configuring LAMP/LEMP stacks from scratch"
+  ],
+  "skills": {
+    "Technologies": ["Laravel", "Tailwind CSS", "React + Next.js", "Vue.js + Nuxt.js"],
+    "Languages": [
+      "PHP",
+      "HTML/CSS",
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "Python",
+      "Node.js",
+      "Java",
+      "C",
+      "C++",
+      "Go",
+      "Bash",
+      "Regex"
+    ],
+    "Software": [
+      "Docker",
+      "Git",
+      "PHPUnit",
+      "VS Code",
+      "Sublime Text",
+      "Ubuntu",
+      "Debian",
+      "LEMP/LAMP",
+      "Figma",
+      "Photoshop",
+      "Blender",
+      "Excel"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Computer Visionaries, Inc.",
+      "location": "Pittston, PA",
+      "position": "Web Developer Intern",
+      "date": "Nov. 2021 – Present",
+      "responsibilities": [
+        "Implemented new communication logging feature covering front-end, back-end, and database with great feedback from end users",
+        "Improved UI/UX of customer input fields",
+        "Improved UX and loading times of main dashboard page",
+        "Optimized SQL stored procedures",
+        "Utilized Angular front-end, Express.js back-end, and SQL Server"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Wilkes University",
+      "graduation": "Expected May 2022",
+      "gpa": 3.55,
+      "gpa_major": 3.61,
+      "description": "Currently studying for a Bachelor of Science degree in Computer Science. Recevied Outstanding Senior Award in Computer Science.",
+      "courses": [
+        "Algorithms",
+        "Data Structures",
+        "Software Engineering",
+        "Web Development I & II",
+        "Computer Networks",
+        "Concurrent & Quantum Computing",
+        "Computer Architecture",
+        "Operating Systems",
+        "Theory of Computation",
+        "Principles of Prog. Languages",
+        "Compiler Design & Assembly",
+        "Team-oriented projects",
+        "Python, Java, C, C++, PHP, Go, Racket, Unix"
+      ]
+    }
+  ]
+}
