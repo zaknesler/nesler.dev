@@ -12,15 +12,15 @@
     "Keen eye for detail and design",
     "Experienced with popular web technologies such as Laravel, React, and Tailwind CSS",
     "Focused on writing self-documenting, tested (using TDD), and tidy code",
-    "Experienced with configuring LAMP/LEMP stacks from scratch"
+    "Experienced with configuring LEMP/LAMP stacks from scratch"
   ],
   "skills": {
-    "technologies": ["Laravel", "Tailwind CSS", "React + Next.js", "Vue.js + Nuxt.js"],
+    "technologies": ["Laravel", "Tailwind CSS", "React/Next.js", "Vue.js/Nuxt.js"],
     "languages": [
-      "PHP",
+      "PHP 8+",
       "HTML/CSS",
-      "TypeScript",
       "JavaScript",
+      "TypeScript",
       "SQL",
       "Python",
       "Node.js",
@@ -28,23 +28,9 @@
       "C",
       "C++",
       "Go",
-      "Bash",
       "Regex"
     ],
-    "software": [
-      "Docker",
-      "Git",
-      "PHPUnit",
-      "VS Code",
-      "Sublime Text",
-      "Ubuntu",
-      "Debian",
-      "LEMP/LAMP",
-      "Figma",
-      "Photoshop",
-      "Blender",
-      "Excel"
-    ]
+    "software": ["Docker", "Git", "PHPUnit", "Linux", "Bash", "LEMP/LAMP", "Figma", "Photoshop", "Blender"]
   },
   "experience": [
     {
@@ -55,19 +41,31 @@
       "responsibilities": [
         "Implemented new communication logging feature covering front-end, back-end, and database with great feedback from end users",
         "Improved UI/UX of customer input fields",
-        "Improved UX and loading times of main dashboard page",
+        "Improved UX and loading times of post-login dashboard page",
         "Optimized SQL stored procedures",
-        "Utilized Angular front-end, Express.js back-end, and SQL Server"
+        "Utilized Angular, Express.js, and SQL Server"
+      ]
+    },
+    {
+      "company": "Airline Hydraulics Corp.",
+      "location": "Bensalem, PA",
+      "position": "Project Manager & Developer",
+      "date": "Nov. 2021 – May 2022",
+      "responsibilities": [
+        "Implemented admin interface to manage warehouse employees & permissions",
+        "Managed team of three others to design and implement features for an existing web application",
+        "Utilized .NET Core framework, React.js, and SQL Server"
       ]
     }
   ],
   "education": [
     {
       "school": "Wilkes University",
-      "graduation_date": "Expected May 2022",
+      "location": "Wilkes-Barre, PA",
+      "graduation_date": "May 2022",
       "gpa": 3.55,
-      "gpa_major": 3.61,
-      "description": "Currently studying for a Bachelor of Science degree in Computer Science. Recevied Outstanding Senior Award in Computer Science.",
+      "gpa_major": 3.65,
+      "description": "Graduated Cum Laude with Bachelor of Science degree in Computer Science. One of two recipients of Outstanding Senior Award in Computer Science.",
       "courses": [
         "Algorithms",
         "Data Structures",
@@ -81,7 +79,7 @@
         "Principles of Prog. Languages",
         "Compiler Design & Assembly",
         "Team-oriented projects",
-        "Python, Java, C, C++, PHP, Go, Racket, Unix"
+        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS"
       ]
     }
   ]

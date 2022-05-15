@@ -10,12 +10,12 @@ import { HeartIcon } from '@heroicons/react/solid'
 
 export default function SkillList() {
   const skills = [
-    { text: 'Laravel', logo: LaravelLogo, fave: true },
-    { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: true },
-    { text: 'React.js', logo: ReactLogo, fave: true },
-    { text: 'Next.js', logo: NextLogo },
-    { text: 'TypeScript', logo: TypeScriptLogo },
-    { text: 'Vue.js', logo: VueLogo },
+    { text: 'Laravel', logo: LaravelLogo, fave: false },
+    { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: false },
+    { text: 'React.js', logo: ReactLogo, fave: false },
+    { text: 'Next.js', logo: NextLogo, fave: false },
+    { text: 'TypeScript', logo: TypeScriptLogo, fave: false },
+    { text: 'Vue.js', logo: VueLogo, fave: false },
   ]
 
   const SkillItem = ({
@@ -25,13 +25,11 @@ export default function SkillList() {
     children?: any
     fave?: boolean
   }) => (
-    <div className="relative flex items-center rounded-lg border bg-white p-4 text-sm font-medium text-gray-600 transition-all hover:scale-105 hover:shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
+    <div className="relative flex items-center rounded-lg border bg-white p-4 text-sm font-medium text-gray-600 transition-all hover:scale-[1.025] hover:shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
       {fave && (
         <div className="absolute -top-2 -right-2 rounded-full bg-black p-1 text-gray-100 shadow dark:bg-gray-100 dark:text-black">
           <HeartIcon className="h-4 w-4 text-inherit" />
         </div>
-
-        // <HeartIcon className="absolute -top-2.5 -right-2.5 h-6 w-6 text-black dark:text-gray-200" />
       )}
       {children}
     </div>

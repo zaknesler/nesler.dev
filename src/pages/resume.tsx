@@ -147,10 +147,10 @@ const Resume = () => {
                     {item.company}
                   </div>
                   <div className="mt-1 text-sm text-gray-500">
-                    {item.position}
+                    {item.location}
                   </div>
                   <div className="mt-1 text-sm text-gray-500">
-                    {item.location}
+                    {item.position}
                   </div>
                   <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
                     <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
@@ -185,6 +185,9 @@ const Resume = () => {
                   {item.school}
                 </div>
                 <div className="mt-1 text-sm text-gray-500">
+                  {item.location}
+                </div>
+                <div className="mt-1 text-sm text-gray-500">
                   {item.graduation_date}
                 </div>
                 <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
@@ -207,7 +210,7 @@ const Resume = () => {
                     Relevant Courses &amp; Skills
                   </div>
 
-                  <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
+                  <div className="mt-2 grid grid-cols-1 gap-2 text-sm lg:grid-cols-2 lg:gap-4">
                     {item.courses && (
                       <>
                         <ListGroup
