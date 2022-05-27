@@ -1,6 +1,7 @@
 import React from 'react'
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
+import data from '../../public/resume.json'
 
 const Sidebar = ({
   navOpen,
@@ -83,11 +84,11 @@ const Sidebar = ({
             <div>
               <Link href="/">
                 <a className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                  Zak Nesler
+                  {data.name}
                 </a>
               </Link>
               <h4 className="text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
-                Full-Stack Developer
+                {data.title}
               </h4>
             </div>
 
@@ -123,13 +124,13 @@ const Sidebar = ({
 
           <ul className="-mx-3 space-y-1 text-base font-medium text-gray-600 md:mx-0 md:space-y-2 md:text-sm">
             <NavItem href="/resume">Résumé</NavItem>
-            <NavItem href="https://github.com/zaknesler" external={true}>
+            <NavItem href={data.urls.github} external={true}>
               GitHub
             </NavItem>
-            <NavItem href="https://twitter.com/zaknesler" external={true}>
+            <NavItem href={data.urls.twitter} external={true}>
               Twitter
             </NavItem>
-            <NavItem href="https://linkedin.com/in/zaknesler" external={true}>
+            <NavItem href={data.urls.linkedin} external={true}>
               LinkedIn
             </NavItem>
           </ul>

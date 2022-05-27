@@ -1,6 +1,6 @@
 {
   "name": "Zak Nesler",
-  "title": "Full-Stack Developer",
+  "title": "Full-Stack Engineer",
   "email": "zak[at]nesler[dot]dev",
   "username": "zaknesler",
   "urls": {
@@ -11,26 +11,13 @@
   "qualitites": [
     "Keen eye for detail and design",
     "Experienced with popular web technologies such as Laravel, React, and Tailwind CSS",
-    "Focused on writing self-documenting, tested (using TDD), and tidy code",
+    "Focused on writing self-documenting, tested, and tidy code",
     "Experienced with configuring LEMP/LAMP stacks from scratch"
   ],
   "skills": {
     "technologies": ["Laravel", "Tailwind CSS", "React/Next.js", "Vue.js/Nuxt.js"],
-    "languages": [
-      "PHP 8+",
-      "HTML/CSS",
-      "JavaScript",
-      "TypeScript",
-      "SQL",
-      "Python",
-      "Node.js",
-      "Java",
-      "C",
-      "C++",
-      "Go",
-      "Regex"
-    ],
-    "software": ["Docker", "Git", "PHPUnit", "Linux", "Bash", "LEMP/LAMP", "Figma", "Photoshop", "Blender"]
+    "languages": ["TypeScript", "JavaScript", "PHP 8+", "HTML/CSS", "Python", "Node.js", "SQL", "Java"],
+    "software": ["Docker", "Git", "PHPUnit", "Linux", "Bash", "Regex", "Figma", "Photoshop", "Blender"]
   },
   "experience": [
     {
@@ -54,7 +41,7 @@
       "responsibilities": [
         "Implemented admin interface to manage warehouse employees & permissions",
         "Managed team of three others to design and implement features for an existing web application",
-        "Utilized .NET Core framework, React.js, and SQL Server"
+        "Utilized .NET Core framework, React, and SQL Server"
       ]
     }
   ],

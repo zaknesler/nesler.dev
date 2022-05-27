@@ -205,12 +205,12 @@ const Resume = () => {
               <div className="col-span-2 space-y-4 lg:col-span-3">
                 <div>{item.description}</div>
 
-                <div>
+                <div className="text-sm">
                   <div className="font-bold text-black dark:text-gray-200">
                     Relevant Courses &amp; Skills
                   </div>
 
-                  <div className="mt-2 grid grid-cols-1 gap-2 text-sm lg:grid-cols-2 lg:gap-4">
+                  <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
                     {item.courses && (
                       <>
                         <ListGroup
