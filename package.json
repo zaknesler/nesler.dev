@@ -14,7 +14,8 @@
     "@react-pdf/renderer": "^2.1",
     "next": "^12.1",
     "react": "^18.0",
-    "react-dom": "^18.0"
+    "react-dom": "^18.0",
+    "ts-node": "^10.7"
   },
   "devDependencies": {
     "@heroicons/react": "^1.0",
