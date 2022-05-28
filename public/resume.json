@@ -27,9 +27,8 @@
       "position": "Web Developer Intern",
       "date": "Nov. 2021 – Present",
       "responsibilities": [
-        "Implemented new communication logging feature covering front-end, back-end, and database with great feedback from end users",
-        "Improved UI/UX of customer input fields",
-        "Improved UX and loading times of post-login dashboard page",
+        "Implemented communication logging feature covering front-end, back-end, and database with great feedback from end users",
+        "Improved UI/UX and loading times of main dashboard",
         "Optimized SQL stored procedures",
         "Utilized Angular, Express.js, and SQL Server"
       ]
