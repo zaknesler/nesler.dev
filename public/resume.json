@@ -2,6 +2,7 @@
   "name": "Zak Nesler",
   "title": "Full-Stack Engineer",
   "email": "zak[at]nesler[dot]dev",
+  "website": "https://nesler.dev",
   "username": "zaknesler",
   "urls": {
     "github": "https://github.com/zaknesler",
@@ -26,9 +27,8 @@
       "position": "Web Developer Intern",
       "date": "Nov. 2021 – Present",
       "responsibilities": [
-        "Implemented new communication logging feature covering front-end, back-end, and database with great feedback from end users",
-        "Improved UI/UX of customer input fields",
-        "Improved UX and loading times of post-login dashboard page",
+        "Implemented communication logging feature covering front-end, back-end, and database with great feedback from end users",
+        "Improved UI/UX and loading times of main dashboard",
         "Optimized SQL stored procedures",
         "Utilized Angular, Express.js, and SQL Server"
       ]
@@ -66,7 +66,7 @@
         "Principles of Prog. Languages",
         "Compiler Design & Assembly",
         "Team-oriented projects",
-        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS"
+        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS, Unix"
       ]
     }
   ]
