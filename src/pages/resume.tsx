@@ -144,13 +144,13 @@ const Resume = () => {
               >
                 <div className="col-span-1">
                   <div className="mt-1 font-medium leading-tight text-black dark:text-gray-200">
+                    {item.position}
+                  </div>
+                  <div className="mt-1 text-sm text-gray-500">
                     {item.company}
                   </div>
                   <div className="mt-1 text-sm text-gray-500">
                     {item.location}
-                  </div>
-                  <div className="mt-1 text-sm text-gray-500">
-                    {item.position}
                   </div>
                   <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
                     <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
