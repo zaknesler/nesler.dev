@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run render && next dev",
+    "build": "npm run render && next build",
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
-    "render": "ts-node ./src/scripts/render.tsx"
+    "render": "ts-node -P ./scripts/tsconfig.json ./scripts/render.tsx"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^2.1.1",
+    "@react-pdf/renderer": "^2.1",
     "next": "^12.1",
     "react": "^18.0",
     "react-dom": "^18.0"
@@ -23,7 +23,7 @@
     "@tailwindcss/typography": "^0.5",
     "@types/node": "^17.0",
     "@types/react": "^18.0",
-    "@types/tailwindcss": "^3.0.10",
+    "@types/tailwindcss": "^3.0",
     "autoprefixer": "^10.4",
     "eslint": "^8.13",
     "eslint-config-next": "^12.1",

@@ -2,6 +2,7 @@
   "name": "Zak Nesler",
   "title": "Full-Stack Engineer",
   "email": "zak[at]nesler[dot]dev",
+  "website": "https://nesler.dev",
   "username": "zaknesler",
   "urls": {
     "github": "https://github.com/zaknesler",
@@ -66,7 +67,7 @@
         "Principles of Prog. Languages",
         "Compiler Design & Assembly",
         "Team-oriented projects",
-        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS"
+        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS, Unix"
       ]
     }
   ]
