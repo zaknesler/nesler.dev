@@ -223,7 +223,7 @@ ReactPDF.render(
         </View>
       </View>
 
-      {/* Professional Qualities */}
+      {/* Qualities */}
       <View style={styles.section}>
         <Text style={styles.sectionHeader}>Professional Qualities</Text>
         <View style={styles.sectionBody}>
@@ -389,6 +389,7 @@ ReactPDF.render(
         </View>
       </View>
 
+      {/* Revised Date */}
       <Text
         style={{
           position: 'absolute',
