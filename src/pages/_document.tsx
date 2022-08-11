@@ -34,7 +34,7 @@ class Document extends NextDocument {
           />
           <meta
             name="description"
-            content="Full-stack developer from Pennsylvania with a passion for clean design and tidy code."
+            content="Full-stack developer from Philadelphia with a passion for clean design and tidy code."
           />
           <meta
             name="keywords"
@@ -45,7 +45,7 @@ class Document extends NextDocument {
           <meta property="og:url" content="https://nesler.dev" />
           <meta
             property="og:description"
-            content="Full-stack developer from Pennsylvania with a passion for clean design and tidy code."
+            content="Full-stack developer from Philadelphia with a passion for clean design and tidy code."
           />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://nesler.dev/banner.png" />
