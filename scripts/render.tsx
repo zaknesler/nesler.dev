@@ -268,7 +268,7 @@ ReactPDF.render(
               .replace('[dot]', '.')}`}
             style={[styles.listItem, styles.link]}
           >
-            {data.email.replace('[at]', '@').replace('[dot]', '.')}
+            <Text>{data.email.replace('[at]', '@').replace('[dot]', '.')}</Text>
           </Link>
         </View>
       </View>
