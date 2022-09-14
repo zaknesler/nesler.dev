@@ -5,26 +5,25 @@ import {
   VueLogo,
   TypeScriptLogo,
   NextLogo,
-} from '../lib/icons'
-import { HeartIcon } from '@heroicons/react/solid'
+} from '../utils/icons'
+import { HeartIcon } from '@heroicons/react/20/solid'
+import { PropsWithChildren } from 'react'
 
-export default function SkillList() {
-  const skills = [
-    { text: 'Laravel', logo: LaravelLogo, fave: false },
-    { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: false },
-    { text: 'React.js', logo: ReactLogo, fave: false },
-    { text: 'Next.js', logo: NextLogo, fave: false },
-    { text: 'TypeScript', logo: TypeScriptLogo, fave: false },
-    { text: 'Vue.js', logo: VueLogo, fave: false },
-  ]
+const items = [
+  { text: 'TypeScript', logo: TypeScriptLogo, fave: false },
+  { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: false },
+  { text: 'Next.js', logo: NextLogo, fave: false },
+  { text: 'React.js', logo: ReactLogo, fave: false },
+  { text: 'Laravel', logo: LaravelLogo, fave: false },
+  { text: 'Vue.js', logo: VueLogo, fave: false },
+]
 
-  const SkillItem = ({
-    children,
-    fave = false,
-  }: {
-    children?: any
-    fave?: boolean
-  }) => (
+export const SkillList = () => {
+  const SkillItem: React.FC<
+    PropsWithChildren & {
+      fave?: boolean
+    }
+  > = ({ children, fave = false }) => (
     <div className="relative flex items-center rounded-lg border bg-white p-4 text-sm font-medium text-gray-600 transition-all hover:scale-[1.025] hover:shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400">
       {fave && (
         <div className="absolute -top-2 -right-2 rounded-full bg-black p-1 text-gray-100 shadow dark:bg-gray-100 dark:text-black">
@@ -37,7 +36,7 @@ export default function SkillList() {
 
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
-      {skills.map((skill, idx) => (
+      {items.map((skill, idx) => (
         <SkillItem key={idx} fave={skill?.fave}>
           {<skill.logo size="sm" />}
           <span className="pl-2">{skill.text}</span>

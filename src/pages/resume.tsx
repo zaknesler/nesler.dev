@@ -1,6 +1,6 @@
-import { ArrowLeftIcon } from '@heroicons/react/solid'
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../lib/icons'
-import Base from '../components/Base'
+import { ArrowLeftIcon } from '@heroicons/react/20/solid'
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../utils/icons'
+import { Base } from '../components/layouts/base'
 import Link from 'next/link'
 import data from '../../public/resume.json'
 

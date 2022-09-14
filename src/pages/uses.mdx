@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import { Content } from '../components/layouts/content'
 
 This is a bunch of software, hardware, apps, and websites I use daily.
 
@@ -161,7 +161,7 @@ There are a lot of superlatives on this page, but only because this is the resul
   - Audio-Technica MSR7 Closed-back
 
 export default ({ children }) => (
-  <Layout title="Uses">
+  <Content title="Uses">
     <div className="prose dark:prose-dark">{children}</div>
-  </Layout>
+  </Content>
 )

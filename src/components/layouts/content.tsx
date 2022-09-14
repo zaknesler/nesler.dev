@@ -1,13 +1,11 @@
-import React from 'react'
-import Base from './Base'
+import React, { PropsWithChildren } from 'react'
+import { Base } from './base'
 
-const Layout = ({
-  children,
-  title,
-}: {
-  children: JSX.Element
+type Content = PropsWithChildren & {
   title?: string
-}) => (
+}
+
+export const Content: React.FC<Content> = ({ children, title }) => (
   <Base title={title}>
     <>
       {title && (
@@ -21,5 +19,3 @@ const Layout = ({
     </>
   </Base>
 )
-
-export default Layout

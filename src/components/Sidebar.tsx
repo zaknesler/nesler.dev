@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { HTMLAttributes, PropsWithChildren } from 'react'
 import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 import data from '../../public/resume.json'
+import { cx } from '../utils'
 
-const Sidebar = ({
-  navOpen,
-  toggleNav,
-}: {
+type Sidebar = {
   navOpen: boolean
   toggleNav: any
-}) => {
+}
+
+export const Sidebar: React.FC<Sidebar> = ({ navOpen, toggleNav }) => {
   const router = useRouter()
 
   const NavMenuButton = () => (
@@ -30,43 +30,40 @@ const Sidebar = ({
     </svg>
   )
 
-  interface NavItemProps extends LinkProps {
-    children: JSX.Element | string
-    external?: boolean
-    otherProps?: any
-  }
+  type NavItem = LinkProps &
+    HTMLAttributes<HTMLAnchorElement> &
+    PropsWithChildren & {
+      external?: boolean
+    }
 
-  const NavItem = ({
+  const NavItem: React.FC<NavItem> = ({
     children,
-    href,
     external = false,
-    ...otherProps
-  }: NavItemProps) => {
+    ...props
+  }) => {
     const baseClass =
       'block w-full rounded-lg p-3 hover:bg-gray-100 hover:text-black dark:hover:bg-gray-800 dark:hover:text-gray-100 md:rounded-none md:p-0 md:hover:bg-transparent'
     return (
       <li>
         {external ? (
           <a
-            href={String(href)}
+            {...props}
+            href={String(props.href)}
             target="_blank"
             rel="noreferrer"
-            className={[baseClass, 'text-gray-600 dark:text-gray-400'].join(
-              ' ',
-            )}
-            {...otherProps}
+            className={cx([baseClass, 'text-gray-600 dark:text-gray-400'])}
           >
             {children}
           </a>
         ) : (
-          <Link href={href} {...otherProps}>
+          <Link {...props}>
             <a
-              className={[
+              className={cx([
                 baseClass,
-                router.pathname === href
+                router.pathname === props.href
                   ? 'font-bold text-gray-900 dark:text-white'
                   : 'text-gray-600 dark:text-gray-400',
-              ].join(' ')}
+              ])}
             >
               {children}
             </a>
@@ -108,10 +105,10 @@ const Sidebar = ({
         </div>
 
         <div
-          className={[
+          className={cx([
             'mb-6 w-full flex-grow md:block',
             !navOpen && 'hidden',
-          ].join(' ')}
+          ])}
         >
           <ul className="-mx-3 space-y-1 text-lg font-medium md:mx-0 md:space-y-2 md:text-base">
             <NavItem href="/">About</NavItem>
