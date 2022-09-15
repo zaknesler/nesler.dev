@@ -1,4 +1,3 @@
-import type { Style } from '@react-pdf/types'
 import ReactPDF, {
   Document,
   Page,
@@ -14,6 +13,7 @@ import ReactPDF, {
   Rect,
   LinearGradient,
 } from '@react-pdf/renderer'
+import type { Style } from '@react-pdf/types'
 import data from '../public/resume.json'
 
 const filepath = `${__dirname}/../public/resume.pdf`
