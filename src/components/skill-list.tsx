@@ -1,3 +1,5 @@
+import { HeartIcon } from '@heroicons/react/20/solid'
+import { PropsWithChildren } from 'react'
 import {
   ReactLogo,
   LaravelLogo,
@@ -6,8 +8,6 @@ import {
   TypeScriptLogo,
   NextLogo,
 } from '../utils/icons'
-import { HeartIcon } from '@heroicons/react/20/solid'
-import { PropsWithChildren } from 'react'
 
 const items = [
   { text: 'TypeScript', logo: TypeScriptLogo, fave: false },

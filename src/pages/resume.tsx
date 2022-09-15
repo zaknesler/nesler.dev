@@ -1,8 +1,8 @@
 import { ArrowLeftIcon } from '@heroicons/react/20/solid'
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../utils/icons'
-import { Base } from '../components/layouts/base'
 import Link from 'next/link'
 import data from '../../public/resume.json'
+import { Base } from '../components/layouts/base'
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../utils/icons'
 
 const Resume = () => {
   const ListGroup = ({ items }: { items: Array<string> }) => {

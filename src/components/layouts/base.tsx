@@ -1,7 +1,7 @@
-import React, { PropsWithChildren, useState } from 'react'
 import Head from 'next/head'
-import { Sidebar } from '../sidebar'
+import React, { PropsWithChildren, useState } from 'react'
 import { cx } from '../../utils'
+import { Sidebar } from '../sidebar'
 
 export const Base: React.FC<
   PropsWithChildren & {

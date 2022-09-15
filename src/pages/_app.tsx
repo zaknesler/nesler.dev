@@ -1,14 +1,11 @@
-import '../css/app.css'
-
 import { MDXProvider } from '@mdx-js/react'
 import type { AppProps } from 'next/app'
+import '../css/app.css'
 
-function App({ Component, pageProps }: AppProps) {
-  return (
-    <MDXProvider>
-      <Component {...pageProps} />
-    </MDXProvider>
-  )
-}
+const App = ({ Component, pageProps }: AppProps) => (
+  <MDXProvider>
+    <Component {...pageProps} />
+  </MDXProvider>
+)
 
 export default App
