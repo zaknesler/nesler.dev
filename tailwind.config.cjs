@@ -1,5 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
   darkMode: 'media',
@@ -51,7 +52,7 @@ module.exports = {
               li: {
                 p: {
                   '&:first-child': {
-                    marginBottom: `-${theme('spacing.4')}`,
+                    marginBottom: `-${theme('spacing.2')}`,
                     a: {
                       fontWeight: theme('fontWeight.semibold'),
                     },
@@ -95,8 +96,7 @@ module.exports = {
               li: {
                 p: {
                   '&:first-child': {
-                    marginBottom: `-${theme('spacing.4')}`,
-
+                    marginBottom: `-${theme('spacing.2')}`,
                     a: {
                       fontWeight: theme('fontWeight.semibold'),
                     },

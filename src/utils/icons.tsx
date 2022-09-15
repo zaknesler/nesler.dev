@@ -6,11 +6,11 @@ type IconProps = PropsWithChildren &
     size?: 'sm' | 'md' | 'lg'
   }
 
-const sizes = {
-  sm: 'w-5 h-5',
-  md: 'w-7 h-7',
-  lg: 'w-9 h-9',
-}
+const sizes = new Map([
+  ['sm', 'w-5 h-5'],
+  ['md', 'w-7 h-7'],
+  ['lg', 'w-9 h-9'],
+])
 
 export const Icon: React.FC<IconProps> = ({
   children,
@@ -19,10 +19,10 @@ export const Icon: React.FC<IconProps> = ({
   ...props
 }) => (
   <svg
-    className={cx([className, sizes[size], 'h-5 w-5'])}
+    {...props}
+    className={cx([className, sizes.get(size), 'h-5 w-5'])}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
   >
     {children}
   </svg>
