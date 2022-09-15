@@ -1,4 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const {
+  default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette')
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -115,5 +119,18 @@ module.exports = {
       display: ['group-hover'],
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          highlight: value => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
+        },
+        {
+          values: flattenColorPalette(theme('backgroundColor')),
+          type: 'color',
+        },
+      )
+    }),
+  ],
 }
