@@ -23,7 +23,7 @@ type SkillItem = PropsWithChildren & {
 }
 
 const SkillItem: React.FC<SkillItem> = ({ children, fave = false }) => (
-  <div className="relative flex items-center rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium text-gray-600 shadow-sm transition-all hover:scale-[1.025] dark:bg-gray-800 dark:text-gray-400 dark:highlight-white/5">
+  <div className="relative flex items-center rounded-lg border border-gray-100 bg-white p-4 text-sm font-medium text-gray-600 shadow-sm transition-all hover:scale-[1.025] dark:border-0 dark:bg-gray-800 dark:text-gray-400 dark:highlight-white/5">
     {fave && (
       <div className="absolute -top-2 -right-2 rounded-full bg-black p-1 text-gray-100 shadow dark:bg-gray-100 dark:text-black">
         <HeartIcon className="h-4 w-4 text-inherit" />
