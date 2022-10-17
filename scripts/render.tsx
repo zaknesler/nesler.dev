@@ -1,4 +1,4 @@
-import ReactPDF, {
+import {
   Document,
   Page,
   Text,
@@ -12,6 +12,7 @@ import ReactPDF, {
   Stop,
   Rect,
   LinearGradient,
+  renderToFile,
 } from '@react-pdf/renderer'
 import type { Style } from '@react-pdf/types'
 import data from '../public/resume.json'
@@ -176,7 +177,7 @@ const HighlightedText = ({
   </Text>
 )
 
-ReactPDF.render(
+renderToFile(
   <MyDocument>
     <MyPage size="Letter" style={styles.page}>
       <View style={{ marginTop: -5, marginHorizontal: -40 }}>
@@ -360,7 +361,7 @@ ReactPDF.render(
               </View>
 
               <View style={{ flex: 1, fontSize: 9, lineHeight: 1.4 }}>
-                <List items={item.responsibilities} />
+                <List items={item.description_list} />
               </View>
             </View>
           ))}
@@ -405,34 +406,6 @@ ReactPDF.render(
 
               <View style={{ flex: 1 }}>
                 <Text>{item.description}</Text>
-                <Text
-                  style={{
-                    marginTop: 10,
-                    fontWeight: 'medium',
-                    color: 'black',
-                    fontSize: 9,
-                  }}
-                >
-                  Relevant Courses &amp; Skills
-                </Text>
-                <View
-                  style={{
-                    marginTop: 3,
-                    flexDirection: 'row',
-                    fontSize: 9,
-                    lineHeight: 1.4,
-                    width: '95%',
-                  }}
-                >
-                  <List
-                    style={{ flex: 1, paddingRight: 15 }}
-                    items={item.courses.slice(0, item.courses.length / 2 + 1)}
-                  />
-                  <List
-                    style={{ flex: 1, paddingLeft: 15 }}
-                    items={item.courses.slice(item.courses.length / 2 + 1)}
-                  />
-                </View>
               </View>
             </View>
           ))}

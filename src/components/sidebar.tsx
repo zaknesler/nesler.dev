@@ -127,6 +127,9 @@ export const Sidebar: React.FC<Sidebar> = ({ navOpen, toggleNav }) => {
             <NavItem href={data.urls.twitter} external={true}>
               Twitter
             </NavItem>
+            <NavItem href={data.urls['last.fm']} external={true}>
+              Last.fm
+            </NavItem>
           </ul>
         </div>
       </div>

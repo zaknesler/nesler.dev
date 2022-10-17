@@ -160,7 +160,7 @@ const Resume = () => {
                 </div>
 
                 <div className="col-span-2 space-y-4 lg:col-span-3">
-                  <ListGroup items={item.responsibilities} />
+                  <ListGroup items={item.description_list} />
                 </div>
               </div>
             ))}
