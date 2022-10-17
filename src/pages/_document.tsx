@@ -73,7 +73,7 @@ class Document extends NextDocument {
           />
         </Head>
 
-        <body className="bg-white font-sans text-base font-normal leading-normal tracking-normal text-gray-700 dark:bg-gray-900 dark:text-gray-300">
+        <body className="bg-white font-sans text-base font-normal leading-normal tracking-normal text-gray-700 selection:bg-brand-400/25 dark:bg-gray-900 dark:text-gray-300">
           <Main />
           <NextScript />
         </body>

@@ -1,4 +1,8 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
+const {
+  default: flattenColorPalette,
+} = require('tailwindcss/lib/util/flattenColorPalette')
+const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -44,9 +48,9 @@ module.exports = {
             },
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
-            },
-            h4: {
-              marginBottom: theme('spacing.3'),
+              '& + p': {
+                marginTop: '-0.5em',
+              },
             },
             ul: {
               li: {
@@ -88,10 +92,11 @@ module.exports = {
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
               color: theme('colors.gray.200'),
+              '& + p': {
+                marginTop: '-0.5em',
+              },
             },
-            h4: {
-              marginBottom: theme('spacing.3'),
-            },
+
             ul: {
               li: {
                 p: {
@@ -115,5 +120,18 @@ module.exports = {
       display: ['group-hover'],
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    plugin(({ matchUtilities, theme }) => {
+      matchUtilities(
+        {
+          highlight: value => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
+        },
+        {
+          values: flattenColorPalette(theme('backgroundColor')),
+          type: 'color',
+        },
+      )
+    }),
+  ],
 }
