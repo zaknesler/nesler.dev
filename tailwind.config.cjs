@@ -48,9 +48,6 @@ module.exports = {
             },
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
-              '& + p': {
-                marginTop: '-0.5em',
-              },
             },
             ul: {
               li: {
@@ -92,9 +89,6 @@ module.exports = {
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
               color: theme('colors.gray.200'),
-              '& + p': {
-                marginTop: '-0.5em',
-              },
             },
 
             ul: {
