@@ -56,17 +56,16 @@ export const Sidebar: React.FC<Sidebar> = ({ navOpen, toggleNav }) => {
             {children}
           </a>
         ) : (
-          <Link {...props}>
-            <a
-              className={cx([
-                baseClass,
-                router.pathname === props.href
-                  ? 'font-bold text-gray-900 dark:text-white'
-                  : 'text-gray-600 dark:text-gray-400',
-              ])}
-            >
-              {children}
-            </a>
+          <Link
+            {...props}
+            className={cx([
+              baseClass,
+              router.pathname === props.href
+                ? 'font-bold text-gray-900 dark:text-white'
+                : 'text-gray-600 dark:text-gray-400',
+            ])}
+          >
+            {children}
           </Link>
         )}
       </li>
@@ -79,10 +78,11 @@ export const Sidebar: React.FC<Sidebar> = ({ navOpen, toggleNav }) => {
         <div className="w-full">
           <div className="flex w-full items-center justify-between md:block">
             <div>
-              <Link href="/">
-                <a className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                  {data.name}
-                </a>
+              <Link
+                href="/"
+                className="text-2xl font-bold text-gray-900 dark:text-gray-100"
+              >
+                {data.name}
               </Link>
               <h4 className="text-xs font-medium uppercase tracking-wide text-gray-600 dark:text-gray-400">
                 {data.title}

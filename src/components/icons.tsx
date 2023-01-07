@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, SVGProps } from 'react'
-import { cx } from '.'
+import { cx } from '../utils'
 
 type IconProps = PropsWithChildren &
   SVGProps<SVGSVGElement> & {

@@ -7,7 +7,7 @@ import {
   VueLogo,
   TypeScriptLogo,
   NextLogo,
-} from '../utils/icons'
+} from './icons'
 
 const items = [
   { text: 'TypeScript', logo: TypeScriptLogo, fave: false },

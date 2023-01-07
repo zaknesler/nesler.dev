@@ -1,8 +1,8 @@
 import { ArrowLeftIcon } from '@heroicons/react/20/solid'
 import Link from 'next/link'
 import data from '../../public/resume.json'
+import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../components/icons'
 import { Base } from '../components/layouts/base'
-import { GitHubIcon, LinkedInIcon, TwitterIcon } from '../utils/icons'
 
 const Resume = () => {
   const ListGroup = ({ items }: { items: Array<string> }) => {
@@ -19,17 +19,19 @@ const Resume = () => {
     <Base full={true} title="Résumé">
       <div className="mx-auto max-w-4xl space-y-10 p-6 text-gray-600 dark:text-gray-400">
         <div className="mx-auto flex max-w-4xl items-center justify-between">
-          <Link href="/">
-            <a className="flex items-center hover:text-black dark:hover:text-gray-200">
-              <ArrowLeftIcon className="h-4 w-4 opacity-75" />
-              <span className="ml-1">Home</span>
-            </a>
+          <Link
+            href="/"
+            className="flex items-center hover:text-black dark:hover:text-gray-200"
+          >
+            <ArrowLeftIcon className="h-4 w-4 opacity-75" />
+            <span className="ml-1">Home</span>
           </Link>
 
-          <Link href="/resume.pdf">
-            <a className="mt-2 flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 hover:text-blue-900 dark:bg-blue-800 dark:bg-opacity-50 dark:text-blue-200 dark:hover:bg-blue-900 dark:hover:text-white">
-              Download as PDF
-            </a>
+          <Link
+            href="/resume.pdf"
+            className="mt-2 flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 hover:text-blue-900 dark:bg-blue-800 dark:bg-opacity-50 dark:text-blue-200 dark:hover:bg-blue-900 dark:hover:text-white"
+          >
+            Download as PDF
           </Link>
         </div>
 
