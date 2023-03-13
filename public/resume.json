@@ -12,14 +12,14 @@
   },
   "qualitites": [
     "Keen eye for detail and design",
-    "Experienced with popular web technologies such as Laravel, Next.js/React, and Tailwind CSS",
-    "Focused on writing self-documenting, tested, and tidy code"
+    "Loves running into problems, but loves solving them even more",
+    "Enjoys writing self-documenting, tested, and tidy code"
   ],
   "skills": {
-    "technologies": ["Laravel", "Tailwind CSS", "React/Next.js", "Vue.js/Nuxt.js"],
-    "languages": ["TypeScript", "JavaScript", "Node.js", "HTML/CSS", "PHP 8+", "Python", "SQL", "Java", "Regex"],
-    "software": ["Docker", "Git", "PHPUnit", "Linux", "Bash", "Figma", "Photoshop", "Blender"],
-    "services": ["GitHub", "Azure DevOps", "Vercel", "DigitalOcean", "Laravel Forge", "Cloudflare", "PlanetScale"]
+    "technologies": ["Next.js/React", "T3 Stack (TypeScript, tRPC, & Tailwind CSS)", "MongoDB", "Express.js"],
+    "languages": ["TypeScript", "Node.js", "Go", "Rust", "Regex", "SQL"],
+    "software": ["Docker", "Git", "Linux", "Bash", "Figma", "Photoshop", "Blender"],
+    "services": ["GitHub", "Azure DevOps", "Vercel", "DigitalOcean", "Cloudflare", "PlanetScale"]
   },
   "experience": [
     {
@@ -27,10 +27,10 @@
       "location": "Media, PA",
       "position": "Full-Stack Engineer",
       "date": "July 2022 – Present",
-      "description": "Implemented communication logging feature covering entire stack with great feedback from end users. Improved UI/UX, loading times, and optimized SQL stored procedures. Utilized Angular, Express.js, and SQL Server.",
+      "description": "Covers entire development process from design to implementation and testing, and bug fixes. Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs.",
       "description_list": [
-        "Covers entire development process from design to implementation and testing",
-        "Utilizes microservice architecture with Express.js, MongoDB, React/Next.js, and 3rd party APIs"
+        "Covers entire development process from design to implementation and testing, and bug fixes",
+        "Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs"
       ]
     },
     {
@@ -40,9 +40,8 @@
       "date": "Nov. 2021 – June 2022",
       "description": "Implemented communication logging feature covering entire stack with great feedback from end users. Improved UI/UX, loading times, and optimized SQL stored procedures. Utilized Angular, Express.js, and SQL Server.",
       "description_list": [
-        "Implemented communication logging feature covering front-end, back-end, and database with great feedback from end users",
-        "Improved UI/UX and loading times",
-        "Optimized SQL stored procedures",
+        "Implemented communication logging feature covering full stack with great feedback from end users",
+        "Improved UI/UX and loading times, and optimized SQL stored procedures",
         "Utilized Angular, Express.js, and SQL Server"
       ]
     },

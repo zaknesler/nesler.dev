@@ -21,15 +21,15 @@ const Resume = () => {
         <div className="mx-auto flex max-w-4xl items-center justify-between">
           <Link
             href="/"
-            className="flex items-center hover:text-black dark:hover:text-gray-200"
+            className="flex items-center hover:text-black dark:hover:text-gray-200 gap-1"
           >
             <ArrowLeftIcon className="h-4 w-4 opacity-75" />
-            <span className="ml-1">Home</span>
+            <span>Home</span>
           </Link>
 
           <Link
             href="/resume.pdf"
-            className="mt-2 flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 hover:text-blue-900 dark:bg-blue-800 dark:bg-opacity-50 dark:text-blue-200 dark:hover:bg-blue-900 dark:hover:text-white"
+            className="flex items-center rounded-md bg-blue-50 px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 hover:text-blue-900 dark:bg-blue-800 dark:bg-opacity-50 dark:text-blue-200 dark:hover:bg-blue-900 dark:hover:text-white"
           >
             Download as PDF
           </Link>
@@ -44,7 +44,7 @@ const Resume = () => {
               {data.title}
             </div>
 
-            <div className="mx-auto mt-3 h-1 w-32 bg-gradient-to-r from-brand-500 to-brand-400 sm:mx-0"></div>
+            <div className="mx-auto mt-3 h-1 w-32 bg-gradient-to-r from-brand-500 to-brand-400 sm:mx-0" />
           </div>
 
           <div className="mt-4 space-y-2 font-medium sm:mt-0 sm:text-right">
@@ -93,11 +93,11 @@ const Resume = () => {
         </section>
 
         <section>
-          <div>
+          <div className="flex flex-col gap-1">
             <div className="font-bold text-black dark:text-gray-200">
               Professional Qualities
             </div>
-            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
+            <div className="border-b-2 border-gray-200 dark:border-gray-800" />
           </div>
 
           <div className="mt-4">
@@ -106,7 +106,7 @@ const Resume = () => {
         </section>
 
         <section>
-          <div>
+          <div className="flex flex-col gap-1">
             <div className="flex items-center justify-between">
               <div className="font-bold text-black dark:text-gray-200">
                 Skills
@@ -115,7 +115,7 @@ const Resume = () => {
                 Ready and willing to learn anything!
               </div>
             </div>
-            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
+            <div className="border-b-2 border-gray-200 dark:border-gray-800" />
           </div>
 
           <div className="mt-4 space-y-4">
@@ -131,11 +131,11 @@ const Resume = () => {
         </section>
 
         <section>
-          <div>
+          <div className="flex flex-col gap-1">
             <div className="font-bold text-black dark:text-gray-200">
               Experience
             </div>
-            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
+            <div className="border-b-2 border-gray-200 dark:border-gray-800" />
           </div>
 
           <div className="mt-4 space-y-8">
@@ -144,16 +144,12 @@ const Resume = () => {
                 key={idx}
                 className="grid gap-4 md:grid-cols-3 lg:grid-cols-4"
               >
-                <div className="col-span-1">
-                  <div className="mt-1 font-medium leading-tight text-black dark:text-gray-200">
+                <div className="col-span-1 flex flex-col gap-1">
+                  <div className="font-medium leading-[1.125] text-black dark:text-gray-200">
                     {item.position}
                   </div>
-                  <div className="mt-1 text-sm text-gray-500">
-                    {item.company}
-                  </div>
-                  <div className="mt-1 text-sm text-gray-500">
-                    {item.location}
-                  </div>
+                  <div className="text-sm text-gray-500">{item.company}</div>
+                  <div className="text-sm text-gray-500">{item.location}</div>
                   <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
                     <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
                       {item.date}
@@ -170,11 +166,11 @@ const Resume = () => {
         </section>
 
         <section>
-          <div>
+          <div className="flex flex-col gap-1">
             <div className="font-bold text-black dark:text-gray-200">
               Education
             </div>
-            <div className="mt-1 border-b-2 border-gray-200 dark:border-gray-800"></div>
+            <div className="border-b-2 border-gray-200 dark:border-gray-800" />
           </div>
 
           {data.education.map((item, idx) => (
@@ -182,22 +178,20 @@ const Resume = () => {
               key={idx}
               className="mt-4 grid gap-4 md:grid-cols-3 lg:grid-cols-4"
             >
-              <div className="col-span-1">
+              <div className="col-span-1 flex flex-col gap-1">
                 <div className="font-medium leading-tight text-black dark:text-gray-200">
                   {item.school}
                 </div>
-                <div className="mt-1 text-sm text-gray-500">
-                  {item.location}
-                </div>
-                <div className="mt-1 text-sm text-gray-500">
+                <div className="text-sm text-gray-500">{item.location}</div>
+                <div className="text-sm text-gray-500">
                   {item.graduation_date}
                 </div>
-                <div className="mt-2 flex items-center text-xs font-medium text-blue-700 dark:text-blue-200">
+                <div className="mt-1 flex gap-2 items-center text-xs font-medium text-blue-700 dark:text-blue-200">
                   <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
                     GPA: {item.gpa}
                   </div>
                   {item.gpa_major && (
-                    <div className="ml-2 rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
+                    <div className="rounded-md bg-blue-50 px-2 py-1 dark:bg-blue-800 dark:bg-opacity-50">
                       Major GPA: {item.gpa_major}
                     </div>
                   )}
@@ -207,12 +201,12 @@ const Resume = () => {
               <div className="col-span-2 space-y-4 lg:col-span-3">
                 <div>{item.description}</div>
 
-                <div className="text-sm">
+                <div className="text-sm flex flex-col gap-2">
                   <div className="font-bold text-black dark:text-gray-200">
                     Relevant Courses &amp; Skills
                   </div>
 
-                  <div className="mt-2 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
+                  <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
                     {item.courses && (
                       <>
                         <ListGroup

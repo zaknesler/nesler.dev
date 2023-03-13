@@ -2,11 +2,11 @@ import { HeartIcon } from '@heroicons/react/20/solid'
 import { PropsWithChildren } from 'react'
 import {
   ReactLogo,
-  LaravelLogo,
   TailwindCSSLogo,
-  VueLogo,
   TypeScriptLogo,
   NextLogo,
+  RustLogo,
+  GoLogo,
 } from './icons'
 
 const items = [
@@ -14,8 +14,12 @@ const items = [
   { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: false },
   { text: 'Next.js', logo: NextLogo, fave: false },
   { text: 'React.js', logo: ReactLogo, fave: false },
-  { text: 'Laravel', logo: LaravelLogo, fave: false },
-  { text: 'Vue.js', logo: VueLogo, fave: false },
+  { text: 'Go', logo: GoLogo, fave: false },
+  {
+    text: 'Rust',
+    logo: () => <RustLogo fill="current" />,
+    fave: false,
+  },
 ]
 
 type SkillItem = PropsWithChildren & {

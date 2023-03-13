@@ -19,10 +19,10 @@ export const Icon: React.FC<IconProps> = ({
   ...props
 }) => (
   <svg
-    {...props}
     className={cx([className, sizes.get(size), 'h-5 w-5'])}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     {children}
   </svg>
@@ -73,32 +73,90 @@ export const ReactLogo = (props: IconProps) => (
   </Icon>
 )
 
-export const LaravelLogo = (props: IconProps) => (
-  <Icon width="50" height="52" viewBox="0 0 50 52" {...props}>
-    <path
-      d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002-21.481L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z"
-      fill="#FF2D20"
-      fillRule="evenodd"
-    />
+export const RustLogo = (props: IconProps) => (
+  <Icon height="106" width="106" viewBox="0 0 106 106" {...props}>
+    <g transform="translate(53 53)">
+      <path
+        stroke="#000"
+        strokeLinejoin="round"
+        d="M-8.5-14.5h13c8 0 8 8 0 8h-13Zm-31 37h40v-11h-9v-8h10c11 0 5 19 14 19h25v-19h-6v2c0 8-9 7-10 2s-5-9-6-9c15-8 6-24-6-24h-47v11h10v26h-15Z"
+      />
+      <g mask="url(#a)">
+        <circle r="43" fill="none" stroke="#000" strokeWidth="9" />
+        <path
+          id="b"
+          stroke="#000"
+          strokeWidth="3"
+          strokeLinejoin="round"
+          d="m46 3 5-3-5-3z"
+        />
+        <use xlinkHref="#b" transform="rotate(11.25)" />
+        <use xlinkHref="#b" transform="rotate(22.5)" />
+        <use xlinkHref="#b" transform="rotate(33.75)" />
+        <use xlinkHref="#b" transform="rotate(45)" />
+        <use xlinkHref="#b" transform="rotate(56.25)" />
+        <use xlinkHref="#b" transform="rotate(67.5)" />
+        <use xlinkHref="#b" transform="rotate(78.75)" />
+        <use xlinkHref="#b" transform="rotate(90)" />
+        <use xlinkHref="#b" transform="rotate(101.25)" />
+        <use xlinkHref="#b" transform="rotate(112.5)" />
+        <use xlinkHref="#b" transform="rotate(123.75)" />
+        <use xlinkHref="#b" transform="rotate(135)" />
+        <use xlinkHref="#b" transform="rotate(146.25)" />
+        <use xlinkHref="#b" transform="rotate(157.5)" />
+        <use xlinkHref="#b" transform="rotate(168.75)" />
+        <use xlinkHref="#b" transform="rotate(180)" />
+        <use xlinkHref="#b" transform="rotate(191.25)" />
+        <use xlinkHref="#b" transform="rotate(202.5)" />
+        <use xlinkHref="#b" transform="rotate(213.75)" />
+        <use xlinkHref="#b" transform="rotate(225)" />
+        <use xlinkHref="#b" transform="rotate(236.25)" />
+        <use xlinkHref="#b" transform="rotate(247.5)" />
+        <use xlinkHref="#b" transform="rotate(258.75)" />
+        <use xlinkHref="#b" transform="rotate(270)" />
+        <use xlinkHref="#b" transform="rotate(281.25)" />
+        <use xlinkHref="#b" transform="rotate(292.5)" />
+        <use xlinkHref="#b" transform="rotate(303.75)" />
+        <use xlinkHref="#b" transform="rotate(315)" />
+        <use xlinkHref="#b" transform="rotate(326.25)" />
+        <use xlinkHref="#b" transform="rotate(337.5)" />
+        <use xlinkHref="#b" transform="rotate(348.75)" />
+        <path
+          id="c"
+          stroke="#000"
+          strokeWidth="6"
+          strokeLinejoin="round"
+          d="m-7-42 7 7 7-7z"
+        />
+        <use xlinkHref="#c" transform="rotate(72)" />
+        <use xlinkHref="#c" transform="rotate(144)" />
+        <use xlinkHref="#c" transform="rotate(216)" />
+        <use xlinkHref="#c" transform="rotate(288)" />
+      </g>
+      <mask id="a">
+        <path fill="#fff" d="M-60-60H60V60H-60z" />
+        <circle id="d" cy="-40" r="3" />
+        <use xlinkHref="#d" transform="rotate(72)" />
+        <use xlinkHref="#d" transform="rotate(144)" />
+        <use xlinkHref="#d" transform="rotate(216)" />
+        <use xlinkHref="#d" transform="rotate(288)" />
+      </mask>
+    </g>
   </Icon>
 )
 
-export const VueLogo = (props: IconProps) => (
-  <Icon width={15} height={15} viewBox="0 0 261.76 226.69" {...props}>
-    <g transform="matrix(1.3333 0 0 -1.3333 -76.311 313.34)">
-      <g transform="translate(178.06 235.01)">
-        <path
-          d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z"
-          fill="#41b883"
-        />
-      </g>
-      <g transform="translate(178.06 235.01)">
-        <path
-          d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z"
-          fill="#34495e"
-        />
-      </g>
-    </g>
+export const GoLogo = (props: IconProps) => (
+  <Icon width={207} height={78} viewBox="0 0 207 78" {...props}>
+    <svg width="207" height="78" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.2 24.1c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h35.7c.4 0 .5.3.3.6l-1.7 2.6c-.2.3-.7.6-1 .6l-36.2-.1ZM1.1 33.3c-.4 0-.5-.2-.3-.5l2.1-2.7c.2-.3.7-.5 1.1-.5h45.6c.4 0 .6.3.5.6l-.8 2.4c-.1.4-.5.6-.9.6l-47.3.1ZM25.3 42.5c-.4 0-.5-.3-.3-.6l1.4-2.5c.2-.3.6-.6 1-.6h20c.4 0 .6.3.6.7l-.2 2.4c0 .4-.4.7-.7.7l-21.8-.1ZM129.1 22.3c-6.3 1.6-10.6 2.8-16.8 4.4-1.5.4-1.6.5-2.9-1-1.5-1.7-2.6-2.8-4.7-3.8-6.3-3.1-12.4-2.2-18.1 1.5-6.8 4.4-10.3 10.9-10.2 19 .1 8 5.6 14.6 13.5 15.7 6.8.9 12.5-1.5 17-6.6.9-1.1 1.7-2.3 2.7-3.7H90.3c-2.1 0-2.6-1.3-1.9-3 1.3-3.1 3.7-8.3 5.1-10.9.3-.6 1-1.6 2.5-1.6h36.4c-.2 2.7-.2 5.4-.6 8.1-1.1 7.2-3.8 13.8-8.2 19.6-7.2 9.5-16.6 15.4-28.5 17-9.8 1.3-18.9-.6-26.9-6.6-7.4-5.6-11.6-13-12.7-22.2-1.3-10.9 1.9-20.7 8.5-29.3C71.1 9.6 80.5 3.7 92 1.6c9.4-1.7 18.4-.6 26.5 4.9 5.3 3.5 9.1 8.3 11.6 14.1.6.9.2 1.4-1 1.7Z"
+        fill="#00ACD7"
+      />
+      <path
+        d="M162.2 77.6c-9.1-.2-17.4-2.8-24.4-8.8-5.9-5.1-9.6-11.6-10.8-19.3-1.8-11.3 1.3-21.3 8.1-30.2 7.3-9.6 16.1-14.6 28-16.7 10.2-1.8 19.8-.8 28.5 5.1 7.9 5.4 12.8 12.7 14.1 22.3 1.7 13.5-2.2 24.5-11.5 33.9-6.6 6.7-14.7 10.9-24 12.8-2.7.5-5.4.6-8 .9ZM186 37.2c-.1-1.3-.1-2.3-.3-3.3-1.8-9.9-10.9-15.5-20.4-13.3-9.3 2.1-15.3 8-17.5 17.4-1.8 7.8 2 15.7 9.2 18.9 5.5 2.4 11 2.1 16.3-.6 7.9-4.1 12.2-10.5 12.7-19.1Z"
+        fill="#00ACD7"
+      />
+    </svg>
   </Icon>
 )
 
