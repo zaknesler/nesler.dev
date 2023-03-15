@@ -16,7 +16,7 @@
     "Enjoys writing self-documenting, tested, and tidy code"
   ],
   "skills": {
-    "technologies": ["Next.js/React", "T3 Stack (TypeScript, tRPC, & Tailwind CSS)", "MongoDB", "Express.js", "Prisma"],
+    "technologies": ["Next.js/React", "T3 Stack (TS, tRPC, & Tailwind CSS)", "MongoDB", "Express.js", "Prisma"],
     "languages": ["TypeScript", "Node.js", "Python", "Go", "Rust", "Regex", "SQL"],
     "software": ["Docker", "Git", "Linux", "Figma", "Photoshop", "Blender"],
     "services": ["GitHub", "Azure DevOps", "Vercel", "DigitalOcean", "Cloudflare", "PlanetScale"]
