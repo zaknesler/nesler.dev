@@ -42,7 +42,7 @@
       "description_list": [
         "Implemented communication logging feature covering full stack with great feedback from end users",
         "Improved UI/UX and loading times, and optimized SQL stored procedures",
-        "Utilized Angular, Express.js, and SQL Server"
+        "Utilized Express.js, Angular, and SQL Server"
       ]
     },
     {
