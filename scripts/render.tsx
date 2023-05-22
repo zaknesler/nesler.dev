@@ -278,7 +278,7 @@ renderToFile(
       <View style={styles.section}>
         <Text style={styles.sectionHeader}>Professional Qualities</Text>
         <View style={styles.sectionBody}>
-          <List items={data.qualitites} />
+          <List items={data.qualities} />
         </View>
       </View>
 

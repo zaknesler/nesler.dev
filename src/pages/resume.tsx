@@ -101,7 +101,7 @@ const Resume = () => {
           </div>
 
           <div className="mt-4">
-            <ListGroup items={data.qualitites} />
+            <ListGroup items={data.qualities} />
           </div>
         </section>
 
