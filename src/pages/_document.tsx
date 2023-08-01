@@ -71,6 +71,7 @@ class Document extends NextDocument {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
           />
+          <script defer data-domain="nesler.dev" src="https://analytics.zak.bz/js/script.js" />
         </Head>
 
         <body className="bg-white font-sans text-base font-normal leading-normal tracking-normal text-gray-700 selection:bg-brand-400/25 dark:bg-gray-900 dark:text-gray-300">
