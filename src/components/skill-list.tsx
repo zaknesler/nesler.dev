@@ -13,7 +13,7 @@ const items = [
   { text: 'TypeScript', logo: TypeScriptLogo, fave: false },
   { text: 'Tailwind CSS', logo: TailwindCSSLogo, fave: false },
   { text: 'Next.js', logo: NextLogo, fave: false },
-  { text: 'React.js', logo: ReactLogo, fave: false },
+  { text: 'React', logo: ReactLogo, fave: false },
   { text: 'Go', logo: GoLogo, fave: false },
   {
     text: 'Rust',
