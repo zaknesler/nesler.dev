@@ -15,14 +15,6 @@
 		"Loves running into problems, but loves solving them even more",
 		"Enjoys writing self-documenting, tested, and tidy code"
 	],
-	"favorites": [
-		"TypeScript",
-		"Next.js/React",
-		"Tailwind CSS",
-		"Go",
-		"Rust",
-		"Svelte"
-	],
 	"skills": {
 		"technologies": ["Next.js/React", "tRPC", "Tailwind CSS", "MongoDB"],
 		"languages": ["TypeScript", "Python", "Go", "Rust", "SQL"],
