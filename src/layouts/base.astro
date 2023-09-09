@@ -12,10 +12,15 @@ const { title } = Astro.props as Props
     <title>{title ? `${title} - Zak Nesler` : 'Zak Nesler'}</title>
   </head>
   <body
-    class="selection:bg-brand-500/20 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800 text-gray-700 dark:text-gray-300 h-full overflow-hidden"
+    class="selection:bg-brand-500/20 bg-white dark:bg-gray-950 md:bg-gradient-to-r md:from-brand-700 md:to-brand-500 md:dark:from-brand-900 md:dark:to-brand-800 text-gray-700 dark:text-gray-300 h-full md:overflow-hidden flex flex-col"
   >
     <div
-      class="absolute inset-4 bg-white dark:bg-gray-950 p-4 md:p-8 rounded-xl shadow-xl overflow-y-auto"
+      class="md:hidden w-full flex-shrink-0 h-4 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
+    >
+    </div>
+
+    <div
+      class="md:absolute md:inset-4 bg-white dark:bg-gray-950 p-4 md:p-8 md:rounded-xl md:shadow-xl md:overflow-y-auto flex-1"
     >
       <slot />
     </div>

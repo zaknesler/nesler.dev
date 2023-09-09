@@ -90,7 +90,9 @@ const socialLinks = [
       <div class="flex flex-col gap-1">
         <div class="flex items-center justify-between">
           <h3 class="font-semibold text-black dark:text-gray-100">Skills</h3>
-          <div class="text-sm text-gray-500 dark:text-gray-400">
+          <div
+            class="text-sm text-gray-500 dark:text-gray-400 dark:text-gray-400"
+          >
             Ready and willing to learn anything!
           </div>
         </div>
@@ -128,8 +130,12 @@ const socialLinks = [
                   </div>
 
                   <div class="flex flex-col gap-0.5">
-                    <div class="text-sm text-gray-500">{item.company}</div>
-                    <div class="text-sm text-gray-500">{item.location}</div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      {item.company}
+                    </div>
+                    <div class="text-sm text-gray-500 dark:text-gray-400">
+                      {item.location}
+                    </div>
                   </div>
                 </div>
 
@@ -168,8 +174,10 @@ const socialLinks = [
                 </div>
 
                 <div class="flex flex-col gap-0.5">
-                  <div class="text-sm text-gray-500">{item.location}</div>
-                  <div class="text-sm text-gray-500">
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
+                    {item.location}
+                  </div>
+                  <div class="text-sm text-gray-500 dark:text-gray-400">
                     {item.year_start} &ndash; {item.year_end}
                   </div>
                 </div>
