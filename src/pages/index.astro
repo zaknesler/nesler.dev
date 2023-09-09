@@ -1,0 +1,50 @@
+---
+import BaseLayout from '@/layouts/base.astro'
+import data from '../../public/resume.json'
+
+const links = [
+  { title: 'Résumé', path: '/resume' },
+  { title: 'GitHub', path: data.urls.github },
+  { title: 'Artwork', path: data.urls.artwork },
+  { title: 'Last.fm', path: data.urls.lastfm },
+] as const
+---
+
+<BaseLayout>
+  <div
+    class="h-full flex flex-col items-center justify-center gap-4 text-center"
+  >
+    <div class="flex flex-col items-center justify-center gap-1">
+      <h3 class="text-2xl font-bold">
+        {data.name}
+      </h3>
+      <h4
+        class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-500"
+      >
+        {data.title}
+      </h4>
+    </div>
+
+    <div
+      class="flex-shrink-0 w-24 h-1 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
+    >
+    </div>
+
+    <ul class="flex flex-col gap-2 font-semibold">
+      {
+        links.map(({ title, path }) => (
+          <li>
+            <a
+              href={path}
+              class="hover:text-black dark:hover:text-white"
+              target={path.startsWith('/') ? undefined : '_blank'}
+              rel={path.startsWith('/') ? undefined : 'noopener noreferrer'}
+            >
+              {title}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</BaseLayout>
