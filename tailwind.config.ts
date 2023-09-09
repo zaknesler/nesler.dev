@@ -1,35 +1,27 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-const {
-  default: flattenColorPalette,
-} = require('tailwindcss/lib/util/flattenColorPalette')
-const plugin = require('tailwindcss/plugin')
+import type { Config } from 'tailwindcss';
+import defaultTheme from 'tailwindcss/defaultTheme';
+import colors from 'tailwindcss/colors';
+import typography from '@tailwindcss/typography';
+import type { PluginUtils } from 'tailwindcss/types/config';
+import plugin from 'tailwindcss/plugin';
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,mdx}'],
-  darkMode: 'media',
+export default {
+  content: ['./src/**/*.{astro,html,md,mdx,ts}'],
   theme: {
     extend: {
-      colors: {
-        brand: {
-          400: '#2f9fed',
-          500: '#2f4fed',
-          600: '#1732b8',
-        },
-      },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter Variable', ...defaultTheme.fontFamily.sans],
       },
-      boxShadow: theme => ({
-        outline: `0 0 0 3px ${theme('colors.brand.500')}60`,
-      }),
-      spacing: {
+      colors: {
+        brand: colors.blue,
+      },
+      maxWidth: {
         sidebar: '10rem',
       },
-      typography: theme => ({
+      typography: ({ theme }: PluginUtils) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.800'),
             strong: {
               fontWeight: theme('fontWeight.semibold'),
             },
@@ -42,12 +34,17 @@ module.exports = {
             },
             p: {
               a: {
-                color: theme('colors.gray.800'),
-                fontWeight: theme('fontWeight.medium'),
+                color: theme('colors.gray.900'),
+                fontWeight: theme('fontWeight.semibold'),
               },
             },
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
+              color: theme('colors.gray.900'),
+            },
+            hr: {
+              borderTopWidth: '0.125rem',
+              borderColor: theme('colors.gray.200'),
             },
             ul: {
               li: {
@@ -65,13 +62,13 @@ module.exports = {
         },
         dark: {
           css: {
-            color: theme('colors.gray.400'),
+            color: theme('colors.gray.100'),
             strong: {
               fontWeight: theme('fontWeight.semibold'),
-              color: theme('colors.gray.200'),
+              color: theme('colors.gray.100'),
             },
             a: {
-              color: theme('colors.gray.200'),
+              color: theme('colors.gray.100'),
               fontWeight: theme('fontWeight.semibold'),
               '&:hover': {
                 color: theme('colors.white'),
@@ -79,8 +76,8 @@ module.exports = {
             },
             p: {
               a: {
-                color: theme('colors.gray.200'),
-                fontWeight: theme('fontWeight.medium'),
+                color: theme('colors.gray.100'),
+                fontWeight: theme('fontWeight.semibold'),
                 '&:hover': {
                   color: theme('colors.white'),
                 },
@@ -88,9 +85,12 @@ module.exports = {
             },
             'h1, h2, h3, h4, h5, h6': {
               fontWeight: theme('fontWeight.semibold'),
-              color: theme('colors.gray.200'),
+              color: theme('colors.gray.100'),
             },
-
+            hr: {
+              borderTopWidth: '0.125rem',
+              borderColor: theme('colors.gray.600'),
+            },
             ul: {
               li: {
                 p: {
@@ -108,24 +108,20 @@ module.exports = {
       }),
     },
   },
-  variants: {
-    extend: {
-      typography: ['dark'],
-      display: ['group-hover'],
-    },
-  },
   plugins: [
-    require('@tailwindcss/typography'),
-    plugin(({ matchUtilities, theme }) => {
-      matchUtilities(
-        {
-          highlight: value => ({ boxShadow: `inset 0 1px 0 0 ${value}` }),
+    typography(),
+    plugin(({ addBase, theme }) => {
+      addBase({
+        hr: {
+          borderTopWidth: '0.125rem',
+          borderColor: theme('colors.gray.200'),
         },
-        {
-          values: flattenColorPalette(theme('backgroundColor')),
-          type: 'color',
+        '@media (prefers-color-scheme: dark)': {
+          hr: {
+            borderColor: theme('colors.gray.600'),
+          },
         },
-      )
+      });
     }),
   ],
-}
+} satisfies Config;

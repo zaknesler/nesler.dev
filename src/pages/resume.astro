@@ -1,0 +1,221 @@
+---
+import dayjs from 'dayjs'
+import data from '../../public/resume.json'
+import BaseLayout from '@/layouts/base.astro'
+import ListGroup from '@/components/list-group.astro'
+import GitHubIcon from '@/assets/github.svg'
+import LinkedInIcon from '@/assets/linkedin.svg'
+
+const socialLinks = [
+  { label: 'GitHub', icon: GitHubIcon, url: data.urls.github },
+  { label: 'LinkedIn', icon: LinkedInIcon, url: data.urls.linkedin },
+] as const
+---
+
+<BaseLayout title="Résumé">
+  <div class="mx-auto max-w-4xl flex flex-col gap-12">
+    <a
+      href="/"
+      class="flex items-center hover:text-black dark:hover:text-gray-100"
+    >
+      &lt;- Home
+    </a>
+
+    <section
+      class="flex flex-col gap-4 items-center justify-between text-center sm:flex-row sm:text-left"
+    >
+      <div class="flex flex-col gap-2">
+        <div class="flex flex-col">
+          <h3 class="text-xl font-semibold text-black dark:text-white">
+            {data.name}
+          </h3>
+          <h4
+            class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-500"
+          >
+            {data.title}
+          </h4>
+        </div>
+
+        <div
+          class="mx-auto h-1 w-24 bg-gradient-to-r from-brand-700 to-brand-500 sm:mx-0"
+        >
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-2 font-medium sm:text-right">
+        <div class="flex items-center gap-4">
+          {
+            socialLinks.map(({ label, icon, url }) => (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={label}
+              >
+                <img src={icon.src} class="w-6 h-6" />
+              </a>
+            ))
+          }
+          <span>@zaknesler</span>
+        </div>
+
+        <div>
+          <a
+            class="hover:text-black dark:hover:text-gray-100"
+            href={`mailto:${data.email
+              .replace('[at]', '%40')
+              .replace('[dot]', '%2E')}`}
+            set:html={data.email
+              .replace('[at]', '&#64;')
+              .replace('[dot]', '&#46;')}
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col gap-1">
+        <h3 class="font-semibold text-black dark:text-gray-100">
+          Professional Qualities
+        </h3>
+        <hr />
+      </div>
+
+      <div class="mt-4">
+        <ListGroup items={data.qualities} />
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col gap-1">
+        <div class="flex items-center justify-between">
+          <h3 class="font-semibold text-black dark:text-gray-100">Skills</h3>
+          <div class="text-sm text-gray-500 dark:text-gray-400">
+            Ready and willing to learn anything!
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <div class="mt-4 space-y-4">
+        {
+          Object.entries(data.skills).map(([name, items]) => (
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-5">
+              <div class="col-span-1 -mb-3 font-medium text-black dark:text-gray-100 md:mb-0">
+                {name.charAt(0).toUpperCase() + name.slice(1)}
+              </div>
+              <div class="col-span-4">{items.join(', ')}</div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col gap-1">
+        <h3 class="font-semibold text-black dark:text-gray-100">Experience</h3>
+        <hr />
+      </div>
+
+      <div class="mt-4 space-y-8">
+        {
+          data.experience.map((item) => (
+            <div class="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+              <div class="col-span-1 flex flex-row flex-wrap items-start justify-between md:flex-col md:items-start md:justify-start gap-3">
+                <div class="flex flex-col gap-3">
+                  <div class="font-medium leading-5 text-black dark:text-gray-100">
+                    {item.position}
+                  </div>
+
+                  <div class="flex flex-col gap-0.5">
+                    <div class="text-sm text-gray-500">{item.company}</div>
+                    <div class="text-sm text-gray-500">{item.location}</div>
+                  </div>
+                </div>
+
+                <div class="flex-shrink-0 flex items-center text-xs font-medium text-brand-700 dark:text-brand-200">
+                  <div class="rounded-md bg-brand-50 px-2 py-1 dark:bg-brand-800 dark:bg-opacity-50">
+                    {dayjs(item.date_start).format('MMM YYYY')} -{' '}
+                    {item.date_end
+                      ? dayjs(item.date_end).format('MMM YYYY')
+                      : 'Present'}
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col col-span-2 lg:col-span-3">
+                <ListGroup items={item.description_list} />
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col gap-1">
+        <h3 class="font-semibold text-black dark:text-gray-100">Education</h3>
+        <hr />
+      </div>
+
+      {
+        data.education.map((item) => (
+          <div class="mt-4 grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
+            <div class="col-span-1 flex flex-row flex-wrap items-start justify-between md:flex-col md:items-start md:justify-start gap-3">
+              <div class="flex flex-col gap-3">
+                <div class="font-medium leading-5 text-black dark:text-gray-100">
+                  {item.school}
+                </div>
+
+                <div class="flex flex-col gap-0.5">
+                  <div class="text-sm text-gray-500">{item.location}</div>
+                  <div class="text-sm text-gray-500">
+                    {item.year_start} &ndash; {item.year_end}
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-shrink-0 flex gap-2 items-center text-xs font-medium text-brand-700 dark:text-brand-200">
+                <div class="rounded-md bg-brand-50 px-2 py-1 dark:bg-brand-800 dark:bg-opacity-50">
+                  GPA: {item.gpa}
+                </div>
+                {item.gpa_major && (
+                  <div class="rounded-md bg-brand-50 px-2 py-1 dark:bg-brand-800 dark:bg-opacity-50">
+                    Major GPA: {item.gpa_major}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            <div class="col-span-2 flex flex-col gap-4 lg:col-span-3">
+              <div>{item.description}</div>
+
+              <div class="text-sm flex flex-col gap-2">
+                <div class="font-semibold text-black dark:text-gray-100">
+                  Relevant Courses & Skills
+                </div>
+
+                <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
+                  {item.courses && (
+                    <>
+                      <ListGroup
+                        items={item.courses.slice(
+                          0,
+                          item.courses.length / 2 + 1
+                        )}
+                      />
+
+                      <ListGroup
+                        items={item.courses.slice(item.courses.length / 2 + 1)}
+                      />
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </section>
+  </div>
+</BaseLayout>

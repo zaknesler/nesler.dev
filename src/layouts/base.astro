@@ -1,0 +1,23 @@
+---
+import Meta from '@/components/meta.astro'
+import '@fontsource-variable/inter'
+
+type Props = { title?: string }
+const { title } = Astro.props as Props
+---
+
+<html lang="en" class="h-full">
+  <head>
+    <Meta />
+    <title>{title ? `${title} - Zak Nesler` : 'Zak Nesler'}</title>
+  </head>
+  <body
+    class="selection:bg-brand-500/20 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800 text-gray-700 dark:text-gray-300 h-full overflow-hidden"
+  >
+    <div
+      class="absolute inset-4 bg-white dark:bg-gray-950 p-4 md:p-8 rounded-xl shadow-xl overflow-y-auto"
+    >
+      <slot />
+    </div>
+  </body>
+</html>

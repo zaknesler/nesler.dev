@@ -1,0 +1,57 @@
+---
+type Props = {
+  title?: string
+  description?: string
+}
+
+const domain = 'nesler.dev'
+const pinterestVerify = 'ff1f90db2750254f6843a167a5e5efb8'
+const keywords = [
+  'zak nesler',
+  'zak',
+  'nesler',
+  'zaknes',
+  'zaknesler',
+  'zachary nesler',
+]
+
+const {
+  title = 'Zak Nesler',
+  description = 'Full-stack developer from Philadelphia with a passion for clean design and tidy code.',
+} = Astro.props as Props
+---
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="author" content={title} />
+<meta name="robots" content="index, follow" />
+<meta name="msapplication-starturl" content="/" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="application-name" content={title} />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content={title} />
+<meta
+  name="apple-mobile-web-app-status-bar-style"
+  content="black-translucent"
+/>
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords.join(',')} />
+<meta property="og:title" content={title} />
+<meta property="og:site_name" content={title} />
+<meta property="og:url" content={`https://${domain}`} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:image" content={`https://${domain}/banner.png`} />
+<meta name="p:domain_verify" content={pinterestVerify} />
+<link rel="icon" href="/favicon.png" />
+<link rel="icon" type="image/png" sizes="128x128" href="/favicon.png" />
+<link
+  rel="apple-touch-icon"
+  type="image/png"
+  sizes="128x128"
+  href="/favicon.png"
+/>
+<link rel="manifest" href="/manifest.json" />
+<script defer data-domain={domain} src="https://analytics.zak.bz/js/script.js"
+></script>

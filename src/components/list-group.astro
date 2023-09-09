@@ -1,0 +1,11 @@
+---
+type Props = {
+  items: string[]
+}
+
+const { items } = Astro.props as Props
+---
+
+<ul class="ml-6 list-disc flex flex-col gap-2">
+  {items.map((item) => <li>{item}</li>)}
+</ul>
