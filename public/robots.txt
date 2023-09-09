@@ -1,2 +1,4 @@
-User-Agent: *
-Disallow: /resume.pdf
+User-agent: *
+Allow: /
+
+Sitemap: https://nesler.dev/sitemap-index.xml

@@ -4,8 +4,12 @@ type Props = {
   description?: string
 }
 
+const {
+  title = 'Zak Nesler',
+  description = 'Full-stack developer from Philadelphia with a passion for clean design and tidy code.',
+} = Astro.props as Props
+
 const domain = 'nesler.dev'
-const pinterestVerify = 'ff1f90db2750254f6843a167a5e5efb8'
 const keywords = [
   'zak nesler',
   'zak',
@@ -14,11 +18,6 @@ const keywords = [
   'zaknesler',
   'zachary nesler',
 ]
-
-const {
-  title = 'Zak Nesler',
-  description = 'Full-stack developer from Philadelphia with a passion for clean design and tidy code.',
-} = Astro.props as Props
 ---
 
 <meta charset="utf-8" />
@@ -43,7 +42,7 @@ const {
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:image" content={`https://${domain}/banner.png`} />
-<meta name="p:domain_verify" content={pinterestVerify} />
+<meta name="p:domain_verify" content="ff1f90db2750254f6843a167a5e5efb8" />
 <link rel="icon" href="/favicon.png" />
 <link rel="icon" type="image/png" sizes="128x128" href="/favicon.png" />
 <link
@@ -53,5 +52,6 @@ const {
   href="/favicon.png"
 />
 <link rel="manifest" href="/manifest.json" />
+<link rel="sitemap" href="/sitemap-index.xml" />
 <script defer data-domain={domain} src="https://analytics.zak.bz/js/script.js"
 ></script>
