@@ -36,7 +36,7 @@
 			"date_end": null,
 			"description": "Covers the entire development process from design to implementation and testing, and bug fixes. Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs.",
 			"description_list": [
-				"Covers entire development process from design to implementation and testing, and bug fixes",
+				"Covers the entire development process from design to implementation and testing, and bug fixes",
 				"Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs"
 			]
 		},
@@ -46,9 +46,9 @@
 			"position": "Web Developer Intern",
 			"date_start": "2021-11",
 			"date_end": "2022-06",
-			"description": "Implemented communication logging feature covering entire stack with great feedback from end users. Improved UI/UX, loading times, and optimized SQL stored procedures. Utilized Express.js, Angular, and SQL Server.",
+			"description": "Implemented communication logging feature covering the entire stack with great feedback from end users. Improved UI/UX, loading times, and optimized SQL stored procedures. Utilized Express.js, Angular, and SQL Server.",
 			"description_list": [
-				"Implemented communication logging feature covering entire stack with great feedback from end users",
+				"Implemented communication logging feature covering the entire stack with great feedback from end users",
 				"Improved UI/UX, loading times, and optimized SQL stored procedures",
 				"Utilized Express.js, Angular, and SQL Server"
 			]
