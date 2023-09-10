@@ -16,7 +16,13 @@
 		"Enjoys writing self-documenting, tested, and tidy code"
 	],
 	"skills": {
-		"technologies": ["Next.js/React", "tRPC", "Tailwind CSS", "MongoDB"],
+		"technologies": [
+			"Next.js/React",
+			"tRPC",
+			"Tailwind CSS",
+			"MongoDB",
+			"Astro"
+		],
 		"languages": ["TypeScript", "Python", "Go", "Rust", "SQL"],
 		"software": ["Docker", "Git", "Linux", "Figma", "Photoshop", "Blender"],
 		"services": [
