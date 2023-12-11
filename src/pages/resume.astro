@@ -13,12 +13,26 @@ const socialLinks = [
 ---
 
 <BaseLayout title="Résumé">
-  <div class="mx-auto max-w-4xl flex flex-col gap-12">
+  <div class="max-w-4xl flex flex-col gap-8">
     <a
       href="/"
-      class="flex items-center hover:text-black dark:hover:text-gray-100"
+      class="inline-flex items-center gap-2 hover:text-black dark:hover:text-gray-100 hover:underline"
     >
-      &lt;- Home
+      <svg
+        class="w-4 h-4 text-gray-500 dark:text-gray-400"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75"></path>
+      </svg>
+
+       Home
     </a>
 
     <section

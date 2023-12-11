@@ -11,27 +11,27 @@
 		"lastfm": "https://last.fm/user/zaknesler"
 	},
 	"qualities": [
-		"Good eye for detail and design",
+		"Keen eye for detail and design",
 		"Loves running into problems, but loves solving them even more",
 		"Enjoys writing self-documenting, tested, and tidy code"
 	],
 	"skills": {
 		"technologies": [
 			"Next.js/React",
-			"tRPC",
 			"Tailwind CSS",
+			"tRPC",
 			"MongoDB",
 			"Astro",
 			"Svelte"
 		],
-		"languages": ["TypeScript", "Python", "Go", "Rust", "SQL"],
+		"languages": ["TypeScript", "Rust", "Go"],
 		"software": ["Docker", "Git", "*nix", "Figma", "Photoshop", "Blender"],
 		"services": [
 			"GitHub",
-			"Azure DevOps",
-			"Vercel",
 			"DigitalOcean",
 			"Cloudflare",
+			"Vercel",
+			"Azure",
 			"AWS"
 		]
 	},
