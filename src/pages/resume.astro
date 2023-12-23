@@ -13,10 +13,10 @@ const socialLinks = [
 ---
 
 <BaseLayout title="Résumé">
-  <div class="max-w-4xl flex flex-col gap-8">
+  <div class="max-w-4xl print:max-w-none flex flex-col gap-8">
     <a
       href="/"
-      class="inline-flex items-center gap-2 hover:text-black dark:hover:text-gray-100 hover:underline"
+      class="inline-flex items-center gap-2 hover:text-black dark:hover:text-gray-100 hover:underline print:hidden"
     >
       <svg
         class="w-4 h-4 text-gray-500 dark:text-gray-400"
@@ -153,7 +153,7 @@ const socialLinks = [
 
                 <div class="flex-shrink-0 flex items-center text-xs font-medium text-brand-700 dark:text-brand-200">
                   <div class="rounded-md bg-brand-50 px-2 py-1 dark:bg-brand-800 dark:bg-opacity-50">
-                    {dayjs(item.date_start).format('MMM YYYY')} -{' '}
+                    {dayjs(item.date_start).format('MMM YYYY')} &ndash;{' '}
                     {item.date_end
                       ? dayjs(item.date_end).format('MMM YYYY')
                       : 'Present'}

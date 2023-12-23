@@ -1,6 +1,7 @@
 {
 	"name": "Zak Nesler",
 	"title": "Full-Stack Engineer",
+	"location": "Philadelphia, PA, USA",
 	"email": "zak[at]nesler[dot]dev",
 	"website": "https://nesler.dev",
 	"username": "zaknesler",
@@ -11,21 +12,20 @@
 		"lastfm": "https://last.fm/user/zaknesler"
 	},
 	"qualities": [
-		"Keen eye for detail and design",
+		"A keen eye for detail and design",
 		"Loves running into problems, but loves solving them even more",
 		"Enjoys writing self-documenting, tested, and tidy code"
 	],
 	"skills": {
+		"languages": ["TypeScript", "Rust", "Go"],
 		"technologies": [
 			"Next.js/React",
 			"Tailwind CSS",
 			"tRPC",
 			"MongoDB",
-			"Astro",
-			"Svelte"
+			"Astro"
 		],
-		"languages": ["TypeScript", "Rust", "Go"],
-		"software": ["Docker", "Git", "*nix", "Figma", "Photoshop", "Blender"],
+		"software": ["Docker", "Git", "Linux", "Figma", "Photoshop", "Blender"],
 		"services": [
 			"GitHub",
 			"DigitalOcean",
@@ -42,10 +42,11 @@
 			"position": "Full-Stack Engineer",
 			"date_start": "2022-07",
 			"date_end": null,
-			"description": "Covers the entire development process from design to implementation and testing, and bug fixes. Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs.",
 			"description_list": [
-				"Covers the entire development process from design to implementation and testing, and bug fixes",
-				"Utilizes microservice architecture with the MERN stack, Next.js/Typescript, and 3rd party APIs"
+				"Covers the entire development process from design to implementation and testing with a small team of developers",
+				"Designed and developed a customer-facing insurance dashboard with Next.js, with microservices to interface with 3rd party APIs and insurance/dealership systems",
+				"Collaborated with marketing and business teams to design and implement new features to increase user engagement and improve user experience",
+				"Utilizes microservice architecture with MERN stack, Next.js/Typescript, and Azure DevOps for CI and deployment"
 			]
 		},
 		{
@@ -54,7 +55,6 @@
 			"position": "Web Developer Intern",
 			"date_start": "2021-11",
 			"date_end": "2022-06",
-			"description": "Implemented communication logging feature covering the entire stack with great feedback from end users. Improved UI/UX, loading times, and optimized SQL stored procedures. Utilized Express.js, Angular, and SQL Server.",
 			"description_list": [
 				"Implemented communication logging feature covering the entire stack with great feedback from end users",
 				"Improved UI/UX, loading times, and optimized SQL stored procedures",
@@ -67,7 +67,6 @@
 			"position": "Project Manager & Developer",
 			"date_start": "2021-11",
 			"date_end": "2022-05",
-			"description": "Designed and implemented an admin interface to manage warehouse employees & permissions. Managed a team of 3 developers to design and implement features for an existing web app. Utilized .NET Core, React, and SQL Server.",
 			"description_list": [
 				"Designed and implemented an admin interface to manage warehouse employees & permissions",
 				"Managed a team of 3 developers to design and implement features for an existing web application",
