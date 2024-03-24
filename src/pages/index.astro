@@ -3,63 +3,65 @@ import BaseLayout from '@/layouts/base.astro'
 import data from '../../public/resume.json'
 
 const links = [
-  { title: 'Résumé', path: '/resume' },
-  { title: 'GitHub', path: data.urls.github },
-  { title: 'Art', path: data.urls.artwork },
-  { title: 'Last.fm', path: data.urls.lastfm },
+	{ title: 'Résumé', path: '/resume' },
+	{ title: 'GitHub', path: data.urls.github },
+	{ title: 'Art', path: data.urls.artwork },
+	{ title: 'Last.fm', path: data.urls.lastfm },
 ] as const
 ---
 
-<BaseLayout>
-  <main class="flex flex-col gap-4">
-    <div class="flex flex-col">
-      <h3 class="text-2xl font-bold text-black dark:text-white">
-        {data.name}
-      </h3>
-      <h4
-        class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-500"
-      >
-        {data.title}
-      </h4>
-    </div>
+<BaseLayout
+	description="Full-stack engineer based in Philadelphia with a passion for clean design and tidy code."
+>
+	<main class="flex flex-col gap-4">
+		<div class="flex flex-col">
+			<h3 class="text-2xl font-bold text-black dark:text-white">
+				{data.name}
+			</h3>
+			<h4
+				class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-500"
+			>
+				{data.title}
+			</h4>
+		</div>
 
-    <div
-      class="flex-shrink-0 w-24 h-1 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
-    >
-    </div>
+		<div
+			class="flex-shrink-0 w-24 h-1 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
+		>
+		</div>
 
-    <ul class="flex flex-col gap-2 font-semibold">
-      {
-        links.map(({ title, path }) => (
-          <li>
-            <a
-              href={path}
-              class="inline-flex items-center gap-2 hover:text-black dark:hover:text-white hover:underline"
-              target={path.startsWith('/') ? undefined : '_blank'}
-              rel={path.startsWith('/') ? undefined : 'noopener noreferrer'}
-            >
-              {title}
+		<ul class="flex flex-col gap-2 font-semibold">
+			{
+				links.map(({ title, path }) => (
+					<li>
+						<a
+							href={path}
+							class="inline-flex items-center gap-2 hover:text-black dark:hover:text-white hover:underline"
+							target={path.startsWith('/') ? undefined : '_blank'}
+							rel={path.startsWith('/') ? undefined : 'noopener noreferrer'}
+						>
+							{title}
 
-              {!path.startsWith('/') && (
-                <svg
-                  class="w-4 h-4 text-gray-500 dark:text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-                  />
-                </svg>
-              )}
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </main>
+							{!path.startsWith('/') && (
+								<svg
+									class="w-4 h-4 text-gray-500 dark:text-gray-400"
+									xmlns="http://www.w3.org/2000/svg"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke-width="1.5"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+									/>
+								</svg>
+							)}
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</main>
 </BaseLayout>

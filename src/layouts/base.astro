@@ -1,26 +1,83 @@
 ---
-import Meta from '@/components/meta.astro'
 import '@fontsource-variable/inter'
+import { SEO, type SEOProps } from 'astro-seo'
 
-type Props = { title?: string }
-const { title } = Astro.props as Props
+type Props = {
+	title?: string
+	description?: string
+	openGraph?: SEOProps['openGraph']
+}
+
+const { title, description, openGraph } = Astro.props as Props
+
+const favicons = [
+	{ rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
+	{
+		rel: 'icon',
+		type: 'image/png',
+		sizes: '128x128',
+		href: '/favicon-128.png',
+	},
+	{ rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96.png' },
+	{ rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48.png' },
+	{ rel: 'apple-touch-icon', type: 'image/svg', href: '/favicon.svg' },
+	{
+		rel: 'apple-touch-icon',
+		type: 'image/png',
+		sizes: '128x128',
+		href: '/favicon-128.png',
+	},
+	{
+		rel: 'apple-touch-icon',
+		type: 'image/png',
+		sizes: '96x96',
+		href: '/favicon-96.png',
+	},
+	{
+		rel: 'apple-touch-icon',
+		type: 'image/png',
+		sizes: '48x48',
+		href: '/favicon-48.png',
+	},
+]
 ---
 
 <html lang="en" class="h-full">
-  <head>
-    <Meta />
-    <title>{title ? `${title} - Zak Nesler` : 'Zak Nesler'}</title>
-  </head>
-  <body
-    class="selection:bg-brand-500/20 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300"
-  >
-    <div
-      class="w-full h-4 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
-    >
-    </div>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <div class="p-8 lg:p-16">
-      <slot />
-    </div>
-  </body>
+		<SEO
+			{title}
+			{description}
+			{openGraph}
+			titleDefault="Zak Nesler"
+			titleTemplate="%s — Zak Nesler"
+			charset="utf-8"
+			twitter={{ creator: '@zaknesler' }}
+			extend={{
+				link: [
+					...favicons,
+					{ rel: 'manifest', href: '/manifest.json' },
+					{ rel: 'sitemap', href: '/sitemap-index.xml' },
+				],
+			}}
+		/>
+
+		<script defer data-domain="nesler.dev" src="https://a.zak.fm/js/script.js"
+		></script>
+	</head>
 </html>
+
+<body
+	class="selection:bg-brand-500/20 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300"
+>
+	<div
+		class="w-full h-4 bg-gradient-to-r from-brand-700 to-brand-500 dark:from-brand-900 dark:to-brand-800"
+	>
+	</div>
+
+	<div class="p-8 lg:p-16">
+		<slot />
+	</div>
+</body>
