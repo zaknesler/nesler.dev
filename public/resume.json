@@ -23,17 +23,11 @@
 			"Tailwind CSS",
 			"tRPC",
 			"MongoDB",
-			"Astro"
+			"Astro",
+			"Solid"
 		],
 		"software": ["Docker", "Git", "Linear", "Figma", "Photoshop", "Blender"],
-		"services": [
-			"GitHub",
-			"DigitalOcean",
-			"Cloudflare",
-			"Vercel",
-			"Azure",
-			"AWS"
-		]
+		"services": ["DigitalOcean", "Cloudflare", "Vercel", "Azure", "AWS"]
 	},
 	"experience": [
 		{
