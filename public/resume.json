@@ -27,7 +27,7 @@
 			"Solid"
 		],
 		"software": ["Docker", "Git", "Linear", "Figma", "Photoshop", "Blender"],
-		"services": ["DigitalOcean", "Cloudflare", "Vercel", "Azure", "AWS"]
+		"services": ["Cloudflare", "DigitalOcean", "Azure"]
 	},
 	"experience": [
 		{
