@@ -1,13 +1,13 @@
 ---
-import BaseLayout from '@/layouts/base.astro'
-import data from '../../public/resume.json'
+import BaseLayout from '@/layouts/base.astro';
+import data from '../../public/resume.json';
 
 const links = [
-	{ title: 'Résumé', path: '/resume' },
-	{ title: 'Artwork', path: data.urls.artwork },
-	{ title: 'GitHub', path: data.urls.github },
-	{ title: 'Last.fm', path: data.urls.lastfm },
-] as const
+  { title: 'Résumé', path: '/resume' },
+  { title: 'Gallery', path: data.urls.gallery },
+  { title: 'GitHub', path: data.urls.github },
+  { title: 'Last.fm', path: data.urls.lastfm },
+] as const;
 ---
 
 <BaseLayout

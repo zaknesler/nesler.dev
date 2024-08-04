@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss';
-import defaultTheme from 'tailwindcss/defaultTheme';
 import colors from 'tailwindcss/colors';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.{astro,html,mdx,ts}'],
@@ -11,6 +11,7 @@ export default {
       },
       colors: {
         brand: colors.blue,
+        gray: colors.slate,
       },
       maxWidth: {
         sidebar: '10rem',
