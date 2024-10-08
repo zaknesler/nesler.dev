@@ -13,18 +13,18 @@
     "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^11.0.4",
-    "@astrojs/sitemap": "^3.1.6",
-    "@astrojs/tailwind": "^5.1.0",
-    "@biomejs/biome": "1.8.3",
-    "@fontsource-variable/inter": "^5.0.20",
-    "@total-typescript/ts-reset": "^0.5.1",
+    "@astrojs/cloudflare": "^11.1.0",
+    "@astrojs/sitemap": "^3.2.0",
+    "@astrojs/tailwind": "^5.1.1",
+    "@biomejs/biome": "1.9.3",
+    "@fontsource-variable/inter": "^5.1.0",
+    "@total-typescript/ts-reset": "^0.6.1",
     "astro-seo": "^0.8.4",
-    "astro": "^4.13.1",
-    "dayjs": "^1.11.12",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.3.5"
+    "astro": "^4.15.12",
+    "dayjs": "^1.11.13",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8"
   },
   "packageManager": "bun@1.1.21"
 }

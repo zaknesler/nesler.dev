@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /resume*
 
 Sitemap: https://nesler.dev/sitemap-index.xml
