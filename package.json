@@ -20,10 +20,10 @@
     "@fontsource-variable/inter": "^5.1.0",
     "@total-typescript/ts-reset": "^0.6.1",
     "astro-seo": "^0.8.4",
-    "astro": "^4.16.10",
+    "astro": "^4.16.14",
     "dayjs": "^1.11.13",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwindcss": "^3.4.14",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.15",
     "vite": "^5.4.11"
   },
   "packageManager": "bun@1.1.21"
