@@ -26,7 +26,7 @@
       "quoteProperties": "asNeeded",
       "quoteStyle": "single",
       "semicolons": "always",
-      "trailingCommas": "all"
+      "trailingComma": "all"
     }
   },
   "json": {
