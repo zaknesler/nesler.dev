@@ -19,10 +19,10 @@ const socialLinks = [
 	<div class="max-w-4xl print:max-w-none flex flex-col gap-8">
 		<a
 			href="/"
-			class="self-start inline-flex items-center gap-2 hover:text-black dark:hover:text-slate-100 hover:underline print:hidden"
+			class="self-start inline-flex items-center gap-2 hover:text-black dark:hover:text-gray-100 hover:underline print:hidden"
 		>
 			<svg
-				class="w-4 h-4 text-slate-500 dark:text-slate-400"
+				class="w-4 h-4 text-gray-500 dark:text-gray-400"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
@@ -47,7 +47,7 @@ const socialLinks = [
 						{data.name}
 					</h3>
 					<h4
-						class="text-xs font-semibold uppercase tracking-wide text-slate-600 dark:text-slate-500"
+						class="text-xs font-semibold uppercase tracking-wide text-gray-600 dark:text-gray-500"
 					>
 						{data.title}
 					</h4>
@@ -76,16 +76,16 @@ const socialLinks = [
 					<span>@zaknesler</span>
 				</div>
 
-				<div class="text-slate-500 text-sm" set:html={data.email} />
+				<div class="text-gray-500 text-sm" set:html={data.email} />
 			</div>
 		</section>
 
 		<section>
 			<div class="flex flex-col gap-1">
-				<h3 class="font-semibold text-black dark:text-slate-100">
+				<h3 class="font-semibold text-black dark:text-gray-100">
 					Professional Qualities
 				</h3>
-				<hr class="border-slate-300 dark:border-slate-700" />
+				<hr class="border-gray-300 dark:border-gray-700" />
 			</div>
 
 			<div class="mt-4">
@@ -96,19 +96,19 @@ const socialLinks = [
 		<section>
 			<div class="flex flex-col gap-1">
 				<div class="flex items-center justify-between">
-					<h3 class="font-semibold text-black dark:text-slate-100">Skills</h3>
-					<div class="text-sm text-slate-500 dark:text-slate-400">
+					<h3 class="font-semibold text-black dark:text-gray-100">Skills</h3>
+					<div class="text-sm text-gray-500 dark:text-gray-400">
 						Ready and willing to learn anything!
 					</div>
 				</div>
-				<hr class="border-slate-300 dark:border-slate-700" />
+				<hr class="border-gray-300 dark:border-gray-700" />
 			</div>
 
 			<div class="mt-4 space-y-4">
 				{
 					Object.entries(data.skills).map(([name, items]) => (
 						<div class="grid grid-cols-1 gap-4 md:grid-cols-5">
-							<div class="col-span-1 -mb-3 font-medium text-black dark:text-slate-100 md:mb-0">
+							<div class="col-span-1 -mb-3 font-medium text-black dark:text-gray-100 md:mb-0">
 								{name.charAt(0).toUpperCase() + name.slice(1)}
 							</div>
 							<div class="col-span-4">{items.join(', ')}</div>
@@ -120,8 +120,8 @@ const socialLinks = [
 
 		<section>
 			<div class="flex flex-col gap-1">
-				<h3 class="font-semibold text-black dark:text-slate-100">Experience</h3>
-				<hr class="border-slate-300 dark:border-slate-700" />
+				<h3 class="font-semibold text-black dark:text-gray-100">Experience</h3>
+				<hr class="border-gray-300 dark:border-gray-700" />
 			</div>
 
 			<div class="mt-4 space-y-8">
@@ -130,15 +130,15 @@ const socialLinks = [
 						<div class="grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
 							<div class="col-span-1 flex flex-row flex-wrap items-start justify-between md:flex-col md:items-start md:justify-start gap-3">
 								<div class="flex flex-col gap-3">
-									<div class="font-medium leading-5 text-black dark:text-slate-100">
+									<div class="font-medium leading-5 text-black dark:text-gray-100">
 										{item.position}
 									</div>
 
 									<div class="flex flex-col gap-0.5">
-										<div class="text-sm text-slate-500 dark:text-slate-400">
+										<div class="text-sm text-gray-500 dark:text-gray-400">
 											{item.company}
 										</div>
-										<div class="text-sm text-slate-500 dark:text-slate-400">
+										<div class="text-sm text-gray-500 dark:text-gray-400">
 											{item.location}
 										</div>
 									</div>
@@ -165,8 +165,8 @@ const socialLinks = [
 
 		<section>
 			<div class="flex flex-col gap-1">
-				<h3 class="font-semibold text-black dark:text-slate-100">Education</h3>
-				<hr class="border-slate-300 dark:border-slate-700" />
+				<h3 class="font-semibold text-black dark:text-gray-100">Education</h3>
+				<hr class="border-gray-300 dark:border-gray-700" />
 			</div>
 
 			{
@@ -174,15 +174,15 @@ const socialLinks = [
 					<div class="mt-4 grid gap-4 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
 						<div class="col-span-1 flex flex-row flex-wrap items-start justify-between md:flex-col md:items-start md:justify-start gap-3">
 							<div class="flex flex-col gap-3">
-								<div class="font-medium leading-5 text-black dark:text-slate-100">
+								<div class="font-medium leading-5 text-black dark:text-gray-100">
 									{item.school}
 								</div>
 
 								<div class="flex flex-col gap-0.5">
-									<div class="text-sm text-slate-500 dark:text-slate-400">
+									<div class="text-sm text-gray-500 dark:text-gray-400">
 										{item.location}
 									</div>
-									<div class="text-sm text-slate-500 dark:text-slate-400">
+									<div class="text-sm text-gray-500 dark:text-gray-400">
 										{item.year_start} &ndash; {item.year_end}
 									</div>
 								</div>
@@ -204,7 +204,7 @@ const socialLinks = [
 							<div>{item.description}</div>
 
 							<div class="text-sm flex flex-col gap-2">
-								<div class="font-semibold text-black dark:text-slate-100">
+								<div class="font-semibold text-black dark:text-gray-100">
 									Relevant Courses & Skills
 								</div>
 

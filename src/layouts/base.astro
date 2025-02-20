@@ -13,33 +13,13 @@ const { title, description, openGraph } = Astro.props as Props;
 
 const favicons = [
   { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
-  {
-    rel: 'icon',
-    type: 'image/png',
-    sizes: '128x128',
-    href: '/favicon-128.png',
-  },
+  { rel: 'icon', type: 'image/png', sizes: '128x128', href: '/favicon-128.png' },
   { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96.png' },
   { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48.png' },
   { rel: 'apple-touch-icon', type: 'image/svg', href: '/favicon.svg' },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '128x128',
-    href: '/favicon-128.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '96x96',
-    href: '/favicon-96.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '48x48',
-    href: '/favicon-48.png',
-  },
+  { rel: 'apple-touch-icon', type: 'image/png', sizes: '128x128', href: '/favicon-128.png' },
+  { rel: 'apple-touch-icon', type: 'image/png', sizes: '96x96', href: '/favicon-96.png' },
+  { rel: 'apple-touch-icon', type: 'image/png', sizes: '48x48', href: '/favicon-48.png' },
 ];
 ---
 
@@ -64,21 +44,14 @@ const favicons = [
 				],
 			}}
 		/>
-
-		<script defer data-domain="nesler.dev" src="https://a.zak.fm/js/script.js"
-		></script>
 	</head>
+
+	<body class="selection:bg-blue-500/20 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300 font-display">
+		<div class="w-full h-4 bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-900 dark:to-blue-800">
+		</div>
+
+		<div class="p-8 lg:p-16">
+			<slot />
+		</div>
+	</body>
 </html>
-
-<body
-	class="selection:bg-blue-500/20 bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 font-display"
->
-	<div
-		class="w-full h-4 bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-900 dark:to-blue-800"
-	>
-	</div>
-
-	<div class="p-8 lg:p-16">
-		<slot />
-	</div>
-</body>
