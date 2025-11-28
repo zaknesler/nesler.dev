@@ -1,97 +1,97 @@
 {
-	"name": "Zak Nesler",
-	"title": "Full-Stack Engineer",
-	"location": "Philadelphia, PA, USA",
-	"email": "zak at [this domain]",
-	"website": "https://nesler.dev",
-	"username": "zaknesler",
-	"urls": {
-		"gallery": "https://zaknesler.com",
-		"github": "https://github.com/zaknesler",
-		"linkedin": "https://linkedin.com/in/zaknesler",
-		"lastfm": "https://last.fm/user/zaknesler"
-	},
-	"qualities": [
-		"A keen eye for detail and design",
-		"Loves running into problems, but loves solving them even more",
-		"Enjoys writing self-documenting, tested, and tidy code"
-	],
-	"skills": {
-		"languages": ["TypeScript", "Rust", "Go"],
-		"technologies": [
-			"Next.js/React",
-			"Tailwind CSS",
-			"tRPC",
-			"MongoDB",
-			"Astro",
-			"Solid"
-		],
-		"software": ["Docker", "Git", "Linear", "Figma", "Photoshop", "Blender"],
-		"services": ["Cloudflare", "DigitalOcean", "Azure"]
-	},
-	"experience": [
-		{
-			"company": "itsWoop Technologies LLC",
-			"location": "Media, PA",
-			"position": "Full-Stack Engineer",
-			"date_start": "2022-07",
-			"date_end": null,
-			"description_list": [
-				"Covers the entire development process from design to implementation and testing with a small team of developers",
-				"Designed and developed a customer-facing insurance dashboard with Next.js, with microservices to interface with 3rd party APIs and insurance/dealership systems",
-				"Collaborated with marketing and business teams to design and implement new features to increase user engagement and improve user experience",
-				"Utilizes microservice architecture with MERN stack, Next.js/Typescript, and Azure DevOps for CI and deployment"
-			]
-		},
-		{
-			"company": "Computer Visionaries, Inc.",
-			"location": "Pittston, PA",
-			"position": "Web Developer Intern",
-			"date_start": "2021-11",
-			"date_end": "2022-06",
-			"description_list": [
-				"Implemented communication logging feature covering the entire stack with great feedback from end users",
-				"Improved UI/UX, loading times, and optimized SQL stored procedures",
-				"Utilized Express.js, Angular, and SQL Server"
-			]
-		},
-		{
-			"company": "Airline Hydraulics Corp.",
-			"location": "Bensalem, PA",
-			"position": "Project Manager & Developer",
-			"date_start": "2021-11",
-			"date_end": "2022-05",
-			"description_list": [
-				"Designed and implemented an admin interface to manage warehouse employees & permissions",
-				"Managed a team of 3 developers to design and implement features for an existing web application",
-				"Utilized .NET Core, React, and SQL Server"
-			]
-		}
-	],
-	"education": [
-		{
-			"school": "Wilkes University",
-			"location": "Wilkes-Barre, PA",
-			"year_start": 2018,
-			"year_end": 2022,
-			"gpa": 3.6,
-			"gpa_major": 3.7,
-			"description": "Graduated cum laude with a B.Sc. degree in Computer Science. One of two recipients of the Outstanding Senior Award in Computer Science.",
-			"courses": [
-				"Algorithms",
-				"Data Structures",
-				"Software Engineering",
-				"Web Development I & II",
-				"Computer Networks",
-				"Concurrent & Quantum Computing",
-				"Computer Architecture",
-				"Operating Systems",
-				"Theory of Computation",
-				"Principles of Prog. Languages",
-				"Compiler Design & Assembly",
-				"Team-oriented projects",
-				"Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS, Unix"
-			]
-		}
-	]
+  "name": "Zak Nesler",
+  "title": "Full-Stack Engineer",
+  "location": "Philadelphia, PA, USA",
+  "email": "zak at [this domain]",
+  "website": "https://nesler.dev",
+  "username": "zaknesler",
+  "urls": {
+    "gallery": "https://zaknesler.com",
+    "github": "https://github.com/zaknesler",
+    "linkedin": "https://linkedin.com/in/zaknesler",
+    "lastfm": "https://last.fm/user/zaknesler"
+  },
+  "qualities": [
+    "A keen eye for detail and design",
+    "Loves running into problems, but loves solving them even more",
+    "Enjoys writing self-documenting, tested, and tidy code"
+  ],
+  "skills": {
+    "languages": ["TypeScript", "Rust", "Go"],
+    "technologies": [
+      "Next.js/React",
+      "Tailwind CSS",
+      "tRPC",
+      "MongoDB",
+      "Astro",
+      "Solid"
+    ],
+    "software": ["Docker", "Git", "Linear", "Figma", "Photoshop", "Blender"],
+    "services": ["Cloudflare", "DigitalOcean", "Azure"]
+  },
+  "experience": [
+    {
+      "company": "itsWoop Technologies LLC",
+      "location": "Media, PA",
+      "position": "Full-Stack Engineer",
+      "date_start": "2022-07",
+      "date_end": null,
+      "description_list": [
+        "Covers the entire development process from design to implementation and testing with a small team of developers",
+        "Designed and developed a customer-facing insurance dashboard with Next.js, with microservices to interface with 3rd party APIs and insurance/dealership systems",
+        "Collaborated with marketing and business teams to design and implement new features to increase user engagement and improve user experience",
+        "Utilizes microservice architecture with MERN stack, Next.js/Typescript, and Azure DevOps for CI and deployment"
+      ]
+    },
+    {
+      "company": "Computer Visionaries, Inc.",
+      "location": "Pittston, PA",
+      "position": "Web Developer Intern",
+      "date_start": "2021-11",
+      "date_end": "2022-06",
+      "description_list": [
+        "Implemented communication logging feature covering the entire stack with great feedback from end users",
+        "Improved UI/UX, loading times, and optimized SQL stored procedures",
+        "Utilized Express.js, Angular, and SQL Server"
+      ]
+    },
+    {
+      "company": "Airline Hydraulics Corp.",
+      "location": "Bensalem, PA",
+      "position": "Project Manager & Developer",
+      "date_start": "2021-11",
+      "date_end": "2022-05",
+      "description_list": [
+        "Designed and implemented an admin interface to manage warehouse employees & permissions",
+        "Managed a team of 3 developers to design and implement features for an existing web application",
+        "Utilized .NET Core, React, and SQL Server"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Wilkes University",
+      "location": "Wilkes-Barre, PA",
+      "year_start": 2018,
+      "year_end": 2022,
+      "gpa": 3.6,
+      "gpa_major": 3.7,
+      "description": "Graduated cum laude with a B.Sc. degree in Computer Science. One of two recipients of the Outstanding Senior Award in Computer Science.",
+      "courses": [
+        "Algorithms",
+        "Data Structures",
+        "Software Engineering",
+        "Web Development I & II",
+        "Computer Networks",
+        "Concurrent & Quantum Computing",
+        "Computer Architecture",
+        "Operating Systems",
+        "Theory of Computation",
+        "Principles of Prog. Languages",
+        "Compiler Design & Assembly",
+        "Team-oriented projects",
+        "Python, Java, C, C++, Go, Racket, PHP, HTML/CSS/JS, Unix"
+      ]
+    }
+  ]
 }

@@ -41,11 +41,7 @@ export const GET: APIRoute = async ({ request }) => {
 
   const query = url.searchParams.get('q') || url.searchParams.get('query');
 
-  if (!query)
-    return Response.json(
-      { error: 'No query provided. (e.g. /search?q=david+bowie)' },
-      { status: 400 },
-    );
+  if (!query) return Response.json({ error: 'No query provided. (e.g. /search?q=david+bowie)' }, { status: 400 });
 
   const field = url.searchParams.get('f') || url.searchParams.get('field');
 
