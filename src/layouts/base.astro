@@ -1,6 +1,7 @@
 ---
 import '@fontsource-variable/inter';
 import { SEO, type SEOProps } from 'astro-seo';
+import { favicons } from '../constants/favicons';
 import '../index.css';
 
 type Props = {
@@ -10,37 +11,6 @@ type Props = {
 };
 
 const { title, description, openGraph } = Astro.props as Props;
-
-const favicons = [
-  { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
-  {
-    rel: 'icon',
-    type: 'image/png',
-    sizes: '128x128',
-    href: '/favicon-128.png',
-  },
-  { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon-96.png' },
-  { rel: 'icon', type: 'image/png', sizes: '48x48', href: '/favicon-48.png' },
-  { rel: 'apple-touch-icon', type: 'image/svg', href: '/favicon.svg' },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '128x128',
-    href: '/favicon-128.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '96x96',
-    href: '/favicon-96.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    type: 'image/png',
-    sizes: '48x48',
-    href: '/favicon-48.png',
-  },
-];
 ---
 
 <html lang="en" class="h-full">
@@ -67,7 +37,7 @@ const favicons = [
 	</head>
 
 	<body class="selection:bg-blue-500/20 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300">
-		<div class="w-full h-4 bg-gradient-to-r from-blue-700 to-blue-500 dark:from-blue-900 dark:to-blue-800">
+		<div class="w-full h-4 bg-linear-to-r from-blue-700 to-blue-500 dark:from-blue-900 dark:to-blue-800">
 		</div>
 
 		<div class="p-8 lg:p-16">
