@@ -1,28 +1,23 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.8/schema.json",
   "assist": {
-    "actions": {
-      "source": {
-        "organizeImports": "on",
-      },
-    },
+    "actions": { "source": { "organizeImports": "on" } }
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
       "style": {
-        "noNonNullAssertion": "off",
-      },
-    },
-    "includes": ["./src/**", "./biome*", "./astro.config*"],
+        "noNonNullAssertion": "off"
+      }
+    }
   },
   "formatter": {
+    "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 120,
-    "includes": ["./src/**", "./biome*", "./astro.config*"],
+    "lineWidth": 120
   },
   "javascript": {
     "formatter": {
@@ -32,29 +27,33 @@
       "quoteProperties": "asNeeded",
       "quoteStyle": "single",
       "semicolons": "always",
-      "trailingCommas": "all",
-    },
+      "trailingCommas": "all"
+    }
   },
   "css": {
     "parser": {
-      "tailwindDirectives": true,
-    },
+      "tailwindDirectives": true
+    }
+  },
+  "html": {
+    "formatter": { "enabled": true },
+    "experimentalFullSupportEnabled": true
   },
   "overrides": [
     {
-      "includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
+      "includes": ["**/*.astro"],
       "linter": {
         "rules": {
           "style": {
             "useConst": "off",
-            "useImportType": "off",
+            "useImportType": "off"
           },
           "correctness": {
             "noUnusedVariables": "off",
-            "noUnusedImports": "off",
-          },
-        },
-      },
-    },
-  ],
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ]
 }

@@ -7,7 +7,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://nesler.dev',
   output: 'static',
-  adapter: cloudflare(),
+  // adapter: cloudflare(),
   integrations: [
     sitemap({
       filter: page => !page.includes('resume'),
