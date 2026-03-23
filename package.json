@@ -9,13 +9,12 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "biome check ./src",
-    "lint:fix": "biome check --write ./src"
+    "lint": "oxlint src/ && oxfmt --check src/",
+    "lint:fix": "oxlint --fix src/ && oxfmt --write src/"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.3",
     "@astrojs/sitemap": "^3.7.1",
-    "@biomejs/biome": "2.4.8",
     "@fontsource-variable/inter": "^5.2.8",
     "@tailwindcss/vite": "^4.2.2",
     "@total-typescript/ts-reset": "^0.6.1",
@@ -25,5 +24,10 @@
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.2"
   },
-  "packageManager": "bun@1.3.10"
+  "packageManager": "bun@1.3.10",
+  "devDependencies": {
+    "oxfmt": "^0.41.0",
+    "oxlint": "^1.56.0",
+    "oxlint-tsgolint": "^0.17.1"
+  }
 }

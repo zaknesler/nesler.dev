@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "import", "typescript"],
+  "env": { "builtin": true, "browser": true, "es2022": true },
+  "options": { "typeAware": true },
+  "categories": { "correctness": "error", "perf": "error" },
+  "rules": {
+	  "triple-slash-reference": "off"
+  }
+}
