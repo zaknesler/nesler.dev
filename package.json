@@ -1,34 +1,33 @@
 {
-  "name": "nesler.dev",
-  "type": "module",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "lint": "oxlint src/ && oxfmt --check src/",
-    "lint:fix": "oxlint --fix src/ && oxfmt --write src/"
-  },
-  "dependencies": {
-    "@astrojs/cloudflare": "^13.1.3",
-    "@astrojs/compiler-rs": "^0.1.6",
-    "@astrojs/sitemap": "^3.7.1",
-    "@fontsource-variable/inter": "^5.2.8",
-    "@tailwindcss/vite": "^4.2.2",
-    "@total-typescript/ts-reset": "^0.6.1",
-    "astro": "^6.0.8",
-    "astro-seo": "^1.1.0",
-    "dayjs": "^1.11.20",
-    "tailwindcss": "^4.2.2",
-    "vite": "^8.0.2"
-  },
-  "packageManager": "bun@1.3.10",
-  "devDependencies": {
-    "oxfmt": "^0.41.0",
-    "oxlint": "^1.56.0",
-    "oxlint-tsgolint": "^0.17.1"
-  }
+	"name": "nesler.dev",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "oxlint src/ && oxfmt --check src/",
+		"lint:fix": "oxlint --fix src/ && oxfmt --write src/"
+	},
+	"dependencies": {
+		"@astrojs/sitemap": "^3.7.1",
+		"@fontsource-variable/inter": "^5.2.8",
+		"@tailwindcss/vite": "^4.2.2",
+		"@total-typescript/ts-reset": "^0.6.1",
+		"astro": "^6.0.8",
+		"astro-seo": "^1.1.0",
+		"dayjs": "^1.11.20",
+		"tailwindcss": "^4.2.2",
+		"vite": "^8.0.2"
+	},
+	"devDependencies": {
+		"@astrojs/compiler-rs": "^0.1.6",
+		"oxfmt": "^0.41.0",
+		"oxlint": "^1.56.0",
+		"oxlint-tsgolint": "^0.17.1"
+	},
+	"packageManager": "bun@1.3.10"
 }
