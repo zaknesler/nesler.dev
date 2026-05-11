@@ -9,17 +9,18 @@ export default defineConfig({
 	integrations: [
 		sitemap({
 			filter: page => !page.includes('resume'),
-			lastmod: new Date()
-		})
+			lastmod: new Date(),
+		}),
 	],
 	vite: {
-		plugins: [tailwindcss()]
+		resolve: { tsconfigPaths: true },
+		plugins: [tailwindcss()],
 	},
 	build: {
 		assets: '_assets',
-		format: 'file'
+		format: 'file',
 	},
 	experimental: {
-		rustCompiler: true
-	}
+		rustCompiler: true,
+	},
 });

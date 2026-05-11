@@ -1,0 +1,22 @@
+---
+type Props = {
+	title: string
+	right?: string;
+}
+
+const { title, right } = Astro.props;
+---
+
+<div class="flex flex-col gap-1">
+	<div class="flex items-center justify-between">
+    <h3 class="font-semibold text-olive-600 uppercase tracking-wide text-sm dark:text-olive-400">{title}</h3>
+
+    {right && (
+    	<div class="text-sm text-olive-500 dark:text-olive-400">
+	    	{right}
+		  </div>
+    )}
+  </div>
+
+  <hr class="border border-olive-200 dark:border-olive-800" />
+</div>

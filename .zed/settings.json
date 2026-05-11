@@ -40,7 +40,7 @@
 		"JSON": {
 			"prettier": { "allowed": false },
 			"formatter": [{ "language_server": { "name": "oxfmt" } }, { "code_action": "source.fixAll.oxc" }],
-			"language_servers": ["oxlint", "oxfmt", "json-language-server"]
+			"language_servers": ["oxlint", "oxfmt", "json-language-server", "npm-package-json-checker-lsp"]
 		},
 		"JSONC": {
 			"prettier": { "allowed": false },

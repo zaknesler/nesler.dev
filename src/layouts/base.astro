@@ -1,5 +1,5 @@
 ---
-import '@fontsource-variable/inter';
+import '@fontsource-variable/public-sans/wght.css';
 import { SEO, type SEOProps } from 'astro-seo';
 import { favicons } from '../constants/favicons';
 import '../index.css';
@@ -13,7 +13,7 @@ type Props = {
 const { title, description, openGraph } = Astro.props as Props;
 ---
 
-<html lang="en" class="h-full">
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -36,9 +36,13 @@ const { title, description, openGraph } = Astro.props as Props;
     />
   </head>
 
-  <body class="selection:bg-blue-500/20 bg-white dark:bg-gray-950 text-gray-700 dark:text-gray-300">
-    <div class="w-full h-4 bg-linear-to-r from-blue-700 to-blue-500 dark:from-blue-900 dark:to-blue-800" />
+  <body class="selection:bg-olive-500/20 bg-white dark:bg-olive-950 text-olive-700 dark:text-olive-300">
+    <div class="w-full h-4 bg-linear-to-r from-olive-700 to-olive-500 dark:from-olive-800 dark:to-olive-700" />
 
-    <div class="p-8 lg:p-16"><slot /></div>
+    <div class="p-8 lg:p-16">
+	    <div class="max-w-2xl print:max-w-none flex flex-col gap-8 w-full mx-auto">
+	    	<slot />
+	    </div>
+    </div>
   </body>
 </html>
