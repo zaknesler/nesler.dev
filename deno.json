@@ -1,0 +1,41 @@
+{
+	"tasks": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"lint": "oxlint src/ && oxfmt --check src/",
+		"lint:fix": "oxlint --fix src/ && oxfmt --write src/"
+	},
+	"imports": {
+		"tty": "node:tty",
+		"crypto": "node:crypto",
+		"child_process": "node:child_process",
+		"path": "node:path",
+		"os": "node:os",
+		"fs": "node:fs",
+		"@astrojs/compiler-rs": "npm:@astrojs/compiler-rs@^0.1.10",
+		"@astrojs/sitemap": "npm:@astrojs/sitemap@^3.7.2",
+		"@fontsource-variable/figtree": "npm:@fontsource-variable/figtree@^5.2.10",
+		"@fontsource-variable/geist": "npm:@fontsource-variable/geist@^5.2.8",
+		"@fontsource-variable/lexend": "npm:@fontsource-variable/lexend@^5.2.11",
+		"@fontsource-variable/outfit": "npm:@fontsource-variable/outfit@^5.2.8",
+		"@fontsource-variable/public-sans": "npm:@fontsource-variable/public-sans@^5.2.7",
+		"@fontsource-variable/quicksand": "npm:@fontsource-variable/quicksand@^5.2.10",
+		"@fontsource-variable/urbanist": "npm:@fontsource-variable/urbanist@^5.2.7",
+		"@fontsource/ia-writer-duo": "npm:@fontsource/ia-writer-duo@^5.2.5",
+		"@fontsource/ia-writer-quattro": "npm:@fontsource/ia-writer-quattro@^5.2.5",
+		"@tailwindcss/vite": "npm:@tailwindcss/vite@^4.3.0",
+		"@total-typescript/ts-reset": "npm:@total-typescript/ts-reset@^0.6.1",
+		"astro": "npm:astro@^6.3.1",
+		"astro-seo": "npm:astro-seo@^1.1.0",
+		"dayjs": "npm:dayjs@^1.11.20",
+		"oxfmt": "npm:oxfmt@^0.48.0",
+		"oxlint": "npm:oxlint@^1.63.0",
+		"oxlint-tsgolint": "npm:oxlint-tsgolint@^0.22.1",
+		"tailwindcss": "npm:tailwindcss@^4.3.0",
+		"vite": "npm:vite@^8.0.12"
+	},
+	"nodeModulesDir": "auto",
+	"allowScripts": ["npm:esbuild@0.27.7", "npm:fsevents@2.3.3", "npm:sharp@0.34.5"]
+}
