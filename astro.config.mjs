@@ -20,7 +20,4 @@ export default defineConfig({
 		assets: '_assets',
 		format: 'file',
 	},
-	experimental: {
-		rustCompiler: true,
-	},
 });
