@@ -18,10 +18,10 @@
 		"Enjoys writing self-documenting, tested, and tidy code"
 	],
 	"skills": {
-		"languages": ["TypeScript", "Rust", "Go", "SQL", "Nushell"],
-		"technologies": ["React/Next.js", "Tailwind CSS", "MongoDB", "Solid.js", "Astro", "Vite"],
+		"languages": ["TypeScript", "Rust", "Go", "Nushell", "SQL"],
+		"technologies": ["React/Next.js", "Tailwind CSS", "MongoDB", "Solid.js", "Astro"],
 		"software": ["Docker", "Git", "Zed", "Linear", "Figma", "Photoshop", "Blender"],
-		"services": ["Cloudflare", "DigitalOcean", "Azure DevOps"]
+		"services": ["Cloudflare", "DigitalOcean", "Azure DevOps", "Tailscale"]
 	},
 	"experience": [
 		{
