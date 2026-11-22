@@ -1,8 +1,9 @@
 {
 	"name": "Zak Nesler",
-	"title": "Full-Stack Engineer",
+	"title": "Full-stack Engineer",
 	"location": "Philadelphia, PA, USA",
-	"email": "zak at [this domain]",
+	"about": "Full-stack engineer based in Philadelphia with a passion for clean design and tidy code.",
+	"email": "zak at [nesler dot dev]",
 	"website": "https://nesler.dev",
 	"username": "zaknesler",
 	"urls": {
