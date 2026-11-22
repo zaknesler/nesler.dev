@@ -1,54 +1,53 @@
 ---
-import '@fontsource-variable/public-sans/wght.css';
 import { SEO, type SEOProps } from 'astro-seo';
+import '@fontsource-variable/inter';
+
 import { favicons } from '../constants/favicons';
+
 import '../index.css';
 
 type Props = {
-  title?: string;
-  description?: string;
-  openGraph?: SEOProps['openGraph'];
+	title?: string;
+	description?: string;
+	openGraph?: SEOProps['openGraph'];
 };
 
 const { title, description, openGraph } = Astro.props as Props;
 ---
 
 <html lang="en">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <SEO
-      {title}
-      {description}
-      {openGraph}
-      titleDefault="Zak Nesler"
-      titleTemplate="%s — Zak Nesler"
-      charset="utf-8"
-      twitter={{ creator: '@zaknesler' }}
-      extend={{
+		<SEO
+			{title}
+			{description}
+			{openGraph}
+			titleDefault="Zak Nesler"
+			titleTemplate="%s — Zak Nesler"
+			charset="utf-8"
+			twitter={{ creator: '@zaknesler' }}
+			extend={{
 				link: [
 					...favicons,
 					{ rel: 'manifest', href: '/manifest.json' },
 					{ rel: 'sitemap', href: '/sitemap-index.xml' },
 				],
 			}}
-    />
+		/>
 
 		<script async src="https://a.zak.fm/js/pa-l6uh6Xn3fSlHtGGQBh1fb.js"></script>
-		<script>
-		  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-		  plausible.init()
-		</script>
-  </head>
+		<script async src="/plausible.js"></script>
+	</head>
 
-  <body class="selection:bg-olive-500/20 bg-white dark:bg-olive-950 text-olive-700 dark:text-olive-300">
-    <div class="w-full h-4 bg-linear-to-r from-olive-700 to-olive-500 dark:from-olive-800 dark:to-olive-700" />
+	<body class="bg-white text-olive-700 selection:bg-olive-500/20 dark:bg-olive-950 dark:text-olive-300">
+		<div class="h-4 w-full bg-linear-to-r from-olive-700 to-olive-500 dark:from-olive-800 dark:to-olive-700" />
 
-    <div class="p-8 lg:p-16">
-	    <div class="max-w-2xl print:max-w-none flex flex-col gap-8 w-full mx-auto">
-	    	<slot />
-	    </div>
-    </div>
-  </body>
+		<div class="p-8 lg:p-16">
+			<div class="mx-auto flex w-full max-w-2xl flex-col gap-8 print:max-w-none">
+				<slot />
+			</div>
+		</div>
+	</body>
 </html>

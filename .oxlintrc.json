@@ -1,10 +1,40 @@
 {
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["unicorn", "import", "typescript"],
-  "env": { "builtin": true, "browser": true, "es2022": true },
-  "options": { "typeAware": true },
-  "categories": { "correctness": "error", "perf": "error" },
-  "rules": {
-	  "triple-slash-reference": "off"
-  }
+	"$schema": "./node_modules/oxlint/configuration_schema.json",
+	"plugins": ["react", "typescript", "oxc", "import", "unicorn", "promise", "jsx-a11y", "react-perf"],
+	"categories": {
+		"correctness": "error",
+		"suspicious": "error",
+		"pedantic": "error",
+		"perf": "error"
+	},
+	"options": {
+		"typeAware": true
+	},
+	"rules": {
+		"eqeqeq": "error",
+		"import/first": "error",
+		"import/no-cycle": "error",
+		"import/no-duplicates": "error",
+		"import/no-unassigned-import": "off",
+		"no-console": "error",
+		"no-var": "error",
+		"prefer-const": "error",
+		"react/exhaustive-deps": "error",
+		"react/only-export-components": ["error", { "allowConstantExport": true }],
+		"react/react-in-jsx-scope": "off",
+		"react/rules-of-hooks": "error",
+		"typescript/array-type": ["error", { "default": "array-simple" }],
+		"typescript/consistent-type-definitions": ["error", "type"],
+		"typescript/consistent-type-imports": "error",
+		"typescript/no-explicit-any": "error",
+		"typescript/no-floating-promises": "error",
+		"typescript/no-misused-promises": "error",
+		"typescript/no-non-null-assertion": "error",
+		"typescript/no-unnecessary-condition": "error",
+		"typescript/prefer-nullish-coalescing": "error",
+		"typescript/prefer-readonly-parameter-types": "off",
+		"typescript/strict-boolean-expressions": "error",
+		"typescript/switch-exhaustiveness-check": "error",
+		"typescript/triple-slash-reference": "off"
+	}
 }

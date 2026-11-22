@@ -16,6 +16,8 @@ export default defineConfig({
 		resolve: { tsconfigPaths: true },
 		plugins: [tailwindcss()],
 	},
+	server: { port: 4000 },
+	preview: { port: 4000 },
 	build: {
 		assets: '_assets',
 		format: 'file',

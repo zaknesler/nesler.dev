@@ -1,7 +1,6 @@
 {
 	"$schema": "./node_modules/oxfmt/configuration_schema.json",
 	"ignorePatterns": [],
-	"experimentalTailwindcss": {},
 	"quoteProps": "consistent",
 	"printWidth": 120,
 	"trailingComma": "all",
@@ -9,5 +8,9 @@
 	"semi": true,
 	"singleQuote": true,
 	"endOfLine": "lf",
-	"arrowParens": "avoid"
+	"arrowParens": "avoid",
+	"sortImports": true,
+	"astro": true,
+	"sortTailwindcss": { "stylesheet": "./src/index.css", "functions": ["clsx", "cn", "cva"] },
+	"sortPackageJson": { "sortScripts": true }
 }
