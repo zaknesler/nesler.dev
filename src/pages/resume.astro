@@ -42,7 +42,7 @@ import data from '../../public/resume.json';
 					<DetailRow
 						title={item.position}
 						subheadings={[item.company, item.location]}
-						dataItems={[
+						items={[
 							`${dayjs(item.date_start).format('MMM YYYY')} – ${item.date_end ? dayjs(item.date_end).format('MMM YYYY') : 'Present'}`,
 						]}
 					>
@@ -60,7 +60,7 @@ import data from '../../public/resume.json';
 					<DetailRow
 						title={item.school}
 						subheadings={[item.location, `${item.year_start} – ${item.year_end}`]}
-						dataItems={[`GPA: ${item.gpa}`, `Major GPA: ${item.gpa_major}`]}
+						items={[`GPA: ${item.gpa}`, `Major GPA: ${item.gpa_major}`]}
 					>
 						<div>{item.description}</div>
 						<div class="flex flex-col gap-2 text-sm">

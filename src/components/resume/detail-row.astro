@@ -1,13 +1,13 @@
 ---
-import DataItem from './data-item.astro';
+import Badge from '../badge.astro';
 
 type Props = {
 	title: string;
 	subheadings: string[];
-	dataItems: string[];
+	items: string[];
 };
 
-const { title, subheadings, dataItems } = Astro.props as Props;
+const { title, subheadings, items } = Astro.props as Props;
 ---
 
 <div class="flex flex-col gap-4">
@@ -23,8 +23,8 @@ const { title, subheadings, dataItems } = Astro.props as Props;
 		</div>
 
 		<div class="flex shrink-0 items-center gap-2 text-xs font-medium text-olive-700 dark:text-olive-200">
-			{dataItems.map(item => (
-				<DataItem>{item}</DataItem>
+			{items.map(item => (
+				<Badge title={item} />
 			))}
 		</div>
 	</div>
