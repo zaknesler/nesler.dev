@@ -11,19 +11,22 @@ const socialLinks = [
 	{ label: 'GitHub', icon: GitHubIcon, url: data.urls.github },
 	{ label: 'LinkedIn', icon: LinkedInIcon, url: data.urls.linkedin },
 ] as const;
+
+const TitleTag = onHome ? 'div' : 'a';
+const SubtitleTag = onResume ? 'div' : 'a';
 ---
 
 <nav class:list={['flex flex-col gap-4', onResume && 'flex-row items-center justify-between text-start']}>
 	<div class="flex flex-col items-start">
-		<a href={onHome ? undefined : '/'} class:list={[!onHome && 'hover:underline']}>
+		<TitleTag href={onHome ? undefined : '/'} class:list={[!onHome && 'hover:underline']}>
 			<h3 class="font-semibold text-black dark:text-white">Zak Nesler</h3>
-		</a>
+		</TitleTag>
 
-		<a href={onResume ? undefined : '/resume'}>
+		<SubtitleTag href={onResume ? undefined : '/resume'}>
 			<h4 class:list={['text-2xs font-medium tracking-wide uppercase', !onResume && 'hover:underline']}>
 				{data.title}
 			</h4>
-		</a>
+		</SubtitleTag>
 	</div>
 
 	{onResume && (
