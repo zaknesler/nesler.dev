@@ -9,7 +9,7 @@
 		"lint": "oxlint src/ && oxfmt --check src/",
 		"lint:fix": "oxlint --fix src/ && oxfmt --write src/",
 		"preview": "astro preview",
-		"start": "astro dev"
+		"start": "astro preview"
 	},
 	"dependencies": {
 		"@astrojs/compiler-rs": "^0.5.3",
