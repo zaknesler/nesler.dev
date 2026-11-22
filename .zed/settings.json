@@ -14,7 +14,7 @@
 	},
 	"languages": {
 		"Astro": {
-			"language_servers": ["typescript-ls", "oxlint", "oxfmt", "astro-language-server"],
+			"language_servers": ["typescript-ls", "oxlint", "oxfmt", "astro-language-server", "tailwindcss-language-server"],
 			"formatter": [{ "code_action": "source.fixAll.oxc" }, { "language_server": { "name": "oxfmt" } }],
 			"format_on_save": "on",
 			"prettier": { "allowed": false }

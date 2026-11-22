@@ -2,9 +2,10 @@
 import { SEO, type SEOProps } from 'astro-seo';
 import '@fontsource-variable/inter';
 
-import { favicons } from '../constants/favicons';
+import Title from '@/components/title.astro';
 
 import '../index.css';
+import { favicons } from '../constants/favicons';
 
 type Props = {
 	title?: string;
@@ -15,10 +16,11 @@ type Props = {
 const { title, description, openGraph } = Astro.props as Props;
 ---
 
-<html lang="en">
+<html lang="en" class="h-full w-full">
 	<head>
+		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<SEO
 			{title}
@@ -41,13 +43,10 @@ const { title, description, openGraph } = Astro.props as Props;
 		<script async src="/plausible.js"></script>
 	</head>
 
-	<body class="bg-white text-olive-700 selection:bg-olive-500/20 dark:bg-olive-950 dark:text-olive-300">
-		<div class="h-4 w-full bg-linear-to-r from-olive-700 to-olive-500 dark:from-olive-800 dark:to-olive-700" />
-
-		<div class="p-8 lg:p-16">
-			<div class="mx-auto flex w-full max-w-2xl flex-col gap-8 print:max-w-none">
-				<slot />
-			</div>
+	<body class="h-full w-full bg-olive-100 text-olive-500 selection:bg-olive-500/20 dark:bg-olive-950 dark:text-olive-400">
+		<div class="mx-auto flex w-full max-w-2xl flex-col gap-6 p-8 lg:p-16 print:max-w-none">
+			<Title />
+			<slot />
 		</div>
 	</body>
 </html>

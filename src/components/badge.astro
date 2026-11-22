@@ -1,0 +1,29 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = {
+	title: string;
+	path: string;
+	icon: (_props: HTMLAttributes<'svg'>) => unknown;
+};
+
+const { title, path, icon: Icon } = Astro.props;
+---
+
+<a
+	href={path}
+	class:list={[
+		'relative inline-flex items-center gap-1.5 rounded-lg px-3 py-1 transition',
+		'border border-olive-300 bg-linear-to-b from-olive-50 to-olive-100 text-olive-600',
+		'ring-0 inset-shadow-light ring-olive-300 ring-offset-2 ring-offset-olive-100',
+		'hover:border-olive-500 hover:text-olive-900 hover:ring-2',
+		'dark:border-olive-700 dark:from-olive-800 dark:to-olive-900 dark:text-olive-300',
+		'dark:inset-shadow-dark dark:ring-olive-800 dark:ring-offset-olive-950',
+		'dark:hover:border-olive-500 dark:hover:text-olive-100',
+	]}
+	target={path.startsWith('/') ? undefined : '_blank'}
+	rel={path.startsWith('/') ? undefined : 'noopener'}
+>
+	{title}
+	<Icon class="size-4 opacity-50" />
+</a>

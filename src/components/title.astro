@@ -1,8 +1,38 @@
 ---
+import GitHubIcon from '@/assets/github.svg';
+import LinkedInIcon from '@/assets/linkedin.svg';
+
 import data from '../../public/resume.json';
+
+const onHome = Astro.routePattern === '/';
+const onResume = Astro.routePattern === '/resume';
+
+const socialLinks = [
+	{ label: 'GitHub', icon: GitHubIcon, url: data.urls.github },
+	{ label: 'LinkedIn', icon: LinkedInIcon, url: data.urls.linkedin },
+] as const;
 ---
 
-<div class="flex flex-col">
-	<h3 class="text-xl font-bold text-black dark:text-white">{data.name}</h3>
-	<h4 class="text-xs font-semibold tracking-wide text-olive-600 uppercase dark:text-olive-500">{data.title}</h4>
-</div>
+<nav class:list={['flex flex-col gap-4', onResume && 'flex-row items-center justify-between text-start']}>
+	<div class="flex flex-col">
+		<a href={onHome ? undefined : '/'}>
+			<h3 class="font-semibold text-black dark:text-white">Zak Nesler</h3>
+		</a>
+
+		<h4 class="text-2xs font-medium tracking-wide text-olive-500 uppercase dark:text-olive-500">{data.title}</h4>
+	</div>
+
+	{onResume && (
+		<div class="flex flex-col gap-2 text-right text-xs font-medium">
+			<div class="flex items-center justify-end gap-3">
+				{socialLinks.map(({ label, icon, url }) => (
+					<a href={url} target="_blank" rel="noopener noreferrer" title={label}>
+						<img src={icon.src} class="size-4" alt={label} />
+					</a>
+				))}
+			</div>
+
+			<div class="text-xs text-olive-500" set:html={data.email} />
+		</div>
+	)}
+</nav>
