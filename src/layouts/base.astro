@@ -27,7 +27,7 @@ const { title, description, openGraph } = Astro.props as Props;
 			{description}
 			{openGraph}
 			titleDefault="Zak Nesler"
-			titleTemplate="%s — Zak Nesler"
+			titleTemplate="%s – Zak Nesler"
 			charset="utf-8"
 			twitter={{ creator: '@zaknesler' }}
 			extend={{
@@ -43,8 +43,8 @@ const { title, description, openGraph } = Astro.props as Props;
 		<script async src="/plausible.js"></script>
 	</head>
 
-	<body class="h-full w-full bg-olive-100 text-olive-500 selection:bg-olive-500/20 dark:bg-olive-950 dark:text-olive-400">
-		<div class="mx-auto flex w-full max-w-2xl flex-col gap-6 p-8 lg:py-16 print:max-w-none">
+	<body class="h-full w-full bg-olive-100 text-olive-600 selection:bg-olive-500/20 dark:bg-olive-950 dark:text-olive-400">
+		<div class="mx-auto flex w-full max-w-2xl flex-col gap-6 p-6 md:py-16 lg:py-24 print:max-w-none">
 			<Title />
 			<slot />
 		</div>

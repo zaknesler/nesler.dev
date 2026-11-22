@@ -9,9 +9,9 @@ const { title, right } = Astro.props;
 
 <div class="flex flex-col gap-1">
 	<div class="flex items-center justify-between">
-		<h3 class="text-sm font-semibold tracking-wide text-olive-500 uppercase sm:text-xs dark:text-olive-400">{title}</h3>
+		<h3 class="text-sm font-semibold tracking-wide uppercase sm:text-xs">{title}</h3>
 
-		{right && <div class="hidden text-xs text-olive-500 xs:flex dark:text-olive-400">{right}</div>}
+		{right && <div class="hidden text-xs xs:flex">{right}</div>}
 	</div>
 
 	<hr class="border border-olive-200 dark:border-olive-800" />
