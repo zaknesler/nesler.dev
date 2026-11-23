@@ -23,12 +23,7 @@ const SubtitleTag = onResume ? 'div' : 'a';
 		</TitleTag>
 
 		<SubtitleTag href={onResume ? undefined : '/resume'}>
-			<h4
-				class:list={[
-					'text-2xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-600',
-					!onResume && 'hover:underline',
-				]}
-			>
+			<h4 class:list={['text-2xs font-medium tracking-wide text-gray-500 uppercase', !onResume && 'hover:underline']}>
 				{data.title}
 			</h4>
 		</SubtitleTag>
