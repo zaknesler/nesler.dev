@@ -16,12 +16,12 @@ const Tag = path ? 'a' : 'span';
 	href={path}
 	class:list={[
 		'relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 transition',
-		'border border-olive-300 bg-linear-to-b from-white to-olive-100 text-olive-600',
-		'ring-0 inset-shadow-light ring-olive-300 ring-offset-2 ring-offset-olive-100',
-		path && 'hover:border-olive-500 hover:text-olive-900 hover:ring-2',
-		'dark:border-olive-700 dark:from-olive-800 dark:to-olive-900 dark:text-olive-300',
-		'dark:inset-shadow-dark dark:ring-olive-800 dark:ring-offset-olive-950',
-		path && 'dark:hover:border-olive-500 dark:hover:text-olive-100',
+		'border border-gray-300 bg-linear-to-b from-white to-gray-100 text-gray-600',
+		'ring-0 inset-shadow-light ring-gray-300 ring-offset-2 ring-offset-gray-100',
+		path && 'hover:border-gray-500 hover:text-gray-900 hover:ring-2',
+		'dark:border-gray-700 dark:from-gray-800 dark:to-gray-900 dark:text-gray-300',
+		'dark:inset-shadow-dark dark:ring-gray-800 dark:ring-offset-gray-950',
+		path && 'dark:hover:border-gray-500 dark:hover:text-gray-100',
 	]}
 	target={path && !path.startsWith('/') ? '_blank' : undefined}
 	rel={path && !path.startsWith('/') ? 'noopener' : undefined}

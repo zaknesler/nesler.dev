@@ -11,30 +11,46 @@
 	--text-2xs: 0.675rem;
 
 	--breakpoint-xs: 30rem;
+
+	--color-gray-50: oklch(98.8% 0.003 106.5);
+	--color-gray-100: oklch(96.6% 0.005 106.5);
+	--color-gray-200: oklch(93% 0.007 106.5);
+	--color-gray-300: oklch(88% 0.011 106.6);
+	--color-gray-400: oklch(73.7% 0.021 106.9);
+	--color-gray-500: oklch(58% 0.031 107.3);
+	--color-gray-600: oklch(46.6% 0.025 107.3);
+	--color-gray-700: oklch(39.4% 0.023 107.4);
+	--color-gray-800: oklch(28.6% 0.016 107.4);
+	--color-gray-900: oklch(22.8% 0.013 107.4);
+	--color-gray-950: oklch(15.3% 0.006 107.1);
 }
 
 @layer base {
+	a:focus-visible {
+		outline: 2px solid var(--color-oli);
+	}
+
 	.prose a {
-		color: var(--color-olive-800);
+		color: var(--color-gray-800);
 		text-decoration-line: underline;
-		text-decoration-color: var(--color-olive-300);
+		text-decoration-color: var(--color-gray-300);
 		text-underline-offset: 2px;
 		transition-property: color, text-decoration-color;
 		transition-timing-function: var(--default-transition-timing-function);
 		transition-duration: var(--default-transition-duration);
 
 		&:hover {
-			color: var(--color-olive-950);
-			text-decoration-color: var(--color-olive-950);
+			color: var(--color-gray-950);
+			text-decoration-color: var(--color-gray-950);
 		}
 
 		@media (prefers-color-scheme: dark) {
-			color: var(--color-olive-500);
-			text-decoration-color: var(--color-olive-700);
+			color: var(--color-gray-500);
+			text-decoration-color: var(--color-gray-700);
 
 			&:hover {
-				color: var(--color-olive-400);
-				text-decoration-color: var(--color-olive-400);
+				color: var(--color-gray-400);
+				text-decoration-color: var(--color-gray-400);
 			}
 		}
 	}

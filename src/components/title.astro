@@ -19,13 +19,13 @@ const SubtitleTag = onResume ? 'div' : 'a';
 <nav class:list={['flex flex-col gap-4', onResume && 'flex-row items-center justify-between text-start']}>
 	<div class="flex flex-col items-start">
 		<TitleTag href={onHome ? undefined : '/'} class:list={[!onHome && 'hover:underline']}>
-			<h3 class="font-semibold text-olive-950 dark:text-olive-100">Zak Nesler</h3>
+			<h3 class="font-semibold text-gray-950 dark:text-gray-100">Zak Nesler</h3>
 		</TitleTag>
 
 		<SubtitleTag href={onResume ? undefined : '/resume'}>
 			<h4
 				class:list={[
-					'text-2xs font-medium tracking-wide text-olive-500 uppercase dark:text-olive-600',
+					'text-2xs font-medium tracking-wide text-gray-500 uppercase dark:text-gray-600',
 					!onResume && 'hover:underline',
 				]}
 			>

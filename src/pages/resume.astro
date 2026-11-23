@@ -25,7 +25,7 @@ import data from '../../public/resume.json';
 			<div class="flex flex-col gap-4">
 				{Object.entries(data.skills).map(([name, items]) => (
 					<div class="flex flex-col items-start gap-1 sm:flex-row sm:items-baseline sm:gap-4">
-						<div class="shrink-0 text-base font-medium text-olive-950 sm:w-24 sm:text-right sm:text-sm dark:text-olive-100">
+						<div class="shrink-0 text-base font-medium text-gray-950 sm:w-24 sm:text-right sm:text-sm dark:text-gray-100">
 							{name.charAt(0).toUpperCase() + name.slice(1)}
 						</div>
 						<div class="col-span-4">{items.join(', ')}</div>
@@ -64,7 +64,7 @@ import data from '../../public/resume.json';
 					>
 						<div>{item.description}</div>
 						<div class="flex flex-col gap-2 text-sm">
-							<div class="font-semibold text-olive-950 dark:text-olive-100">Relevant Courses & Skills</div>
+							<div class="font-semibold text-gray-950 dark:text-gray-100">Relevant Courses & Skills</div>
 
 							<div class="grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-4">
 								{item.courses && (
