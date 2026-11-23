@@ -15,7 +15,7 @@ const Tag = path ? 'a' : 'span';
 <Tag
 	href={path}
 	class:list={[
-		'relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 transition',
+		'group relative inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1 transition',
 		'border border-gray-300 bg-linear-to-b from-white to-gray-100 text-gray-600',
 		'ring-0 inset-shadow-light ring-gray-300 ring-offset-2 ring-offset-gray-100',
 		path && 'hover:border-gray-500 hover:text-gray-900 hover:ring-2',
@@ -27,5 +27,5 @@ const Tag = path ? 'a' : 'span';
 	rel={path && !path.startsWith('/') ? 'noopener' : undefined}
 >
 	{title}
-	{Icon && <Icon class="size-4 opacity-50" />}
+	{Icon && <Icon class="size-4 opacity-50 grayscale transition group-hover:opacity-100 group-hover:grayscale-0" />}
 </Tag>

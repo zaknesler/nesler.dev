@@ -23,17 +23,29 @@
 
 	--breakpoint-xs: 30rem;
 
-	--color-gray-50: oklch(98.8% 0.003 106.5);
-	--color-gray-100: oklch(96.6% 0.005 106.5);
-	--color-gray-200: oklch(93% 0.007 106.5);
-	--color-gray-300: oklch(88% 0.011 106.6);
-	--color-gray-400: oklch(73.7% 0.021 106.9);
-	--color-gray-500: oklch(58% 0.031 107.3);
-	--color-gray-600: oklch(46.6% 0.025 107.3);
-	--color-gray-700: oklch(39.4% 0.023 107.4);
-	--color-gray-800: oklch(28.6% 0.016 107.4);
-	--color-gray-900: oklch(22.8% 0.013 107.4);
-	--color-gray-950: oklch(15.3% 0.006 107.1);
+	--color-accent-50: var(--color-green-50);
+	--color-accent-100: var(--color-green-100);
+	--color-accent-200: var(--color-green-200);
+	--color-accent-300: var(--color-green-300);
+	--color-accent-400: var(--color-green-400);
+	--color-accent-500: var(--color-green-500);
+	--color-accent-600: var(--color-green-600);
+	--color-accent-700: var(--color-green-700);
+	--color-accent-800: var(--color-green-800);
+	--color-accent-900: var(--color-green-900);
+	--color-accent-950: var(--color-green-950);
+
+	--color-gray-50: var(--color-olive-50);
+	--color-gray-100: var(--color-olive-100);
+	--color-gray-200: var(--color-olive-200);
+	--color-gray-300: var(--color-olive-300);
+	--color-gray-400: var(--color-olive-400);
+	--color-gray-500: var(--color-olive-500);
+	--color-gray-600: var(--color-olive-600);
+	--color-gray-700: var(--color-olive-700);
+	--color-gray-800: var(--color-olive-800);
+	--color-gray-900: var(--color-olive-900);
+	--color-gray-950: var(--color-olive-950);
 }
 
 @layer base {
@@ -49,7 +61,7 @@
 		a {
 			color: var(--color-gray-800);
 			text-decoration-line: underline;
-			text-decoration-color: var(--color-gray-300);
+			text-decoration-color: color-mix(in oklab, var(--color-accent-700) 50%, var(--color-gray-300) 100%);
 			text-underline-offset: 2px;
 			transition-property: color, text-decoration-color;
 			transition-timing-function: var(--default-transition-timing-function);
@@ -57,16 +69,16 @@
 
 			&:hover {
 				color: var(--color-gray-950);
-				text-decoration-color: var(--color-gray-950);
+				text-decoration-color: var(--color-accent-700);
 			}
 
 			@media (prefers-color-scheme: dark) {
-				color: var(--color-gray-500);
-				text-decoration-color: var(--color-gray-700);
+				color: var(--color-gray-300);
+				text-decoration-color: color-mix(in oklab, var(--color-accent-700) 50%, var(--color-gray-700) 100%);
 
 				&:hover {
-					color: var(--color-gray-400);
-					text-decoration-color: var(--color-gray-400);
+					color: var(--color-gray-50);
+					text-decoration-color: var(--color-accent-800);
 				}
 			}
 		}

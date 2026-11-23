@@ -30,11 +30,17 @@ const SubtitleTag = onResume ? 'div' : 'a';
 	</div>
 
 	{onResume && (
-		<div class="flex flex-col gap-2 text-right text-xs font-medium">
-			<div class="flex items-center justify-end gap-3">
+		<div class="flex flex-col gap-4 text-right text-xs font-medium">
+			<div class="flex items-center justify-end gap-4">
 				{socialLinks.map(({ label, icon, url }) => (
-					<a href={url} target="_blank" rel="noopener noreferrer" title={label}>
-						<img src={icon.src} class="size-4" alt={label} />
+					<a
+						href={url}
+						target="_blank"
+						rel="noopener noreferrer"
+						title={label}
+						class="transition hover:scale-95 hover:brightness-150"
+					>
+						<img src={icon.src} class="-my-2 size-5" alt={label} />
 					</a>
 				))}
 			</div>

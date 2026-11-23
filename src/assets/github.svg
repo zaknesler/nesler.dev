@@ -3,6 +3,7 @@
 	width="15"
 	height="15"
 	viewBox="0 0 15 15"
+	id="github-logo"
 >
 	<path
 		fill-rule="evenodd"
@@ -11,12 +12,12 @@
 	/>
 
 	<style>
-		path {
-			fill: #24292e;
+		#github-logo path {
+			fill: #181717;
 		}
 
 		@media (prefers-color-scheme: dark) {
-			path {
+			#github-logo path {
 				fill: #ffffff;
 			}
 		}
